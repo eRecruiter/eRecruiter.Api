@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07D5DB59-6C31-44B2-BF5D-18CAE7762DC5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eRecruiter.Api</RootNamespace>
+    <AssemblyName>eRecruiter.Api</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Azure|AnyCPU'">
+    <OutputPath>bin\Release-Azure\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="eRecruiter.Utilities">
+      <HintPath>..\packages\eRecruiter.Utilities.1.0.0\lib\net40-Client\eRecruiter.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gender.cs" />
+    <Compile Include="Parameters\CvParserParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantKnowledgeParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantExperienceParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantEducationParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantActivityParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantPublicationParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantLanguageParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantCertificateParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantCoverLetterCreateParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantResetPasswordParameter.cs" />
+    <Compile Include="Parameters\Application\ApplicationCreateParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantSetPasswordParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantSetPasswordAfterRequestParameter.cs" />
+    <Compile Include="Parameters\ApiKeyParameter.cs" />
+    <Compile Include="Parameters\Application\ApplicationUpdateParameter.cs" />
+    <Compile Include="FlexDate.cs" />
+    <Compile Include="Parameters\CustomField\CustomFieldValueParameter.cs" />
+    <Compile Include="Parameters\FeedbackParameter.cs" />
+    <Compile Include="Responses\ApiTokenResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantKnowledgeResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantCustomFieldResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantExperienceResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantEducationResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantDocumentResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantResponse.cs" />
+    <Compile Include="Responses\ApplicantSetPasswordResponse.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantParameter.cs" />
+    <Compile Include="Responses\Applicant\ApplicantActivityResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantPublicationResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantLanguageResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantCertificateResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantThirdPartyProfileResponse.cs" />
+    <Compile Include="Responses\Application\ApplicationActivityAvailability.cs" />
+    <Compile Include="Responses\Application\ApplicationResponse.cs" />
+    <Compile Include="Responses\Application\ApplicationCreateResponse.cs" />
+    <Compile Include="Responses\CustomField\CustomFieldValueResponse.cs" />
+    <Compile Include="Responses\CvParserResponse.cs" />
+    <Compile Include="Responses\Job\JobSalaryImageResponse.cs" />
+    <Compile Include="Responses\Job\JobResponse.cs" />
+    <Compile Include="Responses\Job\JobsResponse.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantDocumentParameter.cs" />
+    <Compile Include="Responses\Mandator\KnowledgeTreeResponse.cs" />
+    <Compile Include="Responses\Mandator\QuestionnaireItemResponse.cs" />
+    <Compile Include="Responses\Mandator\QuestionnaireResponse.cs" />
+    <Compile Include="Responses\Mandator\MandatorResponse.cs" />
+    <Compile Include="Responses\Mandator\PortalSettingsResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Responses\CustomField\CustomFieldResponse.cs" />
+    <Compile Include="Responses\Mandator\RegionResponse.cs" />
+    <Compile Include="Responses\Mandator\ReferrerResponse.cs" />
+    <Compile Include="Responses\Mandator\TitleResponse.cs" />
+    <Compile Include="Responses\Mandator\TranslationResponse.cs" />
+    <Compile Include="Responses\Mandator\TranslationTextResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

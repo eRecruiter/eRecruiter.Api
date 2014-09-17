@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7AB36921-CAFC-403D-BBC7-F28C8CE9192B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eRecruiter.Api.Client</RootNamespace>
+    <AssemblyName>eRecruiter.Api.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Azure|AnyCPU'">
+    <OutputPath>bin\Release-Azure\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>..\packages\JetBrains.Annotations.7.0\lib\net45\JetBrains.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiHttpClient.cs" />
+    <Compile Include="AuthorizationHandler.cs" />
+    <Compile Include="Exceptions\BadRequestException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\NotFoundException.cs" />
+    <Compile Include="Requests\Account\ResetPasswordRequest.cs" />
+    <Compile Include="Requests\Applicant\ApplicantKnowledgeRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantKnowledgesRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantCustomFieldRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantCustomFieldsRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantDocumentsRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantCvRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantCertificateRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantEducationRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantExperienceRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantPublicationRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantCertificatesRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantEducationsRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantExperiencesRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantPublicationsRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantPhotoRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantActivitiesRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantActivityRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantLanguagesRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantLanguageRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantCoverLetterRequests.cs" />
+    <Compile Include="Requests\DeleteJsonHttpRequestMessage.cs" />
+    <Compile Include="Requests\Job\JobRequest.cs" />
+    <Compile Include="Requests\Mandator\KnowledgeTreeRequest.cs" />
+    <Compile Include="Requests\Mandator\QuestionnaireRequests.cs" />
+    <Compile Include="Requests\FeedbackRequest.cs" />
+    <Compile Include="Requests\CvParserRequest.cs" />
+    <Compile Include="Requests\PostJsonHttpRequestMessage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\Account\ConfirmRequestPasswordRequest.cs" />
+    <Compile Include="Requests\Account\SetPasswordRequest.cs" />
+    <Compile Include="Requests\Account\RequestPasswordRequest.cs" />
+    <Compile Include="Requests\Applicant\ApplicantRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantsRequest.cs" />
+    <Compile Include="Requests\Applicant\ApplicantDocumentRequests.cs" />
+    <Compile Include="Requests\Application\ApplicationsRequests.cs" />
+    <Compile Include="Requests\Application\ApplicationRequests.cs" />
+    <Compile Include="Requests\PutJsonHttpRequestMessage.cs" />
+    <Compile Include="Requests\HttpRequestMessage.cs" />
+    <Compile Include="Requests\Job\PublishedJobRequest.cs" />
+    <Compile Include="Requests\ThirdPartyProfile\UnlinkLinkedInRequest.cs" />
+    <Compile Include="Requests\ThirdPartyProfile\UnlinkXingRequest.cs" />
+    <Compile Include="Requests\ThirdPartyProfile\LinkLinkedInRequest.cs" />
+    <Compile Include="Requests\ThirdPartyProfile\LinkXingRequest.cs" />
+    <Compile Include="Requests\Auth\ApiKeyRequest.cs" />
+    <Compile Include="Requests\CachedHttpRequestMessage.cs" />
+    <Compile Include="Requests\Job\JobSalaryImageRequest.cs" />
+    <Compile Include="Requests\Mandator\MandatorRequest.cs" />
+    <Compile Include="Requests\PingRequest.cs" />
+    <Compile Include="Requests\Job\PublishedJobsRequest.cs" />
+    <Compile Include="ApiTokenCache.cs" />
+    <Compile Include="Exceptions\ServerErrorException.cs" />
+    <Compile Include="ThirdParty.cs" />
+    <Compile Include="Exceptions\UnauthorizedException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eRecruiter.Api\eRecruiter.Api.csproj">
+      <Project>{07d5db59-6c31-44b2-bf5d-18cae7762dc5}</Project>
+      <Name>eRecruiter.Api</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

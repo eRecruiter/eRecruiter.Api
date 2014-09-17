@@ -1,0 +1,2 @@
+.\packages\NuGet.CommandLine.2.8.2\tools\NuGet.exe pack ePunkt.Api\ePunkt.Api.csproj -Build -Properties Configuration=Release
+.\packages\NuGet.CommandLine.2.8.2\tools\NuGet.exe pack ePunkt.Api.Client\ePunkt.Api.Client.csproj -Build -Properties Configuration=Release
