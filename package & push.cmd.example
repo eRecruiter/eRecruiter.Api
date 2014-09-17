@@ -1,9 +1,9 @@
 del *.nupkg
 
-.\packages\NuGet.CommandLine.2.8.0\tools\NuGet.exe SetApiKey <Your API Key here>
+.\packages\NuGet.CommandLine.2.8.2\tools\NuGet.exe SetApiKey <Your API Key here>
 
 call package.cmd
 
 for %%i in (*.nupkg) do (
-	.\packages\NuGet.CommandLine.2.8.0\tools\NuGet.exe push %%i
+	.\packages\NuGet.CommandLine.2.8.2\tools\NuGet.exe push %%i
 )
