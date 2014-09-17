@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BE7563
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eRecruiter.Api.Client", "eRecruiter.Api.Client\eRecruiter.Api.Client.csproj", "{7AB36921-CAFC-403D-BBC7-F28C8CE9192B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eRecruiter.Api.CommandLineClient", "eRecruiter.Api.CommandLineClient\eRecruiter.Api.CommandLineClient.csproj", "{4456BBCC-448F-4CBD-B730-EF2EF64C252E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,12 @@ Global
 		{7AB36921-CAFC-403D-BBC7-F28C8CE9192B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7AB36921-CAFC-403D-BBC7-F28C8CE9192B}.Release-Azure|Any CPU.ActiveCfg = Release-Azure|Any CPU
 		{7AB36921-CAFC-403D-BBC7-F28C8CE9192B}.Release-Azure|Any CPU.Build.0 = Release-Azure|Any CPU
+		{4456BBCC-448F-4CBD-B730-EF2EF64C252E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4456BBCC-448F-4CBD-B730-EF2EF64C252E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4456BBCC-448F-4CBD-B730-EF2EF64C252E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4456BBCC-448F-4CBD-B730-EF2EF64C252E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4456BBCC-448F-4CBD-B730-EF2EF64C252E}.Release-Azure|Any CPU.ActiveCfg = Release|Any CPU
+		{4456BBCC-448F-4CBD-B730-EF2EF64C252E}.Release-Azure|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
