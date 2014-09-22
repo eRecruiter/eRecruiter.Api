@@ -30,7 +30,7 @@ namespace eRecruiter.Api.Responses
         public IEnumerable<string> OccupationTypes { get; set; }
         public IEnumerable<string> CareerLevels { get; set; }
         public IEnumerable<string> Tags { get; set; }
-        public IEnumerable<string> PublishedOn { get; set; }
+        public IEnumerable<JobPublicationResponse> PublishedOn { get; set; }
         public IEnumerable<string> AvailableCultures { get; set; }
 
         //the job ad

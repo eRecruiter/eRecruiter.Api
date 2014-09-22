@@ -28,5 +28,6 @@ namespace eRecruiter.Api.Responses
         public IEnumerable<string> Knowledges { get; set; }
         public IEnumerable<string> KnowledgeLevels { get; set; }
         public IEnumerable<ReferrerResponse> Referrers { get; set; }
+        public IEnumerable<JobPublicationResponse> JobPublicationTypes { get; set; }
     }
 }
