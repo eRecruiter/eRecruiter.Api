@@ -1,6 +1,6 @@
-﻿using System;
+﻿using eRecruiter.Api.Responses;
+using System;
 using System.Net.Http;
-using eRecruiter.Api.Responses;
 
 namespace eRecruiter.Api.Client.Requests
 {
@@ -14,9 +14,15 @@ namespace eRecruiter.Api.Client.Requests
             _currentUri = currentUri;
         }
 
+        public MandatorRequest()
+            : base(HttpMethod.Get, "Api/Mandator")
+        {
+        }
+
         public override string GetCacheKey()
         {
-            return "MandatorRequest_" + _currentUri.Host;
+            // ApiHttpClient automatically appends the Mandator ID to the cache key, so only caching with key 'MandatorRequest' is not a problem.
+            return "MandatorRequest" + (_currentUri == null ? "" : "_" + _currentUri.Host);
         }
     }
 }
