@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gender.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantPhotoParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantCvParameter.cs" />
     <Compile Include="Parameters\CvParserParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantKnowledgeParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantExperienceParameter.cs" />
@@ -65,6 +67,8 @@
     <Compile Include="Parameters\CustomField\CustomFieldValueParameter.cs" />
     <Compile Include="Parameters\FeedbackParameter.cs" />
     <Compile Include="Responses\ApiTokenResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantPhotoResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantCvResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantKnowledgeResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantCustomFieldResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantExperienceResponse.cs" />

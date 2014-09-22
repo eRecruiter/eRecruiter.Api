@@ -4,7 +4,7 @@ using System.Net.Http;
 
 namespace eRecruiter.Api.Client.Requests
 {
-    public class ApplicantPhotoGetRequest : HttpRequestMessage<ApplicantDocumentResponse>
+    public class ApplicantPhotoGetRequest : HttpRequestMessage<ApplicantPhotoResponse>
     {
         public ApplicantPhotoGetRequest(int applicantId, bool includeContent = true)
             : base(HttpMethod.Get, "Api/Applicant/Photo/" + applicantId + "?includeContent=" + includeContent)
@@ -12,23 +12,23 @@ namespace eRecruiter.Api.Client.Requests
         }
     }
 
-    public class ApplicantPhotoPutRequest : PutJsonHttpRequestMessage<ApplicantDocumentResponse>
+    public class ApplicantPhotoPutRequest : PutJsonHttpRequestMessage<ApplicantPhotoResponse>
     {
-        public ApplicantPhotoPutRequest(int applicantId, ApplicantDocumentParameter document)
+        public ApplicantPhotoPutRequest(int applicantId, ApplicantPhotoParameter document)
             : base("Api/Applicant/Photo/" + applicantId, document)
         {
         }
     }
 
-    public class ApplicantPhotoPostRequest : PostJsonHttpRequestMessage<ApplicantDocumentResponse>
+    public class ApplicantPhotoPostRequest : PostJsonHttpRequestMessage<ApplicantPhotoResponse>
     {
-        public ApplicantPhotoPostRequest(int applicantId, ApplicantDocumentParameter document)
+        public ApplicantPhotoPostRequest(int applicantId, ApplicantPhotoParameter document)
             : base("Api/Applicant/Photo/" + applicantId, document)
         {
         }
     }
 
-    public class ApplicantPhotoDeleteRequest : HttpRequestMessage<ApplicantDocumentResponse>
+    public class ApplicantPhotoDeleteRequest : HttpRequestMessage<ApplicantPhotoResponse>
     {
         public ApplicantPhotoDeleteRequest(int applicantId)
             : base(HttpMethod.Delete, "Api/Applicant/Photo/" + applicantId)

@@ -6,5 +6,6 @@
         public string FileExtension { get; set; }
         public string Type { get; set; }
         public byte[] Content { get; set; }
+        public bool IsPublic { get; set; }
     }
 }

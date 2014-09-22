@@ -27,10 +27,10 @@ namespace eRecruiter.Api.CommandLineClient
                 var methodsToCall = new Func<ApiHttpClient, Task>[]
                 {
                     Ping,
-                    CvParser,
                     Mandator,
                     Jobs,
-                    Applicant
+                    Applicant,
+                    CvParser
                 };
 
                 foreach (var method in methodsToCall)
