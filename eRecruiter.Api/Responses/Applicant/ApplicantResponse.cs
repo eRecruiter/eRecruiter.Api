@@ -7,7 +7,6 @@ namespace eRecruiter.Api.Responses
     public class ApplicantResponse : ApplicantParameter
     {
         public int Id { get; set; }
-        public DateTime DateOfCreation { get; set; }
         public DateTime DateOfUpdateByUser { get; set; }
         public DateTime DateOfUpdateByApplicant { get; set; }
 

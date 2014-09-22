@@ -9,14 +9,17 @@ namespace eRecruiter.Api.Parameters
     {
         public ApplicantParameter()
         {
+            DateOfCreation = DateTime.Now; // default value for creation date
         }
 
         public ApplicantParameter(ApplicantResponse applicantResponse)
         {
             // just copy the value of each property
-            foreach (var property in typeof (ApplicantParameter).GetProperties(BindingFlags.Instance | BindingFlags.Public))
-                property.SetValue(this, typeof (ApplicantResponse).GetProperty(property.Name).GetValue(applicantResponse));
+            foreach (var property in typeof(ApplicantParameter).GetProperties(BindingFlags.Instance | BindingFlags.Public))
+                property.SetValue(this, typeof(ApplicantResponse).GetProperty(property.Name).GetValue(applicantResponse));
         }
+
+        public DateTime DateOfCreation { get; set; }
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -75,6 +78,8 @@ namespace eRecruiter.Api.Parameters
 
         public string Classification { get; set; }
         public string ClassificationReason { get; set; }
+
+        public string ImportantInfo { get; set; }
 
         public string SelfDescription { get; set; }
         public string JobDescription { get; set; }

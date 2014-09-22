@@ -83,6 +83,7 @@
     <Compile Include="Responses\Application\ApplicationCreateResponse.cs" />
     <Compile Include="Responses\CustomField\CustomFieldValueResponse.cs" />
     <Compile Include="Responses\CvParserResponse.cs" />
+    <Compile Include="Responses\Job\JobPublicationResponse.cs" />
     <Compile Include="Responses\Job\JobSalaryImageResponse.cs" />
     <Compile Include="Responses\Job\JobResponse.cs" />
     <Compile Include="Responses\Job\JobsResponse.cs" />
