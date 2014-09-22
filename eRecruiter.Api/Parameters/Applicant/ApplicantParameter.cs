@@ -73,6 +73,9 @@ namespace eRecruiter.Api.Parameters
         public string Referrer { get; set; }
         public string ReferrerAdditionalInfo { get; set; }
 
+        public string Classification { get; set; }
+        public string ClassificationReason { get; set; }
+
         public string SelfDescription { get; set; }
         public string JobDescription { get; set; }
 
