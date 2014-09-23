@@ -1,8 +1,8 @@
 # eRecruiter API ChangeLog
 
-## v1.1.0
+## v1.1.1
 - **Breaking**: Since CV and Photo request/responses only require the `Content` and `FileExtension` properties, but not `Name`, `Type` or `IsPublic` like other documents, the API now sends and expects only these two properties.
-- New property `IsPublic` to documents to indicate if the document should be visible on the applicant portal.
+- New property `IsPublic` for documents to indicate if the document should be visible on the applicant portal.
 
 ## v1.1.0
 - **Breaking**: When creating an applicant it's now necessary to explicitly set the `DateOfCreation` property of the applicant.
