@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.1.2
+- New method `DELETE Applicant` to anonymize or completely delete an applicant.
+
 ## v1.1.1
 - **Breaking**: Since CV and Photo request/responses only require the `Content` and `FileExtension` properties, but not `Name`, `Type` or `IsPublic` like other documents, the API now sends and expects only these two properties.
 - New property `IsPublic` for documents to indicate if the document should be visible on the applicant portal.
