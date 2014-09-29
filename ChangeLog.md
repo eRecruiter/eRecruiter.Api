@@ -1,6 +1,6 @@
 # eRecruiter API ChangeLog
 
-## 1.1.2
+## v1.1.2
 - New method `DELETE Applicant` to anonymize or completely delete an applicant.
 
 ## v1.1.1
