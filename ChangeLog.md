@@ -1,7 +1,7 @@
 # eRecruiter API ChangeLog
 
 ## v1.1.3
-- New property `EnableDeleteForApplicant` in portal settings for deleting an applicant.
+- New property `EnableDeleteForApplicant` in portal settings, indicating whether or not it should be possible for applicants to delete themselves.
 
 ## v1.1.2
 - New method `DELETE Applicant` to anonymize or completely delete an applicant.
