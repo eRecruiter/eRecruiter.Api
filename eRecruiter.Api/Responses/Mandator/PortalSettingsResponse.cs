@@ -60,6 +60,12 @@ namespace eRecruiter.Api.Responses
         public bool EnableFilterOnJobsList { get; set; }
 
         public bool AllowDuplicateEmail { get; set; }
+        
+        /// <summary>
+        /// This setting depends on the <see cref="EnableSelfServiceZone"/> setting.
+        /// If this setting is <value>true</value>, an applicant is able to delete their profile.
+        /// </summary>
+        public bool EnableDeleteForApplicant { get; set; }
 
         public bool EnableExtendedXml { get; set; }
         public bool EnableJobTagsInXmlFeed { get; set; }
