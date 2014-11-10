@@ -89,10 +89,13 @@
     <Compile Include="Requests\Application\FinalizeCuteAssessmentRequest.cs" />
     <Compile Include="Requests\DeleteJsonHttpRequestMessage.cs" />
     <Compile Include="Requests\Job\JobRequest.cs" />
+    <Compile Include="Requests\Mandator\MandatorsRequest.cs" />
     <Compile Include="Requests\Mandator\KnowledgeTreeRequest.cs" />
     <Compile Include="Requests\Mandator\QuestionnaireRequests.cs" />
     <Compile Include="Requests\FeedbackRequest.cs" />
     <Compile Include="Requests\CvParserRequest.cs" />
+    <Compile Include="Requests\Mandator\ApiKeyRequests.cs" />
+    <Compile Include="Requests\Mandator\ApiKeysRequest.cs" />
     <Compile Include="Requests\PostJsonHttpRequestMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requests\Account\ConfirmRequestPasswordRequest.cs" />
@@ -118,11 +121,14 @@
     <Compile Include="Requests\Job\PublishedJobsRequest.cs" />
     <Compile Include="ApiTokenCache.cs" />
     <Compile Include="Exceptions\ServerErrorException.cs" />
+    <Compile Include="Requests\User\UserRequests.cs" />
+    <Compile Include="Requests\User\UsersRequest.cs" />
     <Compile Include="ThirdParty.cs" />
     <Compile Include="Exceptions\UnauthorizedException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="eRecruiter.Api.Client.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

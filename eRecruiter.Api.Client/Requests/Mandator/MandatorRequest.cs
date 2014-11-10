@@ -1,4 +1,5 @@
-﻿using eRecruiter.Api.Responses;
+﻿using eRecruiter.Api.Parameters;
+using eRecruiter.Api.Responses;
 using System;
 using System.Net.Http;
 
@@ -23,6 +24,30 @@ namespace eRecruiter.Api.Client.Requests
         {
             // ApiHttpClient automatically appends the Mandator ID to the cache key, so only caching with key 'MandatorRequest' is not a problem.
             return "MandatorRequest" + (_currentUri == null ? "" : "_" + _currentUri.Host);
+        }
+    }
+
+    public class MandatorPutRequest : PutJsonHttpRequestMessage<MandatorResponse>
+    {
+        public MandatorPutRequest(MandatorCreateParameter mandator)
+            : base("Api/Mandator/", mandator)
+        {
+        }
+    }
+
+    public class MandatorPostRequest : PostJsonHttpRequestMessage<MandatorResponse>
+    {
+        public MandatorPostRequest(int mandatorId, MandatorUpdateParameter mandator)
+            : base("Api/Mandator/" + mandatorId, mandator)
+        {
+        }
+    }
+
+    public class MandatorDeleteReqeust : HttpRequestMessage<MandatorResponse>
+    {
+        public MandatorDeleteReqeust(int mandatorId)
+            : base(HttpMethod.Delete, "Api/Mandator/" + mandatorId)
+        {
         }
     }
 }

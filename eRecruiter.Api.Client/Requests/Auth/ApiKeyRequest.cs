@@ -7,10 +7,10 @@ namespace eRecruiter.Api.Client.Requests
 {
     public class ApiKeyRequest : HttpRequestMessage<ApiTokenResponse>
     {
-        public ApiKeyRequest(ApiKeyParameter apiKeyParameter)
+        public ApiKeyRequest(ApiTokenParameter apiTokenParameter)
             : base(HttpMethod.Post, "")
         {
-            Content = new ObjectContent(typeof (ApiKeyParameter), apiKeyParameter, new JsonMediaTypeFormatter());
+            Content = new ObjectContent(typeof (ApiTokenParameter), apiTokenParameter, new JsonMediaTypeFormatter());
         }
     }
 }

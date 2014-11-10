@@ -22,7 +22,7 @@ namespace eRecruiter.Api.CommandLineClient
                 var tokenCache = new ApiTokenCache();
                 var client = new ApiHttpClient(new Uri(Options.ApiUrl),
                     () =>
-                        new ApiKeyParameter
+                        new ApiTokenParameter
                         {
                             ClientInfo = "CommandLineClient",
                             Key = Options.ApiKey,

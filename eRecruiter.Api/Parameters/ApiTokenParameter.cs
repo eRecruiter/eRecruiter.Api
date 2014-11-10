@@ -1,7 +1,7 @@
 ﻿
 namespace eRecruiter.Api.Parameters
 {
-    public class ApiKeyParameter
+    public class ApiTokenParameter
     {
         public string Key { get; set; }
         public int MandatorId { get; set; }

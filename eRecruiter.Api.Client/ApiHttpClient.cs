@@ -20,7 +20,7 @@ namespace eRecruiter.Api.Client
 
         public ApiHttpClient(
             [NotNull] Uri baseAddress,
-            [NotNull] Func<ApiKeyParameter> apiKeyFunction,
+            [NotNull] Func<ApiTokenParameter> apiKeyFunction,
             [NotNull] Func<ApiTokenCache> apiTokenCacheFunction)
             : base(new AuthorizationHandler(baseAddress, apiKeyFunction, apiTokenCacheFunction))
         {

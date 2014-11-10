@@ -62,11 +62,18 @@
     <Compile Include="Parameters\Application\ApplicationCreateParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantSetPasswordParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantSetPasswordAfterRequestParameter.cs" />
-    <Compile Include="Parameters\ApiKeyParameter.cs" />
+    <Compile Include="Parameters\ApiTokenParameter.cs" />
     <Compile Include="Parameters\Application\ApplicationUpdateParameter.cs" />
     <Compile Include="FlexDate.cs" />
     <Compile Include="Parameters\CustomField\CustomFieldValueParameter.cs" />
     <Compile Include="Parameters\FeedbackParameter.cs" />
+    <Compile Include="Parameters\Mandator\ApiKeyCreateParameter.cs" />
+    <Compile Include="Parameters\Mandator\ApiKeyUpdateParameter.cs" />
+    <Compile Include="Parameters\Mandator\MandatorCreateParameter.cs" />
+    <Compile Include="Parameters\Mandator\MandatorUpdateParameter.cs" />
+    <Compile Include="Parameters\User\UserCreateParameter.cs" />
+    <Compile Include="Parameters\User\UserUpdateParameter.cs" />
+    <Compile Include="Parameters\User\UserUpdatePasswordParameter.cs" />
     <Compile Include="Responses\ApiTokenResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantPhotoResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantCvResponse.cs" />
@@ -93,6 +100,7 @@
     <Compile Include="Responses\Job\JobResponse.cs" />
     <Compile Include="Responses\Job\JobsResponse.cs" />
     <Compile Include="Parameters\Applicant\ApplicantDocumentParameter.cs" />
+    <Compile Include="Responses\Mandator\ApiKeyResponse.cs" />
     <Compile Include="Responses\Mandator\KnowledgeTreeResponse.cs" />
     <Compile Include="Responses\Mandator\QuestionnaireItemResponse.cs" />
     <Compile Include="Responses\Mandator\QuestionnaireResponse.cs" />
@@ -105,10 +113,13 @@
     <Compile Include="Responses\Mandator\TitleResponse.cs" />
     <Compile Include="Responses\Mandator\TranslationResponse.cs" />
     <Compile Include="Responses\Mandator\TranslationTextResponse.cs" />
+    <Compile Include="Responses\User\UserResponse.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="eRecruiter.Api.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

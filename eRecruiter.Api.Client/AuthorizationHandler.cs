@@ -13,10 +13,10 @@ namespace eRecruiter.Api.Client
     public class AuthorizationHandler : DelegatingHandler
     {
         private readonly Func<ApiTokenCache> _apiCacheFunction;
-        private readonly Func<ApiKeyParameter> _apiKeyFunction;
+        private readonly Func<ApiTokenParameter> _apiKeyFunction;
         private readonly Uri _baseAddress;
 
-        public AuthorizationHandler([NotNull] Uri baseAddress, [NotNull] Func<ApiKeyParameter> apiKeyFunction, [NotNull] Func<ApiTokenCache> apiCacheFunction)
+        public AuthorizationHandler([NotNull] Uri baseAddress, [NotNull] Func<ApiTokenParameter> apiKeyFunction, [NotNull] Func<ApiTokenCache> apiCacheFunction)
         {
             _baseAddress = baseAddress;
             _apiCacheFunction = apiCacheFunction;
@@ -42,17 +42,17 @@ namespace eRecruiter.Api.Client
             return base.SendAsync(request, cancellationToken);
         }
 
-        private ApiTokenResponse RefreshApiToken(ApiKeyParameter apiKeyParameter, ApiTokenCache tokenCache)
+        private ApiTokenResponse RefreshApiToken(ApiTokenParameter apiTokenParameter, ApiTokenCache tokenCache)
         {
             using (var client = new HttpClient())
             {
                 client.BaseAddress = _baseAddress;
-                var request = client.SendAsync(new ApiKeyRequest(apiKeyParameter)).Result;
+                var request = client.SendAsync(new ApiKeyRequest(apiTokenParameter)).Result;
 
                 request.EnsureSuccessStatusCode();
 
                 var token = request.Content.ReadAsAsync<ApiTokenResponse>().Result;
-                tokenCache.AddToken(apiKeyParameter.MandatorId, token);
+                tokenCache.AddToken(apiTokenParameter.MandatorId, token);
                 return token;
             }
         }
