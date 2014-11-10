@@ -9,6 +9,15 @@ namespace eRecruiter.Api.Responses
         public string InternalName { get; set; }
         public string InternalLocation { get; set; }
 
+        /// <summary>
+        /// Gets the latitude coordinate value of the geography point of the job location in the earth coordinate system (SRID 4326).
+        /// </summary>
+        public double? Latitude { get; set; }
+        /// <summary>
+        /// Gets the longitude coordinate value of the geography point of the job location in the earth coordinate system (SRID 4326).
+        /// </summary>
+        public double? Longitude { get; set; }
+
         //information about the associated user
         public string UserFirstName { get; set; }
         public string UserLastName { get; set; }
