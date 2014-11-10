@@ -86,6 +86,11 @@ namespace eRecruiter.Api.Parameters
 
         public string Culture { get; set; }
 
+        /// <summary>
+        /// Gets or sets the maximum distance to a job location desired by the applicant.
+        /// </summary>
+        public float? MaximumDistanceToJobLocation { get; set; }
+
         public enum SalaryPeriodType
         {
             Monthly,
