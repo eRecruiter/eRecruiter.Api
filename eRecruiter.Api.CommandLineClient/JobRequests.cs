@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using eRecruiter.Api.Client;
+using eRecruiter.Api.Client.Requests;
+using System;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using eRecruiter.Api.Client;
-using eRecruiter.Api.Client.Requests;
 
 namespace eRecruiter.Api.CommandLineClient
 {
