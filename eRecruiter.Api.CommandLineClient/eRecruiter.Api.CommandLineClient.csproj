@@ -43,7 +43,11 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicantRequests.cs" />
     <Compile Include="CommandlineOptions.cs" />
+    <Compile Include="CvParserRequests.cs" />
+    <Compile Include="JobRequests.cs" />
+    <Compile Include="MandatorRequests.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
