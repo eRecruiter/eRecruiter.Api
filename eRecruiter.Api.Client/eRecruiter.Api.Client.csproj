@@ -116,7 +116,7 @@
     <Compile Include="Requests\Auth\ApiKeyRequest.cs" />
     <Compile Include="Requests\CachedHttpRequestMessage.cs" />
     <Compile Include="Requests\Job\JobSalaryImageRequest.cs" />
-    <Compile Include="Requests\Mandator\MandatorRequest.cs" />
+    <Compile Include="Requests\Mandator\MandatorRequests.cs" />
     <Compile Include="Requests\PingRequest.cs" />
     <Compile Include="Requests\Job\PublishedJobsRequest.cs" />
     <Compile Include="ApiTokenCache.cs" />

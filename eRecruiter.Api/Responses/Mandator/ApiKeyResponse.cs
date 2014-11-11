@@ -6,7 +6,6 @@ namespace eRecruiter.Api.Responses
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Notes { get; set; }
         public string Key { get; set; }
         public int MandatorId { get; set; }
         public bool IsEnabled { get; set; }

@@ -6,7 +6,6 @@ namespace eRecruiter.Api.Parameters
     public class ApiKeyUpdateParameter
     {
         public string Name { get; set; }
-        public string Notes { get; set; }
         public bool IsEnabled { get; set; }
         public IEnumerable<ApiKeyAccessLevel> AccessLevels { get; set; }
     }
