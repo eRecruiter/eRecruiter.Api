@@ -53,9 +53,9 @@ namespace eRecruiter.Api.Client.Requests
         }
     }
 
-    public class MandatorDeleteReqeust : HttpRequestMessage<MandatorResponse>
+    public class MandatorDeleteRequest : HttpRequestMessage<MandatorResponse>
     {
-        public MandatorDeleteReqeust(int mandatorId)
+        public MandatorDeleteRequest(int mandatorId)
             : base(HttpMethod.Delete, "Api/Mandator/" + mandatorId)
         {
         }

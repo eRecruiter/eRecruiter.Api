@@ -47,6 +47,7 @@
     <Compile Include="CommandlineOptions.cs" />
     <Compile Include="CvParserRequests.cs" />
     <Compile Include="JobRequests.cs" />
+    <Compile Include="UserRequests.cs" />
     <Compile Include="MandatorRequests.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>

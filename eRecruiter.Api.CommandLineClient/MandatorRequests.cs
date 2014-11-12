@@ -72,7 +72,7 @@ namespace eRecruiter.Api.CommandLineClient
 
             using (var logger = new Program.Logger("Deleting mandator ... ", client))
             {
-                mandator = await new MandatorDeleteReqeust(mandator.Id).LoadResultAsync(client);
+                mandator = await new MandatorDeleteRequest(mandator.Id).LoadResultAsync(client);
                 logger.Write("Mandator '{0}' deleted.", mandator.Name);
             }
         }

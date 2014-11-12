@@ -5,6 +5,6 @@ namespace eRecruiter.Api.Parameters
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string IsActive { get; set; }
+        public bool IsEnabled { get; set; }
     }
 }
