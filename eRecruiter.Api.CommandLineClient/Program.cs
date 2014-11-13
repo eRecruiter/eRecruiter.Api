@@ -33,8 +33,8 @@ namespace eRecruiter.Api.CommandLineClient
 
                 await Ping(client);
 
-                //if (Options.RunMandatorRequests)
-                //    await MandatorRequests.Run(client);
+                if (Options.RunMandatorRequests)
+                    await MandatorRequests.Run(client);
 
                 if (Options.RunUserRequests)
                     await UserRequests.Run(client);
