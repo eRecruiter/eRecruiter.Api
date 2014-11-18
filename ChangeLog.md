@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+##v1.2.0
+- New properties `Longitude` and `Latitude` for jobs.
+- New property `MaximumDistanceToJobLocation` for applicants.
+- New endpoints for managing mandators, users and API keys.
+
 ## v1.1.3
 - New property `EnableDeleteForApplicant` in portal settings, indicating whether or not it should be possible for applicants to delete themselves.
 
