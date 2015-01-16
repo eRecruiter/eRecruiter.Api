@@ -16,9 +16,14 @@ namespace eRecruiter.Api.Parameters
         {
             // just copy the value of each property
             foreach (var property in typeof(ApplicantParameter).GetProperties(BindingFlags.Instance | BindingFlags.Public))
-                property.SetValue(this, typeof(ApplicantResponse).GetProperty(property.Name).GetValue(applicantResponse));
+            {
+                property.SetValue(this, typeof(ApplicantResponse).GetProperty(property.Name).GetValue(applicantResponse));   
+            }
         }
 
+        /// <summary>
+        /// The date when the applicant was created in the database.
+        /// </summary>
         public DateTime DateOfCreation { get; set; }
 
         public string FirstName { get; set; }
