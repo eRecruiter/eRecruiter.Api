@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+##v1.2.1
+- The XML documentation files are now included in the NuGet packages.
+
 ##v1.2.0
 - New properties `Longitude` and `Latitude` for jobs.
 - New property `MaximumDistanceToJobLocation` for applicants.
