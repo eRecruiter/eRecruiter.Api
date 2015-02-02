@@ -14,6 +14,8 @@ namespace eRecruiter.Api.Client
     public class ApiHttpClient : HttpClient
     {
         private const int CacheDurationInSeconds = 60 * 30; // 30m cache duration
+        private const int TimeoutInSeconds = 60;
+
         private readonly int _mandatorId;
         private readonly Stopwatch _watch;
         private readonly Func<ApiTokenCache> _apiTokenCacheFunction;
@@ -39,13 +41,27 @@ namespace eRecruiter.Api.Client
         {
             StartTimer(runTimer);
 
-            var response = SendAsync(requestMessage).Result;
-            LastReceivedContent = response.Content.ReadAsStringAsync().Result;
-            EnsureSuccessStatusCode(requestMessage, response);
-            var result = response.Content.ReadAsAsync<T>().Result;
+            try
+            {
+                var responseTask = SendAsync(requestMessage);
 
-            EndTimer(runTimer);
-            return result;
+                if (responseTask.Wait(TimeoutInSeconds * 1000))
+                {
+                    var response = responseTask.Result;
+
+                    LastReceivedContent = response.Content.ReadAsStringAsync().Result;
+                    EnsureSuccessStatusCode(requestMessage, response);
+                    var result = response.Content.ReadAsAsync<T>().Result;
+
+                    return result;
+                }
+
+                throw new ApplicationException(string.Format("SendAsync with request '{0}' cancelled/timed out after 10 seconds.", requestMessage.GetType()));
+            }
+            finally
+            {
+                EndTimer(runTimer);
+            }
         }
 
         internal async Task<T> SendAndReadAsync<T>(HttpRequestMessage requestMessage, bool runTimer = true)
