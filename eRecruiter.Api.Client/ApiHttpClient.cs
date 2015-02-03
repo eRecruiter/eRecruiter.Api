@@ -56,7 +56,7 @@ namespace eRecruiter.Api.Client
                     return result;
                 }
 
-                throw new ApplicationException(string.Format("SendAsync with request '{0}' cancelled/timed out after 10 seconds.", requestMessage.GetType()));
+                throw new ApplicationException(string.Format("SendAsync with request '{0}' cancelled/timed out after {1} seconds.", requestMessage.GetType(), TimeoutInSeconds));
             }
             finally
             {
