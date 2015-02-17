@@ -1,14 +1,38 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace eRecruiter.Api.Responses
 {
     public class MandatorResponse
     {
+        /// <summary>
+        /// The unique identifier of the mandator.
+        /// </summary>
         public int Id { get; set; }
+
+        /// <summary>
+        /// The name of the mandator.
+        /// </summary>
         public string Name { get; set; }
+
         public PortalSettingsResponse PortalSettings { get; set; }
+
+        /// <summary>
+        /// All available translations for values, identified by a key.
+        /// </summary>
         public IEnumerable<TranslationResponse> Translations { get; set; }
+
+        /// <summary>
+        /// A list containing all the job profile names.
+        /// </summary>
+        [Obsolete("Use GroupedJobProfiles instead")]
         public IEnumerable<string> JobProfiles { get; set; }
+
+        /// <summary>
+        /// All available job profiles containing group and culture information.
+        /// </summary>
+        public IEnumerable<JobProfileResponse> GroupedJobProfiles { get; set; }
+
         public IEnumerable<RegionResponse> Regions { get; set; }
         public IEnumerable<string> Urls { get; set; }
         public IEnumerable<string> ApplicantDocumentTypes { get; set; }
