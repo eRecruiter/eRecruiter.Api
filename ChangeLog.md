@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+##v1.2.2
+- New property `GroupedJobProfiles` for a mandator which contains a more detailed list of job profiles. A `JobProfileResponse` contains the name, group and culture of a job profile.
+
 ##v1.2.1
 - The XML documentation files are now included in the NuGet packages.
 

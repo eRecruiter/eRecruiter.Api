@@ -102,6 +102,7 @@
     <Compile Include="Responses\Job\JobsResponse.cs" />
     <Compile Include="Parameters\Applicant\ApplicantDocumentParameter.cs" />
     <Compile Include="Responses\Mandator\ApiKeyResponse.cs" />
+    <Compile Include="Responses\Mandator\JobProfileResponse.cs" />
     <Compile Include="Responses\Mandator\KnowledgeTreeResponse.cs" />
     <Compile Include="Responses\Mandator\QuestionnaireItemResponse.cs" />
     <Compile Include="Responses\Mandator\QuestionnaireResponse.cs" />
