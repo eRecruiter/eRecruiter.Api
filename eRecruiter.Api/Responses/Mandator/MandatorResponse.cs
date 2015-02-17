@@ -25,7 +25,6 @@ namespace eRecruiter.Api.Responses
         /// <summary>
         /// A list containing all the job profile names.
         /// </summary>
-        [Obsolete("Use GroupedJobProfiles instead")]
         public IEnumerable<string> JobProfiles { get; set; }
 
         /// <summary>
