@@ -60,7 +60,13 @@ namespace eRecruiter.Api.Responses
         public bool EnableFilterOnJobsList { get; set; }
 
         public bool AllowDuplicateEmail { get; set; }
-        
+
+        /// <summary>
+        /// Enables the parsing of a CV if <value>true</value>.
+        /// </summary>
+        /// <remarks>This setting affects the Login, Register and JobAd page.</remarks>
+        public bool EnableCvParsing { get; set; }
+
         /// <summary>
         /// This setting depends on the <see cref="EnableSelfServiceZone"/> setting.
         /// If this setting is <value>true</value>, an applicant is able to delete their profile.
