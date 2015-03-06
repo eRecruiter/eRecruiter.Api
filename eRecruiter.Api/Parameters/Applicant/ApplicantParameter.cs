@@ -1,12 +1,29 @@
-﻿using eRecruiter.Api.Responses;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using eRecruiter.Api.Responses;
 
 namespace eRecruiter.Api.Parameters
 {
     public class ApplicantParameter
     {
+        public enum MilitaryServiceType
+        {
+            NotYetDone,
+            Done,
+            Reliefed,
+            Alternative
+        }
+
+        public enum SalaryPeriodType
+        {
+            Monthly,
+            Yearly
+        }
+
+        /// <summary>
+        /// Creates a new instance of an <see cref="ApplicantParameter"/> class and initializes the <see cref="DateOfCreation"/> property with <value>DateTime.Now</value>.
+        /// </summary>
         public ApplicantParameter()
         {
             DateOfCreation = DateTime.Now; // default value for creation date
@@ -15,9 +32,11 @@ namespace eRecruiter.Api.Parameters
         public ApplicantParameter(ApplicantResponse applicantResponse)
         {
             // just copy the value of each property
-            foreach (var property in typeof(ApplicantParameter).GetProperties(BindingFlags.Instance | BindingFlags.Public))
+            foreach (
+                var property in typeof (ApplicantParameter).GetProperties(BindingFlags.Instance | BindingFlags.Public))
             {
-                property.SetValue(this, typeof(ApplicantResponse).GetProperty(property.Name).GetValue(applicantResponse));   
+                property.SetValue(this,
+                    typeof (ApplicantResponse).GetProperty(property.Name).GetValue(applicantResponse));
             }
         }
 
@@ -26,24 +45,76 @@ namespace eRecruiter.Api.Parameters
         /// </summary>
         public DateTime DateOfCreation { get; set; }
 
+        /// <summary>
+        /// The first name of an applicant.
+        /// </summary>
         public string FirstName { get; set; }
+
+        /// <summary>
+        /// The surname of an applicant.
+        /// </summary>
         public string LastName { get; set; }
+
+        /// <summary>
+        /// The applicant's email address.
+        /// </summary>
         public string Email { get; set; }
+
+        /// <summary>
+        /// The applicant's gender.
+        /// </summary>
         public Gender Gender { get; set; }
 
+        /// <summary>
+        /// The academic title, which usually is written before an applicant's name.
+        /// </summary>
         public string TitleBeforeName { get; set; }
+
+        /// <summary>
+        /// The academic degree, which usually is written after an applicant's name.
+        /// </summary>
         public string TitleAfterName { get; set; }
 
+        /// <summary>
+        /// The date of birth.
+        /// </summary>
         public DateTime? BirthDate { get; set; }
 
+        /// <summary>
+        /// The street of an applicant's address.
+        /// </summary>
         public string Street { get; set; }
+
+        /// <summary>
+        /// The city of an applicant's address.
+        /// </summary>
         public string City { get; set; }
+
+        /// <summary>
+        /// The ZIP (Zone Improvement Plan) code of an applicant's address.
+        /// </summary>
         public string ZipCode { get; set; }
+
+        /// <summary>
+        /// The country of an applicant's address.
+        /// </summary>
         public string Country { get; set; }
+
+        /// <summary>
+        /// The citizenship of an applicant.
+        /// </summary>
         public string Citizenship { get; set; }
 
+        /// <summary>
+        /// The telephone number of an applicant.
+        /// </summary>
         public string Phone { get; set; }
+
+        /// <summary>
+        /// The mobile phone number of an applicant.
+        /// </summary>
         public string MobilePhone { get; set; }
+
         public string Url { get; set; }
 
         public bool IsActive { get; set; }
@@ -95,19 +166,5 @@ namespace eRecruiter.Api.Parameters
         /// Gets or sets the maximum distance to a job location desired by the applicant.
         /// </summary>
         public float? MaximumDistanceToJobLocation { get; set; }
-
-        public enum SalaryPeriodType
-        {
-            Monthly,
-            Yearly
-        }
-
-        public enum MilitaryServiceType
-        {
-            NotYetDone,
-            Done,
-            Reliefed,
-            Alternative
-        }
     }
 }
