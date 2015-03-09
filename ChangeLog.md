@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+##v1.2.3
+- New property `EnableCvParsing` in portal settings, which specifies wether parsing of a Cv is possible on the Login, Register or job page.
+
 ##v1.2.2
 - New property `GroupedJobProfiles` for a mandator which contains a more detailed list of job profiles. A `JobProfileResponse` contains the name, group and culture of a job profile.
 
