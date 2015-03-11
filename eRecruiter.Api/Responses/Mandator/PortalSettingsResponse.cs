@@ -1,5 +1,4 @@
-﻿
-using eRecruiter.Api.Parameters;
+﻿using eRecruiter.Api.Parameters;
 
 namespace eRecruiter.Api.Responses
 {
@@ -116,14 +115,74 @@ namespace eRecruiter.Api.Responses
         public bool AskForCareerLevel { get; set; }
         public bool AskForJobProfiles { get; set; }
 
-        #region Applicanta data on register page
+        #region Applicanta data on registration page
 
         /// <summary>
-        /// Specifies if a second input field for confirmation of an applicant's <see cref="ApplicantParameter.Email"/> should be displayed on the register page.
+        /// Specifies if or how the input field of an applicants's <see cref="ApplicantParameter.Gender"/> should be displayed on the registration page.
+        /// </summary>
+        public DisplayType AskForGenderOnRegistration { get; set; }
+
+        /// <summary>
+        /// Specifies if or how the input fields of an applicants's <see cref="ApplicantParameter.TitleAfterName"/> or <see cref="ApplicantParameter.TitleAfterName"/> should be displayed on the registration page.
+        /// </summary>
+        public DisplayType AskForTitlesOnRegistration { get; set; }
+
+        /// <summary>
+        /// Specifies if or how the input field of an applicants's <see cref="ApplicantParameter.Email"/> should be displayed on the registration page.
+        /// </summary>
+        public DisplayType AskForEmailOnRegistration { get; set; }
+
+        /// <summary>
+        /// Specifies if a second input field for confirmation of an applicant's <see cref="ApplicantParameter.Email"/> should be displayed on the registration page.
         /// </summary>
         public bool AskForEmailConfirmation { get; set; }
 
-        #endregion Applicanta data on register page
+        /// <summary>
+        /// Specifies if or how the input field of an applicants's <see cref="ApplicantParameter.Phone"/> should be displayed on the registration page.
+        /// </summary>
+        public DisplayType AskForPhoneNumberOnRegistration { get; set; }
+
+        /// <summary>
+        /// Specifies if or how the input field of an applicants's <see cref="ApplicantParameter.BirthDate"/> should be displayed on the registration page.
+        /// </summary>
+        public DisplayType AskForBirthdateOnRegistration { get; set; }
+
+        /// <summary>
+        /// Specifies if or how the input fields of an applicants's <see cref="ApplicantParameter.Street"/>, <see cref="ApplicantParameter.ZipCode"/> and <see cref="ApplicantParameter.City"/> should be displayed on the registration page.
+        /// </summary>
+        public DisplayType AskForAddressOnRegistration { get; set; }
+
+        /// <summary>
+        /// Specifies if or how the input field of an applicants's <see cref="ApplicantParameter.Country"/> should be displayed on the registration page.
+        /// </summary>
+        public DisplayType AskForCountryOnRegistration { get; set; }
+
+        /// <summary>
+        /// Specifies if or how the input field of an applicants's <see cref="ApplicantParameter.Citizenship"/> should be displayed on the registration page.
+        /// </summary>
+        public DisplayType AskForCitizenshipOnRegistration { get; set; }
+
+        /// <summary>
+        /// Specifies if or how the input field of a coverletter should be displayed on the register page or the job application page.
+        /// </summary>
+        public DisplayType AskForCoverLetterOnRegistration { get; set; }
+
+        /// <summary>
+        /// Specifies if or how the upload control of an applicants's CV (<see cref="ApplicantCvParameter"/>) should be displayed on the registration page.
+        /// </summary>
+        public DisplayType AskForCvOnRegistration { get; set; }
+
+        /// <summary>
+        /// Specifies if or how the upload control of an applicants's picture (<see cref="ApplicantPhotoParameter"/>) should be displayed on the registration page.
+        /// </summary>
+        public DisplayType AskForPhotoOnRegistration { get; set; }
+
+        /// <summary>
+        /// Specifies wether the upload control of an applicants's documents (<see cref="ApplicantDocumentParameter"/>) should be displayed on the registration page or not.
+        /// </summary>
+        public bool AskForDocumentsOnRegistration { get; set; }
+
+        #endregion Applicanta data on registration page
 
         #endregion Applicanta data
 
