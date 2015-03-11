@@ -2,6 +2,9 @@
 
 namespace eRecruiter.Api.Responses
 {
+    /// <summary>
+    /// The Applicant portal settings to configure the portal for your needs.
+    /// </summary>
     public class PortalSettingsResponse
     {
         // please note that the properties are sorted just like in the eR admin area
@@ -19,6 +22,7 @@ namespace eRecruiter.Api.Responses
         public bool SendRegistrationEmail { get; set; }
         public bool SendApplicationEmail { get; set; }
 
+        // The applicant properties shown on the registration page are ordered as they appear on that page.
         #region Applicanta data
 
         /// <summary>
@@ -57,7 +61,7 @@ namespace eRecruiter.Api.Responses
         public DisplayType AskForCountry { get; set; }
 
         /// <summary>
-        /// Specifies the default value of an applicant's <see cref="ApplicantParameter.Country"/> property.
+        /// Specifies the default (preselected) value of the input field for of an applicant's <see cref="ApplicantParameter.Country"/> property.
         /// </summary>
         public string DefaultCountry { get; set; }
 
@@ -65,6 +69,11 @@ namespace eRecruiter.Api.Responses
         /// Specifies if or how the input field of an applicants's <see cref="ApplicantParameter.Citizenship"/> should be displayed in the Self-Service-Zone.
         /// </summary>
         public DisplayType AskForCitizenship { get; set; }
+
+        /// <summary>
+        /// Specifies the default (preselected) value of the input field for an applicant's <see cref="ApplicantParameter.Citizenship"/> property.
+        /// </summary>
+        public string DefaultCitizenship { get; set; }
 
         /// <summary>
         /// Specifies if or how the input field of a coverletter should be displayed on the register page or the job application page.
