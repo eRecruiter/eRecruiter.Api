@@ -1,5 +1,28 @@
 # eRecruiter API ChangeLog
 
+##v1.3.0
+- **Breaking** Change the type of some portal settings from `bool` to `DisplayType`:
+ - `AskForTitles`
+ - `AskForCitizenship`
+- New portal settings to configure every field of the personal information page of the applicant in the Self-Service-Zone.
+ - `AskForEmail`
+ - `AskForPhoneNumber`
+ - `AskForAddress`
+ - `AskForCountry`
+- New property `DefaultCitizenship` in the portal settings to set a default value for the applicant's citizenship property.
+- New properties for each portal setting which applies to the registration form to handle the visibility of the fields on registration seperate to the Self-Service-Zone.
+ - `AskForGenderOnRegistration`
+ - `AskForTitlesOnRegistration`
+ - `AskForEmailOnRegistration`
+ - `AskForPhoneNumberOnRegistration`
+ - `AskForBirthdateOnRegistration`
+ - `AskForAddressOnRegistration`
+ - `AskForCountryOnRegistration`
+ - `AskForCitizenshipOnRegistration`
+ - `AskForCvOnRegistration`
+ - `AskForPhotoOnRegistration`
+ - `AskForDocumentsOnRegistration`
+
 ##v1.2.3
 - New property `EnableCvParsing` in portal settings, which specifies wether parsing of a Cv is possible on the Login, Register or job page.
 
