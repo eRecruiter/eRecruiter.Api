@@ -32,6 +32,7 @@ namespace eRecruiter.Api.Responses
         public DateTime UpdateDate { get; set; }
         public DateTime? OnlineDate { get; set; }
         public DateTime OnlineDateCorrected { get; set; }
+        public DateTime? OfflineDate { get; set; }
 
         public IEnumerable<string> JobProfiles { get; set; }
         public IEnumerable<string> Regions { get; set; }

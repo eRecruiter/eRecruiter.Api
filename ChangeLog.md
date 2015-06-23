@@ -6,6 +6,7 @@
   - `Account`
   - `Channel`
   - `Partner`
+- New property `OfflineDate` in the job response to expose when a job ad will expire and become unavailable.
 
 ##v1.3.0
 - **Breaking** Change the type of some portal settings from `bool` to `DisplayType`:
