@@ -1,5 +1,12 @@
 # eRecruiter API ChangeLog
 
+##v1.4.0
+- New job publication type `MultiPostChannel` for multi-posting support in feeds and job ads.
+- New job publication properties for multi-posting support in feeds and job ads:
+  - `Account`
+  - `Channel`
+  - `Partner`
+
 ##v1.3.0
 - **Breaking** Change the type of some portal settings from `bool` to `DisplayType`:
  - `AskForTitles`
