@@ -1,4 +1,5 @@
-﻿using eRecruiter.Api.Parameters;
+﻿using System.Collections.Generic;
+using eRecruiter.Api.Parameters;
 
 namespace eRecruiter.Api.Responses
 {
@@ -21,7 +22,10 @@ namespace eRecruiter.Api.Responses
 
         #region Language Packs
 
-        public string[] LanguagePacks { get; set; }
+        /// <summary>
+        /// ISO-2 languages codes of the available language packs on the portal.
+        /// </summary>
+        public IEnumerable<string> LanguagePacks { get; set; }
 
         #endregion
 
