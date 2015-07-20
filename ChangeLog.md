@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+##v1.5.0
+- New portal setting to configure the available language packs (EN/DE are enabled by default)
+  - `LanguagePacks`
+
 ##v1.4.0
 - New job publication type `MultiPostChannel` for multi-posting support in feeds and job ads.
 - New job publication properties for multi-posting support in feeds and job ads:

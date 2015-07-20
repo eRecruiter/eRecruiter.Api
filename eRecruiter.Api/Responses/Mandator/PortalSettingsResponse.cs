@@ -1,4 +1,5 @@
-﻿using eRecruiter.Api.Parameters;
+﻿using System.Collections.Generic;
+using eRecruiter.Api.Parameters;
 
 namespace eRecruiter.Api.Responses
 {
@@ -19,11 +20,25 @@ namespace eRecruiter.Api.Responses
 
         #endregion General settings
 
+        #region Language Packs
+
+        /// <summary>
+        /// ISO-2 languages codes of the available language packs on the portal.
+        /// </summary>
+        public IEnumerable<string> LanguagePacks { get; set; }
+
+        #endregion
+
+        #region E-Mail Communication
+
         public bool SendRegistrationEmail { get; set; }
         public bool SendApplicationEmail { get; set; }
 
-        // The applicant properties shown on the registration page are ordered as they appear on that page.
+        #endregion
+
         #region Applicanta data
+
+        // The applicant properties shown on the registration page are ordered as they appear on that page.
 
         /// <summary>
         /// Specifies if or how the input field of an applicants's <see cref="ApplicantParameter.Gender"/> should be displayed in the Self-Service-Zone.
@@ -193,7 +208,11 @@ namespace eRecruiter.Api.Responses
 
         #endregion Applicanta data on registration page
 
+        public bool AllowDuplicateEmail { get; set; }
+
         #endregion Applicanta data
+
+        #region Job Listing
 
         public bool DisplayLocationInJobListing { get; set; }
         public bool DisplayDateInJobListing { get; set; }
@@ -201,7 +220,9 @@ namespace eRecruiter.Api.Responses
         public bool EnableJobProfilesFilterOnJobsList { get; set; }
         public bool EnableFilterOnJobsList { get; set; }
 
-        public bool AllowDuplicateEmail { get; set; }
+        #endregion
+
+        #region CV Parser
 
         /// <summary>
         /// Enables the parsing of a CV if <value>true</value>.
@@ -209,20 +230,36 @@ namespace eRecruiter.Api.Responses
         /// <remarks>This setting affects the Login, Register and JobAd page.</remarks>
         public bool EnableCvParsing { get; set; }
 
+        #endregion
+
+        #region Self-Service Zone Actions
+
         /// <summary>
         /// This setting depends on the <see cref="EnableSelfServiceZone"/> setting.
         /// If this setting is <value>true</value>, an applicant is able to delete their profile.
         /// </summary>
         public bool EnableDeleteForApplicant { get; set; }
 
+        #endregion
+
+        #region XML Feed
+
         public bool EnableExtendedXml { get; set; }
         public bool EnableJobTagsInXmlFeed { get; set; }
         public bool EnableFourthJobBlockInXmlFeed { get; set; }
         
+        #endregion
+
+        #region Third Party Profiles
+
         public string XingConsumerKey { get; set; }
         public string XingConsumerSecret { get; set; }
         public string LinkedinConsumerKey { get; set; }
         public string LinkedinConsumerSecret { get; set; }
+
+        #endregion
+
+        #region Display Types
 
         public enum DisplayType
         {
@@ -230,5 +267,7 @@ namespace eRecruiter.Api.Responses
             DisplayRequired,
             DisplayNotRequired
         }
+
+        #endregion
     }
 }
