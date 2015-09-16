@@ -23,7 +23,8 @@ namespace eRecruiter.Api.Responses
             DropdownList,
             CheckboxList,
             Date,
-            TextSingleLine
+            TextSingleLine,
+            Html
         }
 
         public enum CustomFieldTarget
