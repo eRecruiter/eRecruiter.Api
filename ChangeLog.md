@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+##v1.6.0
+- New custom field type `Html` that supports public HTML custom fields
+
 ##v1.5.0
 - New portal setting to configure the available language packs (EN/DE are enabled by default)
   - `LanguagePacks`
