@@ -213,7 +213,7 @@ namespace eRecruiter.Api.Responses
         /// <summary>
         /// Specifies if the day should be selectable at a Flexdate picker. If <value>True</value> the day can be selected, else <value>false</value>.
         /// </summary>
-        public bool EnabledExtendedDateSelection { get; set; }
+        public bool EnableExtendedDateSelection { get; set; }
 
         #endregion Applicanta data
 
