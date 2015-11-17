@@ -73,7 +73,7 @@ namespace eRecruiter.Api.Responses
         public string Phone { get; set; }
 
         /// <summary>
-        /// The photo of the person.
+        /// The photo of the person. The type of the image is JPG.
         /// </summary>
         public byte[] Photo { get; set; }
     }
