@@ -112,7 +112,7 @@ namespace eRecruiter.Api.Responses
 
         public bool AskForReferrer { get; set; }
         public bool AskForLocation { get; set; }
-        public bool AskForRegion { get; set; }    
+        public bool AskForRegion { get; set; }
         public bool AskForNewsletter { get; set; }
         public bool AskForMatchingJobsMail { get; set; }
         public bool AskForQuitReason { get; set; }
@@ -210,6 +210,11 @@ namespace eRecruiter.Api.Responses
 
         public bool AllowDuplicateEmail { get; set; }
 
+        /// <summary>
+        /// Specifies if the day should be selectable at a Flexdate picker. If <value>True</value> the day can be selected, else <value>false</value>.
+        /// </summary>
+        public bool EnabledExtendedDateSelection { get; set; }
+
         #endregion Applicanta data
 
         #region Job Listing
@@ -247,7 +252,7 @@ namespace eRecruiter.Api.Responses
         public bool EnableExtendedXml { get; set; }
         public bool EnableJobTagsInXmlFeed { get; set; }
         public bool EnableFourthJobBlockInXmlFeed { get; set; }
-        
+
         #endregion
 
         #region Third Party Profiles

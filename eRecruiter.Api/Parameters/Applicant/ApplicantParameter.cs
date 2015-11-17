@@ -48,11 +48,13 @@ namespace eRecruiter.Api.Parameters
         /// <summary>
         /// The first name of an applicant.
         /// </summary>
+        /// <remarks>Required.</remarks>
         public string FirstName { get; set; }
 
         /// <summary>
         /// The surname of an applicant.
         /// </summary>
+        /// <remarks>Required.</remarks>
         public string LastName { get; set; }
 
         /// <summary>

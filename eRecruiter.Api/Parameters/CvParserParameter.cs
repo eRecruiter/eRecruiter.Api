@@ -11,7 +11,7 @@
         public string FileName { get; set; }
 
         /// <summary>
-        /// The file content of the Cv as byte array.
+        /// The file content of the Cv (usually a byte array) as a serialized base64 encoded string.
         /// </summary>
         public byte[] Content { get; set; }
     }
