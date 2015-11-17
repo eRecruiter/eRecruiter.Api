@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+##v1.6.1
+- New portal setting to configure if the Flexdate selections should include the selection of the day.
+  - `EnabledExtendedDateSelection`
+
 ##v1.6.0
 - New custom field type `Html` that supports public HTML custom fields
 
