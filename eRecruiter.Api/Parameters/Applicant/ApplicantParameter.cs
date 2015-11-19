@@ -39,11 +39,21 @@ namespace eRecruiter.Api.Parameters
                     typeof (ApplicantResponse).GetProperty(property.Name).GetValue(applicantResponse));
             }
         }
-
+        
         /// <summary>
         /// The date when the applicant was created in the database.
         /// </summary>
         public DateTime DateOfCreation { get; set; }
+
+        /// <summary>
+        /// Global identifier for same appliant in different mandators.
+        /// </summary>
+        public int GlobalId { get; set; }
+
+        /// <summary>
+        /// Optional identifiener for third party applications.
+        /// </summary>
+        public int? ExternalId { get; set; }
 
         /// <summary>
         /// The first name of an applicant.
