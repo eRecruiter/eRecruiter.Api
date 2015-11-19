@@ -48,6 +48,11 @@ namespace eRecruiter.Api.CommandLineClient
                     await CvParserRequests.Run(client);
                 }
 
+                if (Options.RunApplicantsGlobalIdRequests)
+                {
+                    await ApplicantsByGlobylIdRequests.Run(client, Options.GlobalId);
+                }
+
                 Console.WriteLine("Everything done. Press < Enter > to exit.");
                 Console.ReadLine();
             }
