@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+##v1.6.2
+- New properties for applicant 
+  - GlobalId: Identifies the same applicant across different mandators 
+  - ExternalId: Enables to set an optional Identifier for applicants, for example to reference from 3rd party applications.
+
 ##v1.6.1
 - New portal setting to configure if the Flexdate selections should include the selection of the day.
   - `EnableExtendedDateSelection`
