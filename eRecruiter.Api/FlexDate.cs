@@ -5,7 +5,7 @@ using eRecruiter.Utilities;
 
 namespace eRecruiter.Api
 {
-    public class FlexDate : IComparable<FlexDate>, IComparable
+    public class FlexDate : IComparable<FlexDate>, IComparable, IEquatable<FlexDate>
     {
         #region Constructors
 
@@ -231,5 +231,22 @@ namespace eRecruiter.Api
         }
 
         #endregion IComparable
+
+        #region IEquatable
+
+        /// <summary>
+        /// Checks if this FlexDate is equal to a given object.
+        /// </summary>
+        /// <param name="other">The object to compare.</param>
+        /// <returns>
+        /// Returns <value>true</value> if the given object is a boxed FlexDate and its value is equal to the value of this Flexdate.
+        /// Returns <value>false</value> otherwise.
+        /// </returns>
+        public bool Equals(FlexDate other)
+        {
+            return Year == other.Year && Month == other.Month && Day == other.Day && IsRelativeDate == other.IsRelativeDate;
+        }
+
+        #endregion IEquatable
     }
 }
