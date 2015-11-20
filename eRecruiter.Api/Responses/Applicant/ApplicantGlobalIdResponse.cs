@@ -5,6 +5,8 @@ namespace eRecruiter.Api.Responses
 {
     public class ApplicantGlobalIdResponse : ApplicantGlobalIdParameters
     {
-        public IEnumerable<int> ApplicantIds { get; set; }
+        public int ApplicantId { get; set; }
+
+        public int MandatorId { get; set; }
     }
 }

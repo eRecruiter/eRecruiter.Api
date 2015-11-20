@@ -81,7 +81,7 @@
     <Compile Include="Requests\Applicant\ApplicantLanguagesRequests.cs" />
     <Compile Include="Requests\Applicant\ApplicantLanguageRequests.cs" />
     <Compile Include="Requests\Applicant\ApplicantCoverLetterRequests.cs" />
-    <Compile Include="Requests\Applicant\ApplicantsGlobalIdGetRequest.cs" />
+    <Compile Include="Requests\Applicant\ApplicantGlobalIdGetRequest.cs" />
     <Compile Include="Requests\Application\FinalizeCuteAssessmentRequest.cs" />
     <Compile Include="Requests\DeleteJsonHttpRequestMessage.cs" />
     <Compile Include="Requests\Job\JobRequest.cs" />

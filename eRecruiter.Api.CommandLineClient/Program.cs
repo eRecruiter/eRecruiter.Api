@@ -49,10 +49,8 @@ namespace eRecruiter.Api.CommandLineClient
                 }
 
                 if (Options.RunApplicantsGlobalIdRequests)
-                {
                     await ApplicantsByGlobylIdRequests.Run(client, Options.GlobalId);
-                }
-
+                
                 Console.WriteLine("Everything done. Press < Enter > to exit.");
                 Console.ReadLine();
             }
