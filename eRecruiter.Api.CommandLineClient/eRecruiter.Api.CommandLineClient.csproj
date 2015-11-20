@@ -44,10 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicantRequests.cs" />
-    <Compile Include="ApplicantsByGlobylIdRequests.cs" />
+    <Compile Include="ApplicantByGlobylIdRequests.cs" />
     <Compile Include="CommandlineOptions.cs" />
     <Compile Include="CvParserRequests.cs" />
     <Compile Include="JobRequests.cs" />
+    <Compile Include="ApplicantByExternalIdRequests.cs" />
     <Compile Include="UserRequests.cs" />
     <Compile Include="MandatorRequests.cs" />
     <Compile Include="Program.cs" />

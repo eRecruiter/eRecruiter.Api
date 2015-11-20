@@ -3,6 +3,7 @@ using eRecruiter.Api.Client.Requests;
 using eRecruiter.Api.Parameters;
 using eRecruiter.Utilities;
 using System;
+using System.Runtime;
 using System.Threading.Tasks;
 
 namespace eRecruiter.Api.CommandLineClient
@@ -40,6 +41,8 @@ namespace eRecruiter.Api.CommandLineClient
                     await UserRequests.Run(client);
 
                 if (Options.RunJobRequests)
+
+
                     await JobRequests.Run(client);
 
                 if (Options.RunApplicantRequests)
@@ -48,9 +51,12 @@ namespace eRecruiter.Api.CommandLineClient
                     await CvParserRequests.Run(client);
                 }
 
-                if (Options.RunApplicantsGlobalIdRequests)
-                    await ApplicantsByGlobylIdRequests.Run(client, Options.GlobalId);
-                
+                if (Options.RunApplicantGlobalIdRequests)
+                    await ApplicantByGlobylIdRequests.Run(client, Options.GlobalId);
+
+                if (Options.RunApplicantExternalIdRequests)
+                    await ApplicantByExternalIdRequests.Run(client, Options.ExternalId);
+
                 Console.WriteLine("Everything done. Press < Enter > to exit.");
                 Console.ReadLine();
             }
