@@ -130,6 +130,10 @@ namespace eRecruiter.Api
                              (Month.HasValue && Year.HasValue));
                 }
                 //No relative date.
+                if (IsEmpty)
+                {
+                    return true;
+                }
                 if (!Year.HasValue || Year.Value <= 0)
                 {
                     return false;
