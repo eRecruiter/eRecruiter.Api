@@ -5,7 +5,7 @@ using eRecruiter.Utilities;
 
 namespace eRecruiter.Api
 {
-    public class FlexDate : IComparable<FlexDate>, IComparable
+    public class FlexDate : IComparable<FlexDate>, IComparable, IEquatable<FlexDate>
     {
         #region Constructors
 
@@ -109,6 +109,79 @@ namespace eRecruiter.Api
         public bool IsRelativeDate { get; set; }
 
         #endregion Properties
+
+        #region Validation
+
+        /// <summary>
+        /// Validates the flexdate object and returns <value>true</value> if valid, else <value>false</value>.
+        /// </summary>
+        public bool IsValid
+        {
+            get
+            {
+                if (IsRelativeDate)
+                {
+                    if (IsEmpty)
+                    {
+                        return false;
+                    }
+                    return !((Day.HasValue && Month.HasValue) ||
+                             (Day.HasValue && Year.HasValue) ||
+                             (Month.HasValue && Year.HasValue));
+                }
+                //No relative date.
+                if (IsEmpty)
+                {
+                    return true;
+                }
+                if (!Year.HasValue || Year.Value <= 0)
+                {
+                    return false;
+                }
+                if (!Month.HasValue)
+                {
+                    //If month part is missing, check for day part.
+                    return !Day.HasValue;
+                }
+                if (Month.Value <= 0 || Month.Value >= 13)
+                {
+                    //no valid month.
+                    return false;
+                }
+                if (Day.HasValue)
+                {
+                    return Day.Value > 0 && ValidateDateTime(Year.Value, Month.Value, Day.Value);
+                }
+                return true;
+            }
+        }
+
+        internal static bool ValidateDateTime(int year, int month, int day)
+        {
+            DateTime result;
+            return TryCreateDateTime(year, month, day, out result);
+        }
+
+        /// <summary>
+        /// Tries to construct a DateTime from a given year, month, day.
+        /// </summary>
+        /// <returns></returns>
+        internal static bool TryCreateDateTime(int year, int month, int day, out DateTime result)
+        {
+            result = DateTime.MinValue;
+            try
+            {
+                result = new DateTime(year, month, day);
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                result = DateTime.MinValue;
+                return false;
+            }
+            return true;
+        }
+
+        #endregion Validation
 
         #region Methods
 
@@ -231,5 +304,22 @@ namespace eRecruiter.Api
         }
 
         #endregion IComparable
+
+        #region IEquatable
+
+        /// <summary>
+        /// Checks if this FlexDate is equal to a given object.
+        /// </summary>
+        /// <param name="other">The object to compare.</param>
+        /// <returns>
+        /// Returns <value>true</value> if the given object is a boxed FlexDate and its value is equal to the value of this Flexdate.
+        /// Returns <value>false</value> otherwise.
+        /// </returns>
+        public bool Equals(FlexDate other)
+        {
+            return Year == other.Year && Month == other.Month && Day == other.Day && IsRelativeDate == other.IsRelativeDate;
+        }
+
+        #endregion IEquatable
     }
 }

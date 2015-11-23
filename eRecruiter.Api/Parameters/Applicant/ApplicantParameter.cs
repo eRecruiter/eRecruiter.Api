@@ -162,6 +162,9 @@ namespace eRecruiter.Api.Parameters
         public string SelfDescription { get; set; }
         public string JobDescription { get; set; }
 
+        /// <summary>
+        /// Is used for determining the spoken language, taken from the browser, Emails are generated in that language
+        /// </summary>
         public string Culture { get; set; }
 
         /// <summary>
