@@ -40,8 +40,6 @@ namespace eRecruiter.Api.CommandLineClient
                     await UserRequests.Run(client);
 
                 if (Options.RunJobRequests)
-
-
                     await JobRequests.Run(client);
 
                 if (Options.RunApplicantRequests)
