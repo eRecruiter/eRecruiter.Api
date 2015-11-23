@@ -18,13 +18,13 @@ namespace eRecruiter.Api.CommandLineClient
                         .Where(x => x.IsInt())
                         .Select(x => x.GetInt()))
             {
-                Console.WriteLine("Loading applicantIds with globalId #{0} ... ", gloablId);
+                Console.WriteLine("Loading applicants with globalId #{0} ... ", gloablId);
 
                 var applicants = await new ApplicantGlobalIdGetRequest(gloablId).LoadResultAsync(client);
 
                 foreach (var applicant in applicants)
                 {
-                    Console.WriteLine("   Applicant #{0}, Mandator #{1}", applicant.ApplicantId, applicant.MandatorId);
+                    Console.WriteLine("   Applicant #{0}", applicant.Id);
                 }
             }
         }

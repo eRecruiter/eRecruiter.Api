@@ -4,10 +4,10 @@ using eRecruiter.Api.Responses;
 
 namespace eRecruiter.Api.Client.Requests
 {
-    public class ApplicantGlobalIdGetRequest : HttpRequestMessage<IEnumerable<ApplicantGlobalIdResponse>>
+    public class ApplicantGlobalIdGetRequest : HttpRequestMessage<IEnumerable<ApplicantResponse>>
     {
         public ApplicantGlobalIdGetRequest(int globalId)
-            : base(HttpMethod.Get, "Api/Applicant/GlobalId/" + globalId)
+            : base(HttpMethod.Get, "Api/Applicants/ByGlobalId/" + globalId)
         {
         }
     }

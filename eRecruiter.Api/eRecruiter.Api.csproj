@@ -78,8 +78,6 @@
     <Compile Include="Parameters\User\UserUpdateParameter.cs" />
     <Compile Include="Parameters\User\UserUpdatePasswordParameter.cs" />
     <Compile Include="Responses\ApiTokenResponse.cs" />
-    <Compile Include="Responses\Applicant\ApplicantExternalIdResponse.cs" />
-    <Compile Include="Responses\Applicant\ApplicantGlobalIdResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantPhotoResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantCvResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantKnowledgeResponse.cs" />

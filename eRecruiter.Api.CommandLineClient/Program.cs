@@ -3,7 +3,6 @@ using eRecruiter.Api.Client.Requests;
 using eRecruiter.Api.Parameters;
 using eRecruiter.Utilities;
 using System;
-using System.Runtime;
 using System.Threading.Tasks;
 
 namespace eRecruiter.Api.CommandLineClient
