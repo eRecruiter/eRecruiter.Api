@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gender.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantExternalIdParameters.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantGlobalIdParameters.cs" />
     <Compile Include="Parameters\Applicant\ApplicantPhotoParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantCvParameter.cs" />
     <Compile Include="Parameters\Application\FinalizeCuteAssessmentParameter.cs" />

@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="Exceptions\NotFoundException.cs" />
     <Compile Include="Requests\Account\ResetPasswordRequest.cs" />
+    <Compile Include="Requests\Applicant\ApplicantExternalIdGetRequest.cs" />
     <Compile Include="Requests\Applicant\ApplicantKnowledgeRequests.cs" />
     <Compile Include="Requests\Applicant\ApplicantKnowledgesRequests.cs" />
     <Compile Include="Requests\Applicant\ApplicantCustomFieldRequests.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Requests\Applicant\ApplicantLanguagesRequests.cs" />
     <Compile Include="Requests\Applicant\ApplicantLanguageRequests.cs" />
     <Compile Include="Requests\Applicant\ApplicantCoverLetterRequests.cs" />
+    <Compile Include="Requests\Applicant\ApplicantGlobalIdGetRequest.cs" />
     <Compile Include="Requests\Application\FinalizeCuteAssessmentRequest.cs" />
     <Compile Include="Requests\DeleteJsonHttpRequestMessage.cs" />
     <Compile Include="Requests\Job\JobRequest.cs" />
