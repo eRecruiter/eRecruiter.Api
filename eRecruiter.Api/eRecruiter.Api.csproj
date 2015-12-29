@@ -70,6 +70,8 @@
     <Compile Include="FlexDate.cs" />
     <Compile Include="Parameters\CustomField\CustomFieldValueParameter.cs" />
     <Compile Include="Parameters\FeedbackParameter.cs" />
+    <Compile Include="Parameters\Mailer\ApplicationMailParameter.cs" />
+    <Compile Include="Parameters\Mailer\RegistrationMailParameter.cs" />
     <Compile Include="Parameters\Mandator\ApiKeyCreateParameter.cs" />
     <Compile Include="Parameters\Mandator\ApiKeyUpdateParameter.cs" />
     <Compile Include="Parameters\Mandator\MandatorCreateParameter.cs" />
@@ -103,6 +105,7 @@
     <Compile Include="Responses\Job\JobResponse.cs" />
     <Compile Include="Responses\Job\JobsResponse.cs" />
     <Compile Include="Parameters\Applicant\ApplicantDocumentParameter.cs" />
+    <Compile Include="Responses\MailerResponse.cs" />
     <Compile Include="Responses\Mandator\ApiKeyResponse.cs" />
     <Compile Include="Responses\Mandator\JobProfileResponse.cs" />
     <Compile Include="Responses\Mandator\KnowledgeTreeResponse.cs" />
