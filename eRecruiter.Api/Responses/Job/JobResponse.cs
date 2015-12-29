@@ -42,6 +42,13 @@ namespace eRecruiter.Api.Responses
         public IEnumerable<JobPublicationResponse> PublishedOn { get; set; }
         public IEnumerable<string> AvailableCultures { get; set; }
 
+        /// <summary>
+        /// Logo of the company the job is associated with
+        /// </summary>
+        public byte[] CompanyPictureContent { get; set; }
+        public string CompanyPictureFileExtension { get; set; }
+        
+
         //the job ad
         public string Culture { get; set; }
         public string Html { get; set; }
