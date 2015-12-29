@@ -224,6 +224,7 @@ namespace eRecruiter.Api.Responses
         public bool EnableRegionsFilterOnJobsList { get; set; }
         public bool EnableJobProfilesFilterOnJobsList { get; set; }
         public bool EnableFilterOnJobsList { get; set; }
+        public bool EnableCompanyPicturesOnJobsList { get; set; }
 
         #endregion
 
