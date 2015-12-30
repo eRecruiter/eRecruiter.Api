@@ -3,10 +3,10 @@
 
 ##v1.8.0
 - New portal setting to indicate if the company picture should be visible on the applicant portal
-	- 'EnableCompanyPicturesOnJobsList'
+	- `EnableCompanyPicturesOnJobsList`
 - New properties for job
-  - 'CompanyPictureContent' Holds the content of the company picture
-  - 'CompanyPictureFileExtension' Holds the content of the company picture
+  - `CompanyPictureContent` Holds the content of the company picture
+  - 'CompanyPictureFileExtension` Holds the file extension of the company picture
 
 ##v1.7.0
 - New properties for applicant

@@ -43,9 +43,12 @@ namespace eRecruiter.Api.Responses
         public IEnumerable<string> AvailableCultures { get; set; }
 
         /// <summary>
-        /// Logo of the company the job is associated with
+        /// Content of the company logo the job is associated with
         /// </summary>
         public byte[] CompanyPictureContent { get; set; }
+        /// <summary>
+        /// File extension of the company logo the job is associated with
+        /// </summary>
         public string CompanyPictureFileExtension { get; set; }
         
 
