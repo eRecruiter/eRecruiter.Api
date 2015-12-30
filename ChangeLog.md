@@ -6,7 +6,7 @@
 	- `EnableCompanyPicturesOnJobsList`
 - New properties for job
   - `CompanyPictureContent` Holds the content of the company picture
-  - 'CompanyPictureFileExtension` Holds the file extension of the company picture
+  - `CompanyPictureFileExtension` Holds the file extension of the company picture
 
 ##v1.7.0
 - New properties for applicant
