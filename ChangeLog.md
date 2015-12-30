@@ -1,6 +1,11 @@
 # eRecruiter API ChangeLog
 
 
+##v1.9.0
+- New API endpoints for sending out-of-workflow e-mails (job and applicant permission required)
+  - `Api/Mailer/Registration` can send registration confirmations / welcome e-mails to applicants
+  - `Api/Mailer/Application` can send application confirmation e-mails to applicants
+
 ##v1.8.0
 - New portal setting to indicate if the company picture should be visible on the applicant portal
 	- `EnableCompanyPicturesOnJobsList`
