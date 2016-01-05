@@ -71,6 +71,7 @@
     <Compile Include="Parameters\CustomField\CustomFieldValueParameter.cs" />
     <Compile Include="Parameters\FeedbackParameter.cs" />
     <Compile Include="Parameters\Mailer\ApplicationMailParameter.cs" />
+    <Compile Include="Parameters\Mailer\DoubleOptInParameter.cs" />
     <Compile Include="Parameters\Mailer\RegistrationMailParameter.cs" />
     <Compile Include="Parameters\Mandator\ApiKeyCreateParameter.cs" />
     <Compile Include="Parameters\Mandator\ApiKeyUpdateParameter.cs" />
