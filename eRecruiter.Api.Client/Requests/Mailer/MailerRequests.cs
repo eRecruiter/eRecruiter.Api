@@ -16,4 +16,11 @@ namespace eRecruiter.Api.Client.Requests
         {
         }
     }
+
+    public class SendDoubleOptInMailRequest : PostJsonHttpRequestMessage<DoubleOptInParameter>
+    {
+        public SendDoubleOptInMailRequest([NotNull] DoubleOptInParameter parameter) : base("Api/Mailer/DoubleOptIn", parameter)
+        {
+        }
+    }
 }
