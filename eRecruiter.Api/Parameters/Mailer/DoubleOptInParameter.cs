@@ -21,6 +21,11 @@
         /// The double-opt-in verification token for the applicant.
         /// </summary>
         public string DoubleOptInToken { get; set; }
+        
+        /// <summary>
+        /// The job ID the applicant has been trying to apply to.
+        /// </summary>
+        public int? JobId { get; set; }
 
         /// <summary>
         /// The current applicant portal URL (if applicable). This is used to match for applicant portal settings. 
