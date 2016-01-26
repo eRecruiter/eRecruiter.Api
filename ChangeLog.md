@@ -2,7 +2,7 @@
 
 ##v1.10.0
 - New portal setting to indicate if the double-opt-in registration flow should be enabled
-	- `EnableDoubleOptIn`
+    - `EnableDoubleOptIn`
 - New endpoint for the mailer to send double-opt-in e-mail requests to applicants
     - `Api/Mailer/DoubleOptIn` can send double-opt-in requests to applicants
 
