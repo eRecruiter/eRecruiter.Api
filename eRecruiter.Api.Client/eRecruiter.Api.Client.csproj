@@ -86,6 +86,7 @@
     <Compile Include="Requests\Application\FinalizeCuteAssessmentRequest.cs" />
     <Compile Include="Requests\DeleteJsonHttpRequestMessage.cs" />
     <Compile Include="Requests\Job\JobRequest.cs" />
+    <Compile Include="Requests\Mailer\MailerRequests.cs" />
     <Compile Include="Requests\Mandator\MandatorsRequest.cs" />
     <Compile Include="Requests\Mandator\KnowledgeTreeRequest.cs" />
     <Compile Include="Requests\Mandator\QuestionnaireRequests.cs" />
