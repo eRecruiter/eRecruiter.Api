@@ -13,10 +13,30 @@ namespace eRecruiter.Api.Responses
 
         #region General settings
 
+        /// <summary>
+        /// Force SSL for all requests and redirect HTTP-only requests to the HTTPS endpoint.
+        /// </summary>
         public bool ForceSsl { get; set; }
+
+        /// <summary>
+        /// Enable the SSZ on the portal.
+        /// </summary>
         public bool EnableSelfServiceZone { get; set; }
+
+        /// <summary>
+        /// Allow applications without a job.
+        /// </summary>
         public bool AllowApplicationWithoutJob { get; set; }
+
+        /// <summary>
+        /// Set the default culture for the applicant portal.
+        /// </summary>
         public string DefaultCulture { get; set; }
+
+        /// <summary>
+        /// Enable double-opt-in registration workflow.
+        /// </summary>
+        public bool EnableDoubleOptIn { get; set; }
 
         #endregion General settings
 
@@ -36,7 +56,7 @@ namespace eRecruiter.Api.Responses
 
         #endregion
 
-        #region Applicanta data
+        #region Applicant data
 
         // The applicant properties shown on the registration page are ordered as they appear on that page.
 

@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+##v1.10.0
+- New portal setting to indicate if the double-opt-in registration flow should be enabled
+    - `EnableDoubleOptIn`
+- New endpoint for the mailer to send double-opt-in e-mail requests to applicants
+    - `Api/Mailer/DoubleOptIn` can send double-opt-in requests to applicants
 
 ##v1.9.0
 - New API endpoints for sending out-of-workflow e-mails (job and applicant permission required)
