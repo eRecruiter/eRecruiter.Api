@@ -5,7 +5,7 @@
         /// <summary>
         /// The applicant's e-mail address.
         /// </summary>
-        public string EMail { get; set; }
+        public string Email { get; set; }
 
         /// <summary>
         /// The applicant's firstname.
