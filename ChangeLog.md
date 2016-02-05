@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+##v1.11.0
+- New properties for mandator
+  - `OccupationTypes` holds the possible values for occupation types
+
 ##v1.10.0
 - New portal setting to indicate if the double-opt-in registration flow should be enabled
     - `EnableDoubleOptIn`
