@@ -21,8 +21,7 @@ namespace eRecruiter.Api.Client.Requests
 
     public class SendDoubleOptInMailRequest : PostJsonHttpRequestMessage<MailerResponse>
     {
-        public SendDoubleOptInMailRequest([NotNull] DoubleOptInParameter parameter)
-            : base($"Api/Mailer/DoubleOptIn?culture={Thread.CurrentThread.CurrentUICulture}", parameter)
+        public SendDoubleOptInMailRequest([NotNull] DoubleOptInParameter parameter) : base("Api/Mailer/DoubleOptIn?culture=" + Thread.CurrentThread.CurrentUICulture, parameter)
         {
         }
     }
