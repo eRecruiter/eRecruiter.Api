@@ -1,4 +1,5 @@
-﻿using eRecruiter.Api.Parameters;
+﻿using System.Threading;
+using eRecruiter.Api.Parameters;
 using eRecruiter.Api.Responses;
 using JetBrains.Annotations;
 
@@ -20,7 +21,8 @@ namespace eRecruiter.Api.Client.Requests
 
     public class SendDoubleOptInMailRequest : PostJsonHttpRequestMessage<MailerResponse>
     {
-        public SendDoubleOptInMailRequest([NotNull] DoubleOptInParameter parameter) : base("Api/Mailer/DoubleOptIn", parameter)
+        public SendDoubleOptInMailRequest([NotNull] DoubleOptInParameter parameter)
+            : base($"Api/Mailer/DoubleOptIn?culture={Thread.CurrentThread.CurrentUICulture}", parameter)
         {
         }
     }
