@@ -54,6 +54,10 @@ namespace eRecruiter.Api.Responses
         public IEnumerable<JobPublicationResponse> JobPublicationTypes { get; set; }
         public IEnumerable<CustomFieldResponse> CustomFields { get; set; }
         public IEnumerable<string> ClassificationTypes { get; set; }
+        
+        /// <summary>
+        /// All available values for occupation types for jobs.
+        /// </summary>
         public IEnumerable<string> OccupationTypes { get; set; } 
     }
 }
