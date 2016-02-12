@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+##v1.12.0
+- Upgrade of .NET Framework dependency to 4.6.1
+- Upgrade of all dependencies to newer versions
+
 ##v1.11.0
 - New properties for mandator
   - `OccupationTypes` holds the possible values for occupation types
