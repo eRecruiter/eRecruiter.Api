@@ -16,6 +16,7 @@ namespace eRecruiter.Api.Responses
     {
         Jobs,
         Applicants,
-        Users
+        Users,
+        Company
     }
 }
