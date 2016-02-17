@@ -26,8 +26,8 @@ namespace eRecruiter.Api.CommandLineClient
         [Option("XmlCompanySource", Required = false, HelpText = "The XML with the stored company data.")]
         public string XmlCompanySource { get; set; }
 
-        [Option("IsCompanyImportTest", Required = false, HelpText = "Test data integration or put data")]
-        public bool IsCompanyImportTest { get; set; }
+        [Option("IsValidationOnly", Required = false, HelpText = "Test data integration or put data")]
+        public bool IsValidationOnly { get; set; }
 
         [Option("RunMandatorRequests", Required = false, HelpText = "Whether or not to run requests to create/update/delete a mandator (and some related requests).")]
         public bool RunMandatorRequests { get; set; }

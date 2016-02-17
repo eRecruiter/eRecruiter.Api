@@ -1,14 +1,13 @@
-﻿using System.Net.Http;
-using System.Text;
+﻿using eRecruiter.Api.Parameters;
 using eRecruiter.Api.Responses;
 
 namespace eRecruiter.Api.Client.Requests
 {
-    public class CompanyImportRequest :  HttpRequestMessage<CompanyImportResponse>
+    public class CompanyImportRequest :  PutJsonHttpRequestMessage<CompanyImportResponse>
     {
-        public CompanyImportRequest(string inputXml, bool isTest) : base(HttpMethod.Put, "Api/Import/Company?isTest=" + isTest)
+        public CompanyImportRequest(bool isValidationOnly, CompanyImportParameter parameter) : 
+            base("Api/Import/Company?isTest=" + isValidationOnly, parameter)
         {
-            Content = new StringContent(inputXml, Encoding.UTF8);
         }
     }
 }

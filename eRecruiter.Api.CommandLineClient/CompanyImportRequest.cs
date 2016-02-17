@@ -4,16 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using eRecruiter.Api.Client;
+using eRecruiter.Api.Parameters;
 using eRecruiter.Api.Responses;
 
 namespace eRecruiter.Api.CommandLineClient
 {
     public class CompanyImportRequest
     {
-        public static async Task Run(ApiHttpClient client, string xmlFileLocation, bool isTest)
+        public static async Task Run(ApiHttpClient client, string xmlFileLocation, bool isValidationOnly)
         {
-            var inputXml = System.IO.File.ReadAllText(xmlFileLocation);
-            var companyImportResponse = await new Client.Requests.CompanyImportRequest(inputXml, isTest).LoadResultAsync(client);
+            var xmlString = System.IO.File.ReadAllText(xmlFileLocation);
+            var bodyParmeter = new CompanyImportParameter
+            {
+                XMLContent = Encoding.UTF8.GetBytes(xmlString)
+            };
+
+            var companyImportResponse = await new Client.Requests.CompanyImportRequest(isValidationOnly, bodyParmeter).LoadResultAsync(client);
             
             Console.WriteLine(RecursiveResultStringBuilder(companyImportResponse.Result));
         }
@@ -25,17 +31,10 @@ namespace eRecruiter.Api.CommandLineClient
             sb.AppendLine(string.Format("{0,-30}{1, -30}", "Type", "Identifiyer"));
             sb.AppendLine("----------------------------------------------------------------------------");
             sb.AppendLine(string.Format("{0,-30}{1, -30}", result.Type, result.Identifiyer));
-            
-            var i = 0;
-            foreach (var message in result.Messages)
-            {
-                sb.AppendLine(string.Format("{0,4} [{1}] {2}", "#" + i++, message.Severity, message.Text));
-            }
 
-            foreach (var nestedResult in result.NestedResults)
-            {
-                sb.AppendLine(RecursiveResultStringBuilder(nestedResult));
-            }
+            var i = 0;
+            result.Messages.Select(x => sb.AppendLine(string.Format("{0,4} [{1}] {2}", "#" + i++, x.Severity, x.Text)));
+            result.NestedResults.Select(x => sb.AppendLine(RecursiveResultStringBuilder(x)));
 
             return sb.ToString();
         }
