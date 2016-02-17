@@ -22,6 +22,12 @@ namespace eRecruiter.Api.CommandLineClient
 
         [Option("ExternalId", Required = false, HelpText = "The external # of an applicant. Use , (comma) to separate multiple #.")]
         public string ExternalId { get; set; }
+        
+        [Option("XmlCompanySource", Required = false, HelpText = "The XML with the stored company data.")]
+        public string XmlCompanySource { get; set; }
+
+        [Option("IsCompanyImportTest", Required = false, HelpText = "Test data integration or put data")]
+        public bool IsCompanyImportTest { get; set; }
 
         [Option("RunMandatorRequests", Required = false, HelpText = "Whether or not to run requests to create/update/delete a mandator (and some related requests).")]
         public bool RunMandatorRequests { get; set; }
@@ -40,6 +46,11 @@ namespace eRecruiter.Api.CommandLineClient
 
         [Option("RunJobRequests", Required = false, HelpText = "Whether or not to run requests to read job information (and some related requests).")]
         public bool RunJobRequests { get; set; }
+
+        [Option("RunCompanyImport", Required = false, HelpText = "Whether or not to run requests to put company information.")]
+        public bool RunCompanyImport { get; set; }
+
+
 
         [HelpOption]
         public string GetUsage()
