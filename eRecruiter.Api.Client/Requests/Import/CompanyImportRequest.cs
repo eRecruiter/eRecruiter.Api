@@ -6,7 +6,7 @@ namespace eRecruiter.Api.Client.Requests
     public class CompanyImportRequest :  PutJsonHttpRequestMessage<CompanyImportResponse>
     {
         public CompanyImportRequest(bool isValidationOnly, CompanyImportParameter parameter) : 
-            base("Api/Import/Company?isTest=" + isValidationOnly, parameter)
+            base("Api/Import/Company?isValidationOnly=" + isValidationOnly, parameter)
         {
         }
     }
