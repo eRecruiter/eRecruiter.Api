@@ -33,9 +33,16 @@ namespace eRecruiter.Api.CommandLineClient
             sb.AppendLine(string.Format("{0,-30}{1, -30}", result.Type, result.Identifiyer));
 
             var i = 0;
-            result.Messages.Select(x => sb.AppendLine(string.Format("{0,4} [{1}] {2}", "#" + i++, x.Severity, x.Text)));
-            result.NestedResults.Select(x => sb.AppendLine(RecursiveResultStringBuilder(x)));
-
+            foreach (var message in result.Messages)
+            {
+                sb.AppendLine(string.Format("{0,4} [{1}] {2}", "#" + i++, message.Severity, message.Text));
+            }
+            
+            foreach (var nestedResult in result.NestedResults)
+            {
+                sb.AppendLine(RecursiveResultStringBuilder(nestedResult));
+            }
+            
             return sb.ToString();
         }
     }
