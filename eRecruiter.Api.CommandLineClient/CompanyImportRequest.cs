@@ -14,8 +14,7 @@ namespace eRecruiter.Api.CommandLineClient
         {
             var inputXml = System.IO.File.ReadAllText(xmlFileLocation);
             var companyImportResponse = await new Client.Requests.CompanyImportRequest(inputXml, isTest).LoadResultAsync(client);
-
-
+            
             Console.WriteLine(RecursiveResultStringBuilder(companyImportResponse.Result));
         }
 
@@ -24,12 +23,13 @@ namespace eRecruiter.Api.CommandLineClient
             var sb = new StringBuilder();
             sb.AppendLine("============================================================================");
             sb.AppendLine(string.Format("{0,-30}{1, -30}", "Type", "Identifiyer"));
+            sb.AppendLine("----------------------------------------------------------------------------");
             sb.AppendLine(string.Format("{0,-30}{1, -30}", result.Type, result.Identifiyer));
-
+            
             var i = 0;
             foreach (var message in result.Messages)
             {
-                sb.AppendLine(string.Format("#{0,-3}: {1}", i++, message));
+                sb.AppendLine(string.Format("{0,4} [{1}] {2}", "#" + i++, message.Severity, message.Text));
             }
 
             foreach (var nestedResult in result.NestedResults)
