@@ -54,6 +54,9 @@ namespace eRecruiter.Api.CommandLineClient
                 if (Options.RunApplicantExternalIdRequests)
                     await ApplicantByExternalIdRequests.Run(client, Options.ExternalId);
 
+                if (Options.RunCompanyImport)
+                    await CompanyImportRequest.Run(client, Options.XmlCompanySource, Options.IsCompanyImportTest);
+
                 Console.WriteLine("Everything done. Press < Enter > to exit.");
                 Console.ReadLine();
             }
