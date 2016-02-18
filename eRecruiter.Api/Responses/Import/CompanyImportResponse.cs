@@ -1,11 +1,28 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 
 namespace eRecruiter.Api.Responses
 {
     public class CompanyImportResponse
     {
+        public StatusType Status;
         public SyncResult Result { get; set; }
     }
+
+    [Flags]
+    public enum StatusType
+    {
+        ValidData = 1,
+        InValidData = 2,
+        PeristingSkiped = 4,
+        PersistingError = 8,
+        PersistingSuccess = 16
+        // = 32
+        // = 64
+        // = ...
+    }
+
 
     public class SyncResult
     {
