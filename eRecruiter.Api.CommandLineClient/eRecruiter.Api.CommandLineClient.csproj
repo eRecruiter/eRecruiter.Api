@@ -61,6 +61,7 @@
     <Compile Include="ApplicantRequests.cs" />
     <Compile Include="ApplicantByGlobylIdRequests.cs" />
     <Compile Include="CommandlineOptions.cs" />
+    <Compile Include="CompanyImportRequest.cs" />
     <Compile Include="CvParserRequests.cs" />
     <Compile Include="JobRequests.cs" />
     <Compile Include="ApplicantByExternalIdRequests.cs" />
