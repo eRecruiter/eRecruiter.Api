@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
 
 namespace eRecruiter.Api.Responses
 {
-    public class CompanyImportResponse
+    public class CompanySynchronizeResponse
     {
         public StatusType Status;
         public SyncResult Result { get; set; }

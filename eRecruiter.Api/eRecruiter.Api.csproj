@@ -70,7 +70,7 @@
     <Compile Include="FlexDate.cs" />
     <Compile Include="Parameters\CustomField\CustomFieldValueParameter.cs" />
     <Compile Include="Parameters\FeedbackParameter.cs" />
-    <Compile Include="Parameters\Import\CompanyImportParameter.cs" />
+    <Compile Include="Parameters\Synchronize\CompanySynchronizeParameter.cs" />
     <Compile Include="Parameters\Mailer\ApplicationMailParameter.cs" />
     <Compile Include="Parameters\Mailer\DoubleOptInParameter.cs" />
     <Compile Include="Parameters\Mailer\RegistrationMailParameter.cs" />
@@ -102,7 +102,7 @@
     <Compile Include="Responses\Application\ApplicationCreateResponse.cs" />
     <Compile Include="Responses\CustomField\CustomFieldValueResponse.cs" />
     <Compile Include="Responses\CvParserResponse.cs" />
-    <Compile Include="Responses\Import\CompanyImportResponse.cs" />
+    <Compile Include="Responses\Synchronize\CompanySynchronizeResponse.cs" />
     <Compile Include="Responses\Job\JobPublicationResponse.cs" />
     <Compile Include="Responses\Job\JobSalaryImageResponse.cs" />
     <Compile Include="Responses\Job\JobResponse.cs" />

@@ -1,6 +1,6 @@
 ﻿namespace eRecruiter.Api.Parameters
 {
-    public class CompanyImportParameter
+    public class CompanySynchronizeParameter
     {
         public string XMLContent { get; set; }
     }

@@ -47,8 +47,8 @@ namespace eRecruiter.Api.CommandLineClient
         [Option("RunJobRequests", Required = false, HelpText = "Whether or not to run requests to read job information (and some related requests).")]
         public bool RunJobRequests { get; set; }
 
-        [Option("RunCompanyImport", Required = false, HelpText = "Whether or not to run requests to put company information.")]
-        public bool RunCompanyImport { get; set; }
+        [Option("RunCompanySynchronization", Required = false, HelpText = "Whether or not to run requests to put company information.")]
+        public bool RunCompanySynchronization { get; set; }
 
 
 

@@ -9,19 +9,19 @@ using eRecruiter.Api.Responses;
 
 namespace eRecruiter.Api.CommandLineClient
 {
-    public class CompanyImportRequest
+    public class CompanySynchronizeRequest
     {
         public static async Task Run(ApiHttpClient client, string xmlFileLocation, bool isValidationOnly)
         {
             // Build Body
             var xmlString = System.IO.File.ReadAllText(xmlFileLocation);
-            var bodyParmeter = new CompanyImportParameter
+            var bodyParmeter = new CompanySynchronizeParameter
             {
                 XMLContent = xmlString
             };
 
             // Request and await response
-            var companyImportResponse = await new Client.Requests.CompanyImportRequest(isValidationOnly, bodyParmeter).LoadResultAsync(client);
+            var companyImportResponse = await new Client.Requests.CompanySynchronizeRequest(isValidationOnly, bodyParmeter).LoadResultAsync(client);
             
             // Print response result
             Console.WriteLine(RecursiveResultStringBuilder(companyImportResponse.Result));

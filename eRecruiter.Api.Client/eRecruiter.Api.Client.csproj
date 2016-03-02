@@ -88,7 +88,7 @@
     <Compile Include="Requests\Applicant\ApplicantGlobalIdGetRequest.cs" />
     <Compile Include="Requests\Application\FinalizeCuteAssessmentRequest.cs" />
     <Compile Include="Requests\DeleteJsonHttpRequestMessage.cs" />
-    <Compile Include="Requests\Import\CompanyImportRequest.cs" />
+    <Compile Include="Requests\Synchronize\CompanySynchronizeRequest.cs" />
     <Compile Include="Requests\Job\JobRequest.cs" />
     <Compile Include="Requests\Mailer\MailerRequests.cs" />
     <Compile Include="Requests\Mandator\MandatorsRequest.cs" />
