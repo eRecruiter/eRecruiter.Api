@@ -17,7 +17,7 @@ namespace eRecruiter.Api.CommandLineClient
             var xmlString = System.IO.File.ReadAllText(xmlFileLocation);
             var bodyParmeter = new CompanyImportParameter
             {
-                XMLContent = Encoding.UTF8.GetBytes(xmlString)
+                XMLContent = xmlString
             };
 
             // Request and await response

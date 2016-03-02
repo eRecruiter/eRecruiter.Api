@@ -2,6 +2,6 @@
 {
     public class CompanyImportParameter
     {
-        public byte[] XMLContent { get; set; }
+        public string XMLContent { get; set; }
     }
 }
