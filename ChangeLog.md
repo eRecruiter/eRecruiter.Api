@@ -1,7 +1,8 @@
 # eRecruiter API ChangeLog
 
 ##v1.13.0
-- Add `company` synchronization for XML content (requires company permission for the api key)
+- New `company` synchronization for XML content (requires company permission for the api key) for the following endpoint
+  - `Api/Synchronize/Company` can receive the content of an company XML formated string and synchronizes the mandators companies
 
 ##v1.12.0
 - Upgrade of .NET Framework dependency to 4.6.1
