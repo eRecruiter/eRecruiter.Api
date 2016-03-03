@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+##v1.13.0
+- Add `company` synchronization for XML content (requires company permission for the api key)
+
 ##v1.12.0
 - Upgrade of .NET Framework dependency to 4.6.1
 - Upgrade of all dependencies to newer versions
