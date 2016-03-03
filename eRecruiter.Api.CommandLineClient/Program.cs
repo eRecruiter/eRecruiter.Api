@@ -54,6 +54,9 @@ namespace eRecruiter.Api.CommandLineClient
                 if (Options.RunApplicantExternalIdRequests)
                     await ApplicantByExternalIdRequests.Run(client, Options.ExternalId);
 
+                if (Options.RunCompanySynchronization)
+                    await CompanySynchronizeRequest.Run(client, Options.XmlCompanySource, Options.IsValidationOnly);
+
                 Console.WriteLine("Everything done. Press < Enter > to exit.");
                 Console.ReadLine();
             }
