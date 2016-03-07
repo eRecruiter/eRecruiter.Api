@@ -58,6 +58,7 @@
     <Reference Include="System.Net.Http.WebRequest" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgnosticApplicantsByGlobylIdRequest.cs" />
     <Compile Include="ApplicantRequests.cs" />
     <Compile Include="ApplicantByGlobylIdRequests.cs" />
     <Compile Include="CommandlineOptions.cs" />
