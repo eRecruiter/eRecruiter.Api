@@ -20,6 +20,6 @@ namespace eRecruiter.Api.Responses
         /// <summary>
         /// Date of last update by applicant
         /// </summary>
-        public DateTime LastUpdated { get; set; }
+        public DateTime? LastUpdated { get; set; }
     }
 }

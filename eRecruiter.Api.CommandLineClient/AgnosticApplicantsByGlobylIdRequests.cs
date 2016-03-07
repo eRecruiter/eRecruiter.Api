@@ -24,8 +24,7 @@ namespace eRecruiter.Api.CommandLineClient
 
                 foreach (var applicant in applicants)
                 {
-                    Console.WriteLine("   Applicant #{0} / Mandator #{1} / {2:O}", applicant.Id, applicant.MandatorId,
-                        applicant.LastUpdated);
+                    Console.WriteLine("   Applicant #{0} / Mandator #{1}", applicant.Id, applicant.MandatorId);
                 }
             }
         }
