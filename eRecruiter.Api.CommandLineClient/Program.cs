@@ -54,8 +54,8 @@ namespace eRecruiter.Api.CommandLineClient
                 if (Options.RunApplicantExternalIdRequests)
                     await ApplicantByExternalIdRequests.Run(client, Options.ExternalId);
 
-                if (Options.RunAgnosticApplicantsByGlobalIdRequest)
-                    await AgnosticApplicantsByGlobylIdRequest.Run(client, Options.GlobalId);
+                if (Options.RunAgnosticApplicantsByGlobalIdRequests)
+                    await AgnosticApplicantsByGlobalIdRequests.Run(client, Options.GlobalId);
 
                 if (Options.RunCompanySynchronization)
                     await CompanySynchronizeRequest.Run(client, Options.XmlCompanySource, Options.IsValidationOnly);

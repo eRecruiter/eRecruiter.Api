@@ -1,13 +1,13 @@
-﻿using eRecruiter.Api.Client;
-using eRecruiter.Api.Client.Requests;
-using eRecruiter.Utilities;
-using System;
+﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
+using eRecruiter.Api.Client;
+using eRecruiter.Api.Client.Requests;
+using eRecruiter.Utilities;
 
 namespace eRecruiter.Api.CommandLineClient
 {
-    public static class AgnosticApplicantsByGlobylIdRequest
+    public static class AgnosticApplicantsByGlobalIdRequests
     {
         public static async Task Run(ApiHttpClient client, string globalIdsOption)
         {
@@ -24,7 +24,8 @@ namespace eRecruiter.Api.CommandLineClient
 
                 foreach (var applicant in applicants)
                 {
-                    Console.WriteLine("   Applicant #{0} / Mandator #{1} / {2:O}", applicant.Id, applicant.MandatorId, applicant.LastUpdated);
+                    Console.WriteLine("   Applicant #{0} / Mandator #{1} / {2:O}", applicant.Id, applicant.MandatorId,
+                        applicant.LastUpdated);
                 }
             }
         }
