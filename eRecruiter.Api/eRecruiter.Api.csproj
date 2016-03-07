@@ -81,6 +81,7 @@
     <Compile Include="Parameters\User\UserCreateParameter.cs" />
     <Compile Include="Parameters\User\UserUpdateParameter.cs" />
     <Compile Include="Parameters\User\UserUpdatePasswordParameter.cs" />
+    <Compile Include="Responses\Agnostic\AgnosticApplicantsResponse.cs" />
     <Compile Include="Responses\ApiTokenResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantPhotoResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantCvResponse.cs" />
