@@ -1,7 +1,7 @@
 # eRecruiter API ChangeLog
 
 ##v1.14.0
-- Changed ``ApplicantParameter`` to allow ``GlobalId`` to be NULL
+- Changed ``ApplicantParameter`` to allow ``GlobalId`` to be a nullable long value for better support in external systems
 
 ##v1.13.0
 - New `company` synchronization for XML content (requires company permission for the api key) for the following endpoint
