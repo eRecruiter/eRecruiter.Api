@@ -48,7 +48,7 @@ namespace eRecruiter.Api.Parameters
         /// <summary>
         /// Global identifier for same appliant in different mandators.
         /// </summary>
-        public int GlobalId { get; set; }
+        public long? GlobalId { get; set; }
 
         /// <summary>
         /// Optional identifiener for third party applications.
