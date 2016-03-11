@@ -44,6 +44,9 @@ namespace eRecruiter.Api.CommandLineClient
         [Option("RunApplicantExternalIdRequests", Required = false, HelpText = "Whether or not to run requests to get an applicant Ids from external Ids.")]
         public bool RunApplicantExternalIdRequests { get; set; }
 
+        [Option("RunAgnosticApplicantsByGlobalIdRequests", Required = false, HelpText = "Whether or not to run request to get mandator-agnostic applicant info from global IDs.")]
+        public bool RunAgnosticApplicantsByGlobalIdRequests { get; set; }
+
         [Option("RunJobRequests", Required = false, HelpText = "Whether or not to run requests to read job information (and some related requests).")]
         public bool RunJobRequests { get; set; }
 

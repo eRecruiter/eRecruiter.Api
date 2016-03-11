@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+##v1.15.0
+- New API calls to get applicants with the same `GlobalId` from all mandators (mandator-agnostic permission required)
+
 ##v1.14.0
 - Changed ``ApplicantParameter`` to allow ``GlobalId`` to be a nullable long value for better support in external systems
 

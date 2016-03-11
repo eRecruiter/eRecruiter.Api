@@ -64,6 +64,7 @@
     </Compile>
     <Compile Include="Exceptions\NotFoundException.cs" />
     <Compile Include="Requests\Account\ResetPasswordRequest.cs" />
+    <Compile Include="Requests\Agnostic\AgnosticApplicantsRequest.cs" />
     <Compile Include="Requests\Applicant\ApplicantExternalIdGetRequest.cs" />
     <Compile Include="Requests\Applicant\ApplicantKnowledgeRequests.cs" />
     <Compile Include="Requests\Applicant\ApplicantKnowledgesRequests.cs" />
