@@ -17,6 +17,6 @@ namespace eRecruiter.Api.Responses
         Jobs,
         Applicants,
         Users,
-        Company
+        Companies
     }
 }
