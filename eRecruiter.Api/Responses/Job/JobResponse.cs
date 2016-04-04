@@ -34,6 +34,10 @@ namespace eRecruiter.Api.Responses
         public DateTime OnlineDateCorrected { get; set; }
 
         public IEnumerable<string> JobProfiles { get; set; }
+        /// <summary>
+        /// Job profiles including group and culture information.
+        /// </summary>
+        public IEnumerable<JobProfileResponse> ExtendedJobProfiles { get; set; } 
         public IEnumerable<string> Regions { get; set; }
         public IEnumerable<CustomFieldValueResponse> CustomFields { get; set; }
         public IEnumerable<string> OccupationTypes { get; set; }

@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+##v1.16.0
+- New properties for job
+  - `ExtendedJobProfiles` includes the job profiles with group and culture information
+
 ##v1.15.0
 - New API calls to get applicants with the same `GlobalId` from all mandators (mandator-agnostic permission required)
 
