@@ -51,7 +51,7 @@ namespace eRecruiter.Api.Parameters
         public long? GlobalId { get; set; }
 
         /// <summary>
-        /// Optional identifiener for third party applications.
+        /// Optional identifier for third party applications.
         /// </summary>
         public int? ExternalId { get; set; }
 
