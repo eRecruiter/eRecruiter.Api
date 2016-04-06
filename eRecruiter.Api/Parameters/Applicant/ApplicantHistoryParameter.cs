@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace eRecruiter.Api.Parameters
+﻿namespace eRecruiter.Api.Parameters
 {
     public class ApplicantHistoryParameter
     {
@@ -28,11 +26,5 @@ namespace eRecruiter.Api.Parameters
         /// The information (mostly the name of the applicant, user) who created this history entry.
         /// </summary>
         public string CreatedBy { get; set; }
-
-        /// <summary>
-        /// The date of creation of the history entry. If none is supplied the current time will be used.
-        /// </summary>
-        public DateTime? CreatedOn { get; set; }
     }
 }
- 
