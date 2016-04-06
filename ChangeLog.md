@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+##v1.17.0
+- New endpoint for adding a history entry to an applicant
+  - `Api/Applicant/History` can create a history entry for an applicant
+
 ##v1.16.0
 - New properties for job
   - `ExtendedJobProfiles` includes the job profiles with group and culture information
