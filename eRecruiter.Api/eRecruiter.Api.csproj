@@ -47,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gender.cs" />
+    <Compile Include="HistoryType.cs" />
     <Compile Include="Parameters\Applicant\ApplicantExternalIdParameters.cs" />
     <Compile Include="Parameters\Applicant\ApplicantGlobalIdParameters.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantHistoryParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantPhotoParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantCvParameter.cs" />
     <Compile Include="Parameters\Application\FinalizeCuteAssessmentParameter.cs" />
@@ -83,6 +85,7 @@
     <Compile Include="Parameters\User\UserUpdatePasswordParameter.cs" />
     <Compile Include="Responses\Agnostic\AgnosticApplicantsResponse.cs" />
     <Compile Include="Responses\ApiTokenResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantHistoryResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantPhotoResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantCvResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantKnowledgeResponse.cs" />
