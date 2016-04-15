@@ -130,6 +130,7 @@ namespace eRecruiter.Api.Parameters
         public string Url { get; set; }
 
         public bool IsActive { get; set; }
+        public bool IsLocked { get; set; }
         public bool EnableNewsletter { get; set; }
         public bool EnableMatchingJobsAutoMail { get; set; }
 
