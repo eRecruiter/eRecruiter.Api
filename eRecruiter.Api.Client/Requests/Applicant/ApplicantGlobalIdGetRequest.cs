@@ -6,7 +6,7 @@ namespace eRecruiter.Api.Client.Requests
 {
     public class ApplicantGlobalIdGetRequest : HttpRequestMessage<IEnumerable<ApplicantResponse>>
     {
-        public ApplicantGlobalIdGetRequest(int globalId)
+        public ApplicantGlobalIdGetRequest(long globalId)
             : base(HttpMethod.Get, "Api/Applicants/ByGlobalId/" + globalId)
         {
         }

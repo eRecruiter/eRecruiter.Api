@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+##v1.18.1
+- Ensured `GlobalId` is represented as `long` in all endpoints 
+
 ##v1.18.0
 - New property for applicant
   - `IsLocked` indicates if the applicant is currently locked (prevents communication)
