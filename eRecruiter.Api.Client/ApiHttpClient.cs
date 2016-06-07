@@ -23,7 +23,8 @@ namespace eRecruiter.Api.Client
         public ApiHttpClient(
             [NotNull] Uri baseAddress,
             [NotNull] Func<ApiTokenParameter> apiKeyFunction,
-            [NotNull] Func<ApiTokenCache> apiTokenCacheFunction)
+            [NotNull] Func<ApiTokenCache> apiTokenCacheFunction, 
+                      TimeSpan requestTimeout)
             : base(new AuthorizationHandler(baseAddress, apiKeyFunction, apiTokenCacheFunction))
         {
             _apiTokenCacheFunction = apiTokenCacheFunction;
@@ -31,7 +32,7 @@ namespace eRecruiter.Api.Client
             _watch = new Stopwatch();
             BaseAddress = new Uri(baseAddress.ToString().Trim('/'));
 
-            Timeout = TimeSpan.FromMinutes(3);
+            Timeout = requestTimeout;
         }
 
         public long ElapsedMillisecondsInLastCall { get; private set; }
@@ -44,8 +45,9 @@ namespace eRecruiter.Api.Client
             try
             {
                 var responseTask = SendAsync(requestMessage);
+                responseTask.Wait();
 
-                if (responseTask.Wait(TimeoutInSeconds * 1000))
+                if (!responseTask.IsFaulted)
                 {
                     var response = responseTask.Result;
 

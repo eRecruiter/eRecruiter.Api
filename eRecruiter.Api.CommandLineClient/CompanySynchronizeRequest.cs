@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,22 +15,43 @@ namespace eRecruiter.Api.CommandLineClient
         public static async Task Run(ApiHttpClient client, string xmlFileLocation, bool isValidationOnly)
         {
             // Build Body
-            var xmlString = System.IO.File.ReadAllText(xmlFileLocation);
+            var xmlString = File.ReadAllText(xmlFileLocation);
             var bodyParmeter = new CompanySynchronizeParameter
             {
                 XMLContent = xmlString
             };
 
             // Request and await response
-            var companyImportResponse = await new Client.Requests.CompanySynchronizeRequest(isValidationOnly, bodyParmeter).LoadResultAsync(client);
-            
-            // Print response result
-            Console.WriteLine(RecursiveResultStringBuilder(companyImportResponse.Result));
+            var companyImportResponse = new Client.Requests.CompanySynchronizeRequest(isValidationOnly, bodyParmeter).LoadResult(client);
 
-            // Print response stati
-            Console.WriteLine("========== Stati ==========");
-            var stati = SplitEnumFlags<StatusType>(companyImportResponse.Status);
-            stati.ToList().ForEach(x => Console.WriteLine(x));
+            // Duration string
+            var duration = TimeSpan.FromMilliseconds(client.ElapsedMillisecondsInLastCall);
+            var durationString = $"Request took {(int)duration.TotalMinutes}min {duration.Seconds}sec.";
+
+            // Result string
+            var resultString = RecursiveResultStringBuilder(companyImportResponse.Result);
+
+            // Stati string
+            var statiString = SplitEnumFlags<StatusType>(companyImportResponse.Status).Aggregate(string.Empty, (s, status) => $"{status}, ");
+
+            // Build result string 
+            var sb = new StringBuilder();
+            sb.AppendLine("========== Duration ==========");
+            sb.AppendLine(durationString);
+            sb.AppendLine(string.Empty);
+            sb.AppendLine("========== Result Stati ==========");
+            sb.AppendLine(statiString);
+            sb.AppendLine(string.Empty);
+            sb.AppendLine("========== Result Import Logs ==========");
+            sb.AppendLine(resultString);
+            var x = sb.ToString();
+
+            // Print response result
+            var logFileName = Path.Combine(Environment.CurrentDirectory, $"CompanyImport_LogInfo_{DateTime.Now.ToString("yyyyMMdd_HHmmss")}.txt");
+            File.WriteAllText(logFileName, x);
+
+            Console.WriteLine(durationString);
+            Console.WriteLine($"See '{logFileName}' for logged information.");
         }
 
         private static IEnumerable<T> SplitEnumFlags<T>(Enum mask)

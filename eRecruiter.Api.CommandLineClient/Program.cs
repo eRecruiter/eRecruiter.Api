@@ -21,16 +21,19 @@ namespace eRecruiter.Api.CommandLineClient
             if (CommandLine.Parser.Default.ParseArguments(args, Options))
             {
                 var tokenCache = new ApiTokenCache();
-                var client = new ApiHttpClient(new Uri(Options.ApiUrl),
-                    () =>
-                        new ApiTokenParameter
-                        {
-                            ClientInfo = "CommandLineClient",
-                            Key = Options.ApiKey,
-                            MandatorId = Options.MandatorId
-                        },
-                    () => tokenCache);
 
+                var client = new ApiHttpClient(
+                        new Uri(Options.ApiUrl),
+                        () =>
+                            new ApiTokenParameter
+                            {
+                                ClientInfo = "CommandLineClient",
+                                Key = Options.ApiKey,
+                                MandatorId = Options.MandatorId
+                            },
+                        () => tokenCache,
+                        TimeSpan.FromSeconds(Options.RequestTimeout));
+                
                 await Ping(client);
 
                 if (Options.RunMandatorRequests)
