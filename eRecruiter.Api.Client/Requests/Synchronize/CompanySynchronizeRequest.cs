@@ -5,8 +5,8 @@ namespace eRecruiter.Api.Client.Requests
 {
     public class CompanySynchronizeRequest :  PutJsonHttpRequestMessage<CompanySynchronizeResponse>
     {
-        public CompanySynchronizeRequest(bool isValidationOnly, CompanySynchronizeParameter parameter) : 
-            base("Api/Synchronize/Company?isValidationOnly=" + isValidationOnly, parameter)
+        public CompanySynchronizeRequest(bool isValidationOnly, int requestTimeoutSeconds, CompanySynchronizeParameter parameter) : 
+            base($"Api/Synchronize/Company?isValidationOnly={isValidationOnly}&requestTimeoutSeconds={requestTimeoutSeconds}", parameter)
         {
         }
     }

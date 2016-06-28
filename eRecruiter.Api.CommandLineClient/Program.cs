@@ -61,7 +61,7 @@ namespace eRecruiter.Api.CommandLineClient
                     await AgnosticApplicantsByGlobalIdRequests.Run(client, Options.GlobalId);
 
                 if (Options.RunCompanySynchronization)
-                    await CompanySynchronizeRequest.Run(client, Options.XmlCompanySource, Options.IsValidationOnly);
+                    await CompanySynchronizeRequest.Run(client, Options.XmlCompanySource, Options.IsValidationOnly, Options.RequestTimeout);
 
                 Console.WriteLine("Everything done. Press < Enter > to exit.");
                 Console.ReadLine();

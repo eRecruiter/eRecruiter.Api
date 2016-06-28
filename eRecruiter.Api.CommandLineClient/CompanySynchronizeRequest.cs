@@ -12,7 +12,7 @@ namespace eRecruiter.Api.CommandLineClient
 {
     public class CompanySynchronizeRequest
     {
-        public static async Task Run(ApiHttpClient client, string xmlFileLocation, bool isValidationOnly)
+        public static async Task Run(ApiHttpClient client, string xmlFileLocation, bool isValidationOnly, int requestTimeoutSeconds)
         {
             // Build Body
             var xmlString = File.ReadAllText(xmlFileLocation);
@@ -22,7 +22,7 @@ namespace eRecruiter.Api.CommandLineClient
             };
 
             // Request and await response
-            var companyImportResponse = new Client.Requests.CompanySynchronizeRequest(isValidationOnly, bodyParmeter).LoadResult(client);
+            var companyImportResponse = new Client.Requests.CompanySynchronizeRequest(isValidationOnly, requestTimeoutSeconds, bodyParmeter).LoadResult(client);
 
             // Duration string
             var duration = TimeSpan.FromMilliseconds(client.ElapsedMillisecondsInLastCall);
