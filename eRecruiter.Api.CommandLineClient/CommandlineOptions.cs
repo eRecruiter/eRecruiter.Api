@@ -5,7 +5,7 @@ namespace eRecruiter.Api.CommandLineClient
 {
     public class CommandlineOptions
     {
-        [Option("RequestTimeout", Required = true, HelpText = "The HttpRequest Timeout in Seconds. Default value is 3 minutes.", DefaultValue = 3 * 60 /* 3 minutes */ )]
+        [Option("RequestTimeout", Required = false, HelpText = "The HttpRequest Timeout in Seconds. Default value is 3 minutes.", DefaultValue = 3 * 60 /* 3 minutes */ )]
         public int RequestTimeout { get; set; }
 
         [Option("MandatorId", Required = true, HelpText = "The mandator# for your API key.")]
