@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+##v1.18.2
+- Fix typo in CompanySynchronizeResponse of parameter 'Identifiyer' and rename to 'Identifyer'
+
 ##v1.18.1
 - Ensured `GlobalId` is represented as `long` in all endpoints 
 
