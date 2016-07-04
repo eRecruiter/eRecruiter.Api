@@ -22,7 +22,7 @@ namespace eRecruiter.Api.CommandLineClient
             };
 
             // Request and await response
-            var companyImportResponse = new Client.Requests.CompanySynchronizeRequest(isValidationOnly, requestTimeoutSeconds, bodyParmeter).LoadResult(client);
+            var companyImportResponse = await new Client.Requests.CompanySynchronizeRequest(isValidationOnly, requestTimeoutSeconds, bodyParmeter).LoadResultAsync(client);
 
             // Duration string
             var duration = TimeSpan.FromMilliseconds(client.ElapsedMillisecondsInLastCall);
@@ -64,7 +64,7 @@ namespace eRecruiter.Api.CommandLineClient
             var sb = new StringBuilder();
             sb.AppendLine("============================================================================");
             sb.AppendLine(string.Format("{0,-30}{1, -30}", "Type", "Identifiyer"));
-            sb.AppendLine(string.Format("{0,-30}{1, -30}", result.Type, result.Identifiyer));
+            sb.AppendLine(string.Format("{0,-30}{1, -30}", result.Type, result.Identifyer));
 
             var i = 0;
             foreach (var message in result.Messages)

@@ -11,7 +11,7 @@ namespace eRecruiter.Api.Client.Requests
         {
             if (param == null)
             {
-                throw new ArgumentNullException(nameof(param));
+                throw new ArgumentNullException("param");
             }
             Content = new ObjectContent(param.GetType(), param, new JsonMediaTypeFormatter());
         }

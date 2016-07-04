@@ -125,6 +125,10 @@
     <Compile Include="Responses\Mandator\TitleResponse.cs" />
     <Compile Include="Responses\Mandator\TranslationResponse.cs" />
     <Compile Include="Responses\Mandator\TranslationTextResponse.cs" />
+    <Compile Include="Responses\Synchronize\Message.cs" />
+    <Compile Include="Responses\Synchronize\Severity.cs" />
+    <Compile Include="Responses\Synchronize\StatusType.cs" />
+    <Compile Include="Responses\Synchronize\SyncResult.cs" />
     <Compile Include="Responses\User\UserResponse.cs" />
   </ItemGroup>
   <ItemGroup>
