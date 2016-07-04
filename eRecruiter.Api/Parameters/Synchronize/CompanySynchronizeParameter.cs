@@ -6,7 +6,7 @@
     public class CompanySynchronizeParameter
     {
         /// <summary>
-        /// Xml content represented as string. Will be validated against Company-Import schema.
+        /// Xml content represented as string. Will be validated with the Company-Import Xml-schema.
         /// </summary>
         public string XmlContent { get; set; }
     }
