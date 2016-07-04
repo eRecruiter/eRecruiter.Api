@@ -2,6 +2,6 @@
 {
     public class CompanySynchronizeParameter
     {
-        public string XMLContent { get; set; }
+        public string XmlContent { get; set; }
     }
 }

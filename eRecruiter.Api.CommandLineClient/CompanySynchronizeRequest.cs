@@ -18,7 +18,7 @@ namespace eRecruiter.Api.CommandLineClient
             var xmlString = File.ReadAllText(xmlFileLocation);
             var bodyParmeter = new CompanySynchronizeParameter
             {
-                XMLContent = xmlString
+                XmlContent = xmlString
             };
 
             // Request and await response
@@ -63,8 +63,8 @@ namespace eRecruiter.Api.CommandLineClient
         {
             var sb = new StringBuilder();
             sb.AppendLine("============================================================================");
-            sb.AppendLine(string.Format("{0,-30}{1, -30}", "Type", "Identifiyer"));
-            sb.AppendLine(string.Format("{0,-30}{1, -30}", result.Type, result.Identifyer));
+            sb.AppendLine(string.Format("{0,-30}{1, -30}", "Type", "Identifier"));
+            sb.AppendLine(string.Format("{0,-30}{1, -30}", result.Type, result.Identifier));
 
             var i = 0;
             foreach (var message in result.Messages)
