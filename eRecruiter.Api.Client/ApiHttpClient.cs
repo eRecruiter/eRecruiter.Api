@@ -19,20 +19,17 @@ namespace eRecruiter.Api.Client
         private readonly int _mandatorId;
         private readonly Stopwatch _watch;
         private readonly Func<ApiTokenCache> _apiTokenCacheFunction;
-
+        
         public ApiHttpClient(
             [NotNull] Uri baseAddress,
             [NotNull] Func<ApiTokenParameter> apiKeyFunction,
-            [NotNull] Func<ApiTokenCache> apiTokenCacheFunction, 
-                      TimeSpan requestTimeout)
+            [NotNull] Func<ApiTokenCache> apiTokenCacheFunction)
             : base(new AuthorizationHandler(baseAddress, apiKeyFunction, apiTokenCacheFunction))
         {
             _apiTokenCacheFunction = apiTokenCacheFunction;
             _mandatorId = apiKeyFunction.Invoke().MandatorId;
             _watch = new Stopwatch();
             BaseAddress = new Uri(baseAddress.ToString().Trim('/'));
-
-            Timeout = requestTimeout;
         }
 
         public long ElapsedMillisecondsInLastCall { get; private set; }
