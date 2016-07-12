@@ -36,12 +36,12 @@ namespace eRecruiter.Api.Responses
         /// </summary>
         public JobPublicationType Type { get; set; }
         /// <summary>
-        /// URL override for Job Ad. The placeholder %REFERRER% may be contained
+        /// URL override for Job Ad. The placeholder $Referrer$ may be contained
         /// in the URL which needs to be replaced or removed.
         /// </summary>
         public string JobAdUrl { get; set; }
         /// <summary>
-        /// URL override for registration/application. The placeholder %REFERRER% 
+        /// URL override for registration/application. The placeholder $Referrer$
         /// may be contained in the URL which needs to be replaced or removed.
         /// </summary>
         public string ApplyUrl { get; set; }
