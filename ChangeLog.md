@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+##v1.19.0
+- New fields for `JobPublication` response to allow job ad and registration/application URL overrides.
+	- `JobAdUrl` allows to override the location of the job ad
+	- `ApplyUrl` allows to override the location of the registration/application form
+
 ##v1.18.2
 - Fix typo in CompanySynchronizeResponse of parameter `Identifiyer` and rename to `Identifier`
 
