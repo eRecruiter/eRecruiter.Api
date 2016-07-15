@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace eRecruiter.Api.Responses
 {
@@ -76,5 +77,55 @@ namespace eRecruiter.Api.Responses
         /// The photo of the person. The type of the image is JPG.
         /// </summary>
         public byte[] Photo { get; set; }
+
+        /// <summary>
+        /// Additional information if available.
+        /// </summary>
+        public string Summary { get; set; }
+
+        /// <summary>
+        /// Competences of the person.
+        /// </summary>
+        public IEnumerable<string> Competences { get; set; }
+
+        /// <summary>
+        /// Interests of the persion.
+        /// </summary>
+        public IEnumerable<string> Interests { get; set; }
+
+        /// <summary>
+        /// URL's found in the document.
+        /// </summary>
+        public IEnumerable<string> Urls { get; set; }
+
+        /// <summary>
+        /// Skills of the person.
+        /// </summary>
+        public IEnumerable<Skill> Skills { get; set; }
+
+        /// <summary>
+        /// Work experiences of the person.
+        /// </summary>
+        public IEnumerable<Experience> Experiences { get; set; }
+
+        /// <summary>
+        /// Educations of the person.
+        /// </summary>
+        public IEnumerable<Education> Educations { get; set; }
+
+        /// <summary>
+        /// Certifications of the person.
+        /// </summary>
+        public IEnumerable<Certification> Certifications { get; set; }
+
+        /// <summary>
+        /// Language skills of the person.
+        /// </summary>
+        public IEnumerable<Language> Languages { get; set; }
+
+        /// <summary>
+        /// Publications of the person.
+        /// </summary>
+        public IEnumerable<Publication> Publications { get; set; }
     }
 }
