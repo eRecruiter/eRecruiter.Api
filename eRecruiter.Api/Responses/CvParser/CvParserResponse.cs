@@ -82,12 +82,7 @@ namespace eRecruiter.Api.Responses
         /// Additional information if available.
         /// </summary>
         public string Summary { get; set; }
-
-        /// <summary>
-        /// Specifies the amount of provided data.
-        /// </summary>
-        public ProfileType ProfileType { get; set; }
-
+        
         /// <summary>
         /// Competences of the person.
         /// </summary>
