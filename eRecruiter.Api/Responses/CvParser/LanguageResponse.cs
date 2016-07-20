@@ -3,7 +3,7 @@ namespace eRecruiter.Api.Responses
     /// <summary>
     /// Description of skills of a language
     /// </summary>
-    public class Language
+    public class LanguageResponse
     {
         /// <summary>
         /// Language code

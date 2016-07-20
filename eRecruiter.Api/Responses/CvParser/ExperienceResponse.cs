@@ -5,7 +5,7 @@ namespace eRecruiter.Api.Responses
     /// <summary>
     /// Description of an experience
     /// </summary>
-    public class Experience
+    public class ExperienceResponse
     {
         /// <summary>
         /// Experience start date

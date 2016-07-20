@@ -3,7 +3,7 @@ namespace eRecruiter.Api.Responses
     /// <summary>
     /// Description of a Skill
     /// </summary>
-    public class Skill
+    public class SkillResponse
     {
         /// <summary>
         /// Skill name

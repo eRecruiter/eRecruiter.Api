@@ -5,7 +5,7 @@ namespace eRecruiter.Api.Responses
     /// <summary>
     /// Description of a publication
     /// </summary>
-    public class Publication
+    public class PublicationResponse
     {
         /// <summary>
         /// Publication title

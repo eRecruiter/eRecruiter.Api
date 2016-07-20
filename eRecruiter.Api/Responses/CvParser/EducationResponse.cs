@@ -5,7 +5,7 @@ namespace eRecruiter.Api.Responses
     /// <summary>
     /// Describes an education
     /// </summary>
-    public class Education
+    public class EducationResponse
     {
         /// <summary>
         /// Education start date

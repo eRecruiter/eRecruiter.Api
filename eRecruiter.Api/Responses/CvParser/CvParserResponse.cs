@@ -101,31 +101,31 @@ namespace eRecruiter.Api.Responses
         /// <summary>
         /// Skills of the person.
         /// </summary>
-        public IEnumerable<Skill> Skills { get; set; }
+        public IEnumerable<SkillResponse> Skills { get; set; }
 
         /// <summary>
         /// Work experiences of the person.
         /// </summary>
-        public IEnumerable<Experience> Experiences { get; set; }
+        public IEnumerable<ExperienceResponse> Experiences { get; set; }
 
         /// <summary>
         /// Educations of the person.
         /// </summary>
-        public IEnumerable<Education> Educations { get; set; }
+        public IEnumerable<EducationResponse> Educations { get; set; }
 
         /// <summary>
         /// Certifications of the person.
         /// </summary>
-        public IEnumerable<Certification> Certifications { get; set; }
+        public IEnumerable<CertificationResponse> Certifications { get; set; }
 
         /// <summary>
         /// Language skills of the person.
         /// </summary>
-        public IEnumerable<Language> Languages { get; set; }
+        public IEnumerable<LanguageResponse> Languages { get; set; }
 
         /// <summary>
         /// Publications of the person.
         /// </summary>
-        public IEnumerable<Publication> Publications { get; set; }
+        public IEnumerable<PublicationResponse> Publications { get; set; }
     }
 }

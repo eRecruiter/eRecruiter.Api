@@ -5,7 +5,7 @@ namespace eRecruiter.Api.Responses
     /// <summary>
     /// Description of a certification
     /// </summary>
-    public class Certification
+    public class CertificationResponse
     {
         /// <summary>
         /// Start date of the certification
