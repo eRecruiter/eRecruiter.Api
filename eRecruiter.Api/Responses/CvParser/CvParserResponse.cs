@@ -89,7 +89,7 @@ namespace eRecruiter.Api.Responses
         public IEnumerable<string> Competences { get; set; }
 
         /// <summary>
-        /// Interests of the persion.
+        /// Interests of the person.
         /// </summary>
         public IEnumerable<string> Interests { get; set; }
 

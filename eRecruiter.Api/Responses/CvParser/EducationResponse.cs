@@ -10,15 +10,15 @@ namespace eRecruiter.Api.Responses
         /// <summary>
         /// Education start date
         /// </summary>
-        public DateTime? StartDate { get; set; }
+        public FlexDate StartDate { get; set; }
 
         /// <summary>
         /// Education end date
         /// </summary>
-        public DateTime? EndDate { get; set; }
+        public FlexDate EndDate { get; set; }
 
         /// <summary>
-        /// Is currently experiencing this Education
+        /// Is currently studying this field of education
         /// </summary>
         public bool IsCurrent { get; set; }
 

@@ -10,12 +10,12 @@ namespace eRecruiter.Api.Responses
         /// <summary>
         /// Start date of the certification
         /// </summary>
-        public DateTime? StartDate { get; set; }
+        public FlexDate StartDate { get; set; }
 
         /// <summary>
         /// End date of the certification
         /// </summary>
-        public DateTime? EndDate { get; set; }
+        public FlexDate EndDate { get; set; }
         
         /// <summary>
         /// Name of the certificate

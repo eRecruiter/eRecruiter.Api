@@ -15,7 +15,7 @@ namespace eRecruiter.Api.Responses
         /// <summary>
         /// Publication date
         /// </summary>
-        public DateTime? Date { get; set; }
+        public FlexDate Date { get; set; }
 
         /// <summary>
         /// Abstract of the publication

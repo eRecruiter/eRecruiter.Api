@@ -10,15 +10,15 @@ namespace eRecruiter.Api.Responses
         /// <summary>
         /// Experience start date
         /// </summary>
-        public DateTime? StartDate { get; set; }
+        public FlexDate StartDate { get; set; }
 
         /// <summary>
         /// Experience end date
         /// </summary>
-        public DateTime? EndDate { get; set; }
+        public FlexDate EndDate { get; set; }
 
         /// <summary>
-        /// Is current experience
+        /// Is current workplace
         /// </summary>
         public bool IsCurrent { get; set; }
 
