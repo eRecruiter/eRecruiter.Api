@@ -103,7 +103,13 @@
     <Compile Include="Responses\Application\ApplicationResponse.cs" />
     <Compile Include="Responses\Application\ApplicationCreateResponse.cs" />
     <Compile Include="Responses\CustomField\CustomFieldValueResponse.cs" />
-    <Compile Include="Responses\CvParserResponse.cs" />
+    <Compile Include="Responses\CvParser\CertificationResponse.cs" />
+    <Compile Include="Responses\CvParser\CvParserResponse.cs" />
+    <Compile Include="Responses\CvParser\EducationResponse.cs" />
+    <Compile Include="Responses\CvParser\ExperienceResponse.cs" />
+    <Compile Include="Responses\CvParser\LanguageResponse.cs" />
+    <Compile Include="Responses\CvParser\PublicationResponse.cs" />
+    <Compile Include="Responses\CvParser\SkillResponse.cs" />
     <Compile Include="Responses\Synchronize\CompanySynchronizeResponse.cs" />
     <Compile Include="Responses\Job\JobPublicationResponse.cs" />
     <Compile Include="Responses\Job\JobSalaryImageResponse.cs" />

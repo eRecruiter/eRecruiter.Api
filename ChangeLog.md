@@ -1,4 +1,8 @@
 # eRecruiter API ChangeLog
+##v1.20.0
+- Refactored CV parsing request and response
+	- Add optional portal-URI in request url, such that the backend is able to determine the set parsing strategy for this portal
+	- Extend cv parsing response with more detailed profile data
 
 ##v1.19.0
 - New fields for `JobPublication` response to allow job ad and registration/application URL overrides.
