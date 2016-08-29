@@ -14,7 +14,7 @@ namespace eRecruiter.Api.CommandLineClient
         [Option("ApiKey", Required = true, HelpText = "Your API key.")]
         public string ApiKey { get; set; }
 
-        [Option("ApiUrl", Required = true, HelpText = "The URL to your API endpoint, for example https://er.erecruiter.net/api.")]
+        [Option("ApiUrl", Required = true, HelpText = "The URL to your API endpoint, for example https://api.erecruiter.net/api.")]
         public string ApiUrl { get; set; }
 
         [Option("ApplicantId", Required = false, HelpText = "The # of an applicant. Use , (comma) to separate multiple #.")]
@@ -56,7 +56,11 @@ namespace eRecruiter.Api.CommandLineClient
         [Option("RunCompanySynchronization", Required = false, HelpText = "Whether or not to run requests to put company information.")]
         public bool RunCompanySynchronization { get; set; }
 
+        [Option("RunReferrerRequests", Required = false, HelpText = "Whether or not to run requests to fetch applications by referrer.")]
+        public bool RunReferrerRequests { get; set; }
 
+        [Option("Referrer", Required = false, HelpText = "Name of the referrer for the referrer requests.")]
+        public string Referrer { get; set; }
 
         [HelpOption]
         public string GetUsage()

@@ -60,13 +60,14 @@
   <ItemGroup>
     <Compile Include="AgnosticApplicantsByGlobalIdRequests.cs" />
     <Compile Include="ApplicantRequests.cs" />
-    <Compile Include="ApplicantByGlobylIdRequests.cs" />
+    <Compile Include="ApplicantByGlobalIdRequests.cs" />
     <Compile Include="CommandlineOptions.cs" />
     <Compile Include="CompanySynchronizeRequest.cs" />
     <Compile Include="CvParserRequests.cs" />
     <Compile Include="JobRequests.cs" />
     <Compile Include="ApplicantByExternalIdRequests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferrerRequests.cs" />
     <Compile Include="UserRequests.cs" />
     <Compile Include="MandatorRequests.cs" />
     <Compile Include="Program.cs" />
