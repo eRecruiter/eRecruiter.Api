@@ -1,4 +1,8 @@
 # eRecruiter API ChangeLog
+
+##v1.21.0
+- New API call to get applications by the referrer that created the application (referrer permission required)
+
 ##v1.20.0
 - Refactored CV parsing request and response
 	- Add optional portal-URI in request url, such that the backend is able to determine the set parsing strategy for this portal

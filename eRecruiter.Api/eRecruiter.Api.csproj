@@ -100,8 +100,10 @@
     <Compile Include="Responses\Applicant\ApplicantCertificateResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantThirdPartyProfileResponse.cs" />
     <Compile Include="Responses\Application\ApplicationActivityAvailability.cs" />
+    <Compile Include="Responses\Application\ApplicationReferrerResponse.cs" />
     <Compile Include="Responses\Application\ApplicationResponse.cs" />
     <Compile Include="Responses\Application\ApplicationCreateResponse.cs" />
+    <Compile Include="WorkflowStatusGroup.cs" />
     <Compile Include="Responses\CustomField\CustomFieldValueResponse.cs" />
     <Compile Include="Responses\CvParser\CertificationResponse.cs" />
     <Compile Include="Responses\CvParser\CvParserResponse.cs" />

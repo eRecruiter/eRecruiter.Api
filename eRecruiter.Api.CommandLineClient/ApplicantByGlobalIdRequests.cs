@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace eRecruiter.Api.CommandLineClient
 {
-    public static class ApplicantByGlobylIdRequests
+    public static class ApplicantByGlobalIdRequests
     {
         public static async Task Run(ApiHttpClient client, string globalIdsOption)
         {

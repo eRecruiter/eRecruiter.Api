@@ -52,8 +52,13 @@ namespace eRecruiter.Api.CommandLineClient
                     await CvParserRequests.Run(client);
                 }
 
+                if (Options.RunReferrerRequests)
+                {
+                    await ReferrerRequests.Run(client, Options.Referrer);
+                }
+
                 if (Options.RunApplicantGlobalIdRequests)
-                    await ApplicantByGlobylIdRequests.Run(client, Options.GlobalId);
+                    await ApplicantByGlobalIdRequests.Run(client, Options.GlobalId);
 
                 if (Options.RunApplicantExternalIdRequests)
                     await ApplicantByExternalIdRequests.Run(client, Options.ExternalId);
