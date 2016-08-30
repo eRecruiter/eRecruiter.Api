@@ -20,10 +20,11 @@ namespace eRecruiter.Api.CommandLineClient
             // print the results
             foreach (var application in applications)
             {
-                Console.WriteLine($"#{application.ApplicationId}, #{application.ApplicationId}, " +
-                                  $"{application.FirstName}, {application.LastName}, " +
-                                  $"{application.ReferrerAdditionalInformation}, " +
-                                  $"{application.WorkflowStatusGroup}");
+                Console.WriteLine($"#{application.ApplicantId}, #{application.ApplicationId}, {application.JobId}, " +                                  
+                                  $"{application.Gender}, {application.TitleBeforeName}, {application.FirstName}, " +
+                                  $"{application.LastName}, {application.TitleAfterName}, {application.Referrer}, " +
+                                  $"{application.ReferrerAdditionalInformation}, {application.WorkflowStatusGroup}, " +
+                                  $"{application.WorkflowLastChange:O}");
             }
         }
     }
