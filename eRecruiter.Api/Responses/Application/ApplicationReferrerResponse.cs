@@ -18,6 +18,11 @@ namespace eRecruiter.Api.Responses
         public int ApplicationId { get; set; }
 
         /// <summary>
+        /// job ID
+        /// </summary>
+        public int JobId { get; set; }
+
+        /// <summary>
         /// applicant's firstname
         /// </summary>
         public string FirstName { get; set; }
