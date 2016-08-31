@@ -11,7 +11,7 @@ namespace eRecruiter.Api.CommandLineClient
         public static async Task Run(ApiHttpClient client, string referrer)
         {
             // fetch the applications for the referrer
-            var applications = (await new ApplicationsByReferrerRequests(referrer).LoadResultAsync(client)).ToList();
+            var applications = (await new ApplicationsByReferrerRequests(referrer, DateTime.Now.AddDays(-7)).LoadResultAsync(client)).ToList();
 
             // print the number of results
             Console.WriteLine($"Retrieved {applications.Count} applications for referrer {referrer}");

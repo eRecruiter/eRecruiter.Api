@@ -9,7 +9,10 @@ namespace eRecruiter.Api.Client.Requests.Application
     {
         #region Constructor
 
-        public ApplicationsByReferrerRequests(string referrer) : base(HttpMethod.Get, "Api/Applications/ByReferrer/" + Uri.EscapeDataString(referrer))
+        public ApplicationsByReferrerRequests(string referrer, DateTime? startAt = null, DateTime? endAt = null) : 
+            base(HttpMethod.Get, $"Api/Applications/ByReferrer/{Uri.EscapeDataString(referrer)}?" +
+                                 $"startAt={Uri.EscapeDataString(startAt?.ToString("O") ?? string.Empty)}&" +
+                                 $"endAt={Uri.EscapeDataString(endAt?.ToString("O") ?? string.Empty)}")
         {
         }
 
