@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+##v1.21.1
+- New time range filter for applications by referrer request
+
 ##v1.21.0
 - New API call to get applications by the referrer that created the application (referrer permission required)
 
