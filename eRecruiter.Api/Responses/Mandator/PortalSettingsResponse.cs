@@ -282,6 +282,8 @@ namespace eRecruiter.Api.Responses
         public string XingConsumerSecret { get; set; }
         public string LinkedinConsumerKey { get; set; }
         public string LinkedinConsumerSecret { get; set; }
+        public string IndeedApiToken { get; set; }
+        public string IndeedApiSecret { get; set; }
 
         #endregion
 

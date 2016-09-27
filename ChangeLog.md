@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+##v1.22.0
+- New fields for `PortalSettings` response to allow transmission of Indeed API settings
+	- `IndeedApiToken` used for XML feed delivery
+	- `IndeedApiSecret` used for "Apply with Indeed" request validation
+
 ##v1.21.1
 - New time range filter for applications by referrer request
 
