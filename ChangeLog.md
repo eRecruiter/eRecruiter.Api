@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+##v1.23.0
+- New fields for `PortalSettings` response to allow transmission of myVeeta and Instapp settings
+	- `InstappToken` used for "Apply with Instapp"
+	- `MyVeetaToken` used for "Apply with myVeeta"
+
 ##v1.22.0
 - New fields for `PortalSettings` response to allow transmission of Indeed API settings
 	- `IndeedApiToken` used for XML feed delivery
