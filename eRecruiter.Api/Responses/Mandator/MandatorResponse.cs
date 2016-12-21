@@ -32,6 +32,11 @@ namespace eRecruiter.Api.Responses
         /// </summary>
         public IEnumerable<JobProfileResponse> GroupedJobProfiles { get; set; }
 
+        /// <summary>
+        /// All available cultures for the mandator.
+        /// </summary>
+        public IEnumerable<string> Cultures { get; set; }
+
         public IEnumerable<RegionResponse> Regions { get; set; }
         public IEnumerable<string> Urls { get; set; }
         public IEnumerable<string> ApplicantDocumentTypes { get; set; }
