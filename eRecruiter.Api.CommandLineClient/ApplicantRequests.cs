@@ -6,6 +6,7 @@ using eRecruiter.Utilities;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using eRecruiter.Api.Client.Requests.Account;
 
 namespace eRecruiter.Api.CommandLineClient
 {
@@ -137,11 +138,8 @@ namespace eRecruiter.Api.CommandLineClient
                         client.ElapsedMillisecondsInLastCall);
                 }
 
-                /*
-                await new ApplicantDeleteRequest(applicant.Id).LoadResultAsync(client);
-                Console.WriteLine("Applicant '{0}' anonymized, {1} ms.", applicant.FirstName + " " + applicant.LastName,
-                    client.ElapsedMillisecondsInLastCall);
-                */
+                var tokenResponse = await new LogOnTokenRequest(applicantId).LoadResultAsync(client);
+                Console.WriteLine($"LogOn token {tokenResponse.LogOnToken}, {0}ms.", client.ElapsedMillisecondsInLastCall);
             }
         }
 

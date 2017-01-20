@@ -63,6 +63,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Exceptions\NotFoundException.cs" />
+    <Compile Include="Requests\Account\LogOnTokenRequest.cs" />
     <Compile Include="Requests\Account\ResetPasswordRequest.cs" />
     <Compile Include="Requests\Agnostic\AgnosticApplicantsRequest.cs" />
     <Compile Include="Requests\Applicant\ApplicantExternalIdGetRequest.cs" />
