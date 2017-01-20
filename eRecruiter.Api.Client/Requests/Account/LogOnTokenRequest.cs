@@ -8,7 +8,7 @@ namespace eRecruiter.Api.Client.Requests
     /// </summary>
     public class LogOnTokenRequest : HttpRequestMessage<ApplicantLogOnTokenResponse>
     {
-        public LogOnTokenRequest(int applicantId) : base(HttpMethod.Get, "Api/Applicant/" + applicantId + "/ResetPassword")
+        public LogOnTokenRequest(int applicantId) : base(HttpMethod.Get, "Api/Applicant/" + applicantId + "/LogOnToken")
         {
         }
     }
