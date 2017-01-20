@@ -6,7 +6,6 @@ using eRecruiter.Utilities;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using eRecruiter.Api.Client.Requests.Account;
 
 namespace eRecruiter.Api.CommandLineClient
 {

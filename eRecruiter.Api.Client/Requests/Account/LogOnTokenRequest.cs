@@ -1,7 +1,7 @@
 ﻿using System.Net.Http;
-using eRecruiter.Api.Responses.Applicant;
+using eRecruiter.Api.Responses;
 
-namespace eRecruiter.Api.Client.Requests.Account
+namespace eRecruiter.Api.Client.Requests
 {
     /// <summary>
     /// Request to generate a log-on token for the applicant.

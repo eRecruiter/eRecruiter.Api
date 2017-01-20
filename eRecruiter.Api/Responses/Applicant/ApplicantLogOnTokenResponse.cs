@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace eRecruiter.Api.Responses.Applicant
+namespace eRecruiter.Api.Responses
 {
     /// <summary>
     /// Response for applicant log-on token requests.
