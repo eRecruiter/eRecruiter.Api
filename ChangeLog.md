@@ -1,5 +1,15 @@
 # eRecruiter API ChangeLog
 
+## 1.25.0
+- New fields for `PortalSettings` response to allow transmission of "Apply by karriere.at" settings
+	- `KarriereApiKey` used for validation of "Apply by karriere.at" requests
+	- `KarriereApiSecret` used for validation of "Apply by karriere.at" requests
+- New API call to generate applicant log-on tokens (applicant permission required)
+
+##v1.24.0
+- New fields for `MandatorResponse` to expose the configured publication cultures
+	- `Cultures` used for exposing publication cultures
+
 ##v1.23.0
 - New fields for `PortalSettings` response to allow transmission of myVeeta and Instapp settings
 	- `InstappToken` used for "Apply with Instapp"
