@@ -99,6 +99,7 @@
     <Compile Include="Responses\Applicant\ApplicantLanguageResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantCertificateResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantThirdPartyProfileResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantLogOnTokenResponse.cs" />
     <Compile Include="Responses\Application\ApplicationActivityAvailability.cs" />
     <Compile Include="Responses\Application\ApplicationReferrerResponse.cs" />
     <Compile Include="Responses\Application\ApplicationResponse.cs" />

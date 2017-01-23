@@ -286,6 +286,8 @@ namespace eRecruiter.Api.Responses
         public string IndeedApiSecret { get; set; }
         public string MyVeetaToken { get; set; }
         public string InstappToken { get; set; }
+        public string KarriereApiKey { get; set; }
+        public string KarriereApiSecret { get; set; }
 
         #endregion
 
