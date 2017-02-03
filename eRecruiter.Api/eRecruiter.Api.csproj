@@ -104,6 +104,7 @@
     <Compile Include="Responses\Application\ApplicationReferrerResponse.cs" />
     <Compile Include="Responses\Application\ApplicationResponse.cs" />
     <Compile Include="Responses\Application\ApplicationCreateResponse.cs" />
+    <Compile Include="Responses\Job\JobStatus.cs" />
     <Compile Include="WorkflowStatusGroup.cs" />
     <Compile Include="Responses\CustomField\CustomFieldValueResponse.cs" />
     <Compile Include="Responses\CvParser\CertificationResponse.cs" />
