@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.26.0
+- New property for `Job` has been added for the job's status.
+	- `Status` represents the status of the job (draft, open, engaged, repositioned or cancelled).
+
 ## 1.25.0
 - New fields for `PortalSettings` response to allow transmission of "Apply by karriere.at" settings
 	- `KarriereApiKey` used for validation of "Apply by karriere.at" requests
