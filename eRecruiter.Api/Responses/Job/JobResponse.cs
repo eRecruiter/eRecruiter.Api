@@ -10,6 +10,11 @@ namespace eRecruiter.Api.Responses
         public string InternalLocation { get; set; }
 
         /// <summary>
+        /// Get the current status of the job.
+        /// </summary>
+        public JobStatus Status { get; set; }
+
+        /// <summary>
         /// Gets the latitude coordinate value of the geography point of the job location in the earth coordinate system (SRID 4326).
         /// </summary>
         public double? Latitude { get; set; }
@@ -55,7 +60,6 @@ namespace eRecruiter.Api.Responses
         /// </summary>
         public string CompanyPictureFileExtension { get; set; }
         
-
         //the job ad
         public string Culture { get; set; }
         public string Html { get; set; }
