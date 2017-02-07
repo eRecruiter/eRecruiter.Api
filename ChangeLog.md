@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.26.1
+- New fields for `PortalSettings` response to "Apply with Indeed" status setting
+	- `IndeedApplyAllowed` used to enable/disable "Apply with Indeed"
+
 ## 1.26.0
 - New property for `Job` has been added for the job's status.
 	- `Status` represents the status of the job (draft, open, engaged, repositioned or cancelled).

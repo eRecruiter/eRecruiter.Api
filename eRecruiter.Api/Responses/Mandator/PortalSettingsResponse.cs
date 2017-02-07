@@ -284,6 +284,7 @@ namespace eRecruiter.Api.Responses
         public string LinkedinConsumerSecret { get; set; }
         public string IndeedApiToken { get; set; }
         public string IndeedApiSecret { get; set; }
+        public bool IndeedApplyAllowed { get; set; }
         public string MyVeetaToken { get; set; }
         public string InstappToken { get; set; }
         public string KarriereApiKey { get; set; }
