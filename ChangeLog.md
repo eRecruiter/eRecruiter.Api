@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.26.2
+- Add documentation to custom fields to avoid further misunderstandings.
+	
 ## 1.26.1
 - New fields for `PortalSettings` response to "Apply with Indeed" status setting
 	- `IndeedApplyAllowed` used to enable/disable "Apply with Indeed"
