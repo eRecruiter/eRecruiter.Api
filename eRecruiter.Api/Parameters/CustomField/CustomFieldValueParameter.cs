@@ -2,10 +2,13 @@
 
 namespace eRecruiter.Api.Parameters
 {
+    /// <summary>
+    /// Represents the value of a custom field.
+    /// </summary>
     public class CustomFieldValueParameter
     {
         /// <summary>
-        /// Represents the internal name (identifier) of the associated custom field.
+        /// The identifier (as text) of the associated custom field. Is also known as "internal name" in the eRecruiter.
         /// </summary>
         public string CustomField { get; set; }
 
@@ -15,7 +18,7 @@ namespace eRecruiter.Api.Parameters
         /// * TextMultiLine, TextSingleLine: the text as string.
         /// * CheckBox: "true" or "false" as string
         /// * DropdownList: the selected value as string
-        /// * Date: The datetime as string
+        /// * Date: A string representation of the datetime as short date pattern (format specifier "d").
         /// * Html: Not supported
         /// </summary>
         public string Value { get; set; }

@@ -2,6 +2,11 @@
 
 namespace eRecruiter.Api.Responses
 {
+    /// <summary>
+    /// Represents a response of the value of a custom field.
+    /// The value is either in one of the properties: BoolValue, DateValue, StringValue or NumberValue.
+    /// The Value property just contains a formatted version of the one property which holds a value.
+    /// </summary>
     public class CustomFieldValueResponse
     {
         /// <summary>
@@ -10,7 +15,8 @@ namespace eRecruiter.Api.Responses
         public CustomFieldResponse CustomField { get; set; }
 
         /// <summary>
-        /// Contains a formatted version of either bool, string, date or number value.
+        /// The Value property provides a formatted version of the one property which holds a value
+        /// (Either BoolValue property, StringValue property, DateValue property or NumberValue).
         /// </summary>
         public string Value { get; set; }
 
