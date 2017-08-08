@@ -26,7 +26,7 @@ namespace eRecruiter.Api.Responses
         public bool? BoolValue { get; set; }
 
         /// <summary>
-        /// Contains a datetime value type is CustomFieldType.Date.
+        /// Contains a datetime value if type is CustomFieldType.Date.
         /// </summary>
         public DateTime? DateValue { get; set; }
 
