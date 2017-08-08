@@ -5,7 +5,11 @@ namespace eRecruiter.Api.Responses
 {
     public class JobResponse
     {
+        /// <summary>
+        /// The unique internal numeric job identifier.
+        /// </summary>
         public int Id { get; set; }
+
         public string InternalName { get; set; }
         public string InternalLocation { get; set; }
 
@@ -33,12 +37,30 @@ namespace eRecruiter.Api.Responses
         public string UserPhone { get; set; }
         public string UserEmail { get; set; }
 
+        /// <summary>
+        /// The date of creation of the job.
+        /// </summary>
         public DateTime CreationDate { get; set; }
+
+        /// <summary>
+        /// The date when the job was modified.
+        /// </summary>
         public DateTime UpdateDate { get; set; }
+
+        /// <summary>
+        /// The date when the job was first published on any channel or portal.
+        /// </summary>
         public DateTime? OnlineDate { get; set; }
+
+        /// <summary>
+        /// The publication date corrected by the "maximum publication duration setting".
+        /// If the period from OnlineDate to the current date exceeds the value of the "maximum publication duration" 
+        /// this date is modified with the amount of days specified in the "maximum publication duration", so it appears the job is more up to date.
+        /// </summary>
         public DateTime OnlineDateCorrected { get; set; }
 
         public IEnumerable<string> JobProfiles { get; set; }
+
         /// <summary>
         /// Job profiles including group and culture information.
         /// </summary>

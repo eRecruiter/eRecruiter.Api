@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.27.1
+- Add documentation to custom fields to avoid further misunderstandings.
+	
 ## 1.27.0
 - New fields for `PortalSettings` response to support "Login with XING"
 	- `LoginWithXingConsumerKey` used for "Login with XING"

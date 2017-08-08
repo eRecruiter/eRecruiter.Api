@@ -4,9 +4,19 @@ namespace eRecruiter.Api.Responses
 {
     public class CustomFieldResponse
     {
-        public string Name { get; set; } // represents the internal name
+        /// <summary>
+        /// The identifier (as text) of the associated custom field. Is also known as "internal name" in the eRecruiter.
+        /// </summary>
+        public string Name { get; set; }
 
-        public string Title { get; set; } // represents the "public" name
+        /// <summary>
+        /// Represents the name of the custom field. Is also known as the "public name" in the eRecruiter.
+        /// </summary>
+        public string Title { get; set; }
+
+        /// <summary>
+        /// The name of the group the custom field is associated to.
+        /// </summary>
         public string GroupName { get; set; }
 
         public CustomFieldType Type { get; set; }
