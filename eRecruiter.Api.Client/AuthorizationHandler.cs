@@ -30,8 +30,8 @@ namespace eRecruiter.Api.Client
 
             var token = tokenCache.GetCachedToken(apiKey.MandatorId);
 
-            // 15 minutes buffer to make sure small time differences between server and client don't matter
-            if (token == null || DateTime.UtcNow.AddMinutes(-15) >= token.Expires)
+            // renew the token 30 minutes before it's expiration
+            if (token == null || DateTime.UtcNow.AddMinutes(-30) >= token.Expires)
                 token = RefreshApiToken(apiKey, tokenCache);
 
             if (InnerHandler == null)
