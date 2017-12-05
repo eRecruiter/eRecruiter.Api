@@ -182,5 +182,10 @@ namespace eRecruiter.Api.Parameters
         /// Gets or sets the maximum distance to a job location desired by the applicant.
         /// </summary>
         public float? MaximumDistanceToJobLocation { get; set; }
+
+        /// <summary>
+        /// Get or set the date when the privacy policy has been accepted.
+        /// </summary>
+        public DateTime? PolicyAcceptedAt { get; set; }
     }
 }

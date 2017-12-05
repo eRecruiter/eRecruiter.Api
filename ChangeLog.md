@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.28.0
+- New fields for `ApplicantParameter` to support information about the privacy policy (EU-DSVGO)
+	- `PolicyAcceptedAt` used to transfer/set the date for acceptance of the privacy policy.
+
 ## 1.27.1
 - Add documentation to custom fields to avoid further misunderstandings.
 	
