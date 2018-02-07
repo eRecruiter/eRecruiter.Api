@@ -81,6 +81,7 @@
     <Compile Include="Parameters\User\UserCreateParameter.cs" />
     <Compile Include="Parameters\User\UserUpdateParameter.cs" />
     <Compile Include="Parameters\User\UserUpdatePasswordParameter.cs" />
+    <Compile Include="Responses\Account\ValidatePasswordResponse.cs" />
     <Compile Include="Responses\Agnostic\AgnosticApplicantsResponse.cs" />
     <Compile Include="Responses\ApiTokenResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantHistoryResponse.cs" />
@@ -92,7 +93,7 @@
     <Compile Include="Responses\Applicant\ApplicantEducationResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantDocumentResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantResponse.cs" />
-    <Compile Include="Responses\ApplicantSetPasswordResponse.cs" />
+    <Compile Include="Responses\Account\ApplicantSetPasswordResponse.cs" />
     <Compile Include="Parameters\Applicant\ApplicantParameter.cs" />
     <Compile Include="Responses\Applicant\ApplicantActivityResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantPublicationResponse.cs" />

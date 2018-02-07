@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.29.0
+- New API call to validate a password against the applicant portal password policy.
+
 ## 1.28.0
 - New fields for `ApplicantParameter` to support information about the privacy policy (EU-DSVGO)
 	- `PolicyAcceptedAt` used to transfer/set the date for acceptance of the privacy policy.
