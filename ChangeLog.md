@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+## 1.30.0
+- New API call to request the video interviews for an applicant.
+	- The new API call requires the `VideoInterview` permission for the API key.
+	- The response contains information about the video interview as well as an expiring link (3 views until expiration).
+
 ## 1.29.0
 - New API call to validate a password against the applicant portal password policy.
 
