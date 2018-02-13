@@ -1,7 +1,7 @@
 # eRecruiter API ChangeLog
 
 ## 1.30.0
-- New portal setting to indicate if pagination in the Jobs list should be enabled and the page size
+- New portal settings to indicate if pagination should be enabled in the jobs list and how many items should be displayed
 	`EnablePaginationInJobsList`  
 	`PageSizeJobsList`
 
