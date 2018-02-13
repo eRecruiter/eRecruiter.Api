@@ -245,7 +245,8 @@ namespace eRecruiter.Api.Responses
         public bool EnableJobProfilesFilterOnJobsList { get; set; }
         public bool EnableFilterOnJobsList { get; set; }
         public bool EnableCompanyPicturesOnJobsList { get; set; }
-
+        public bool EnablePaginationInJobsList { get; set; }
+        public int PageSizeJobsList { get; set; }
         #endregion
 
         #region CV Parser
