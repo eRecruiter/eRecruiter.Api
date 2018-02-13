@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+## 1.30.0
+- New portal setting to indicate if pagination in the Jobs list should be enabled and the page size
+	`EnablePaginationInJobsList`  
+	`PageSizeJobsList`
+
 ## 1.29.0
 - New API call to validate a password against the applicant portal password policy.
 
