@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.32.0
+- New type for `HistoryType` to support privacy policies updates.
+	- `PrivacyPolicy`
+
 ## 1.31.0
 - New API call to request the video interviews for an applicant.
 	- The new API call requires the `VideoInterview` permission for the API key.
