@@ -12,6 +12,10 @@
         /// <summary>
         /// The history entry was created during an import.
         /// </summary>
-        Import
+        Import,
+        /// <summary>
+        /// The history entry is a privacy policy update 
+        /// </summary>
+        PrivacyPolicy
     }
 }
