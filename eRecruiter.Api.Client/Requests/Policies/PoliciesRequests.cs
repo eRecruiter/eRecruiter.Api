@@ -13,7 +13,7 @@ namespace eRecruiter.Api.Client.Requests
         /// Returns the current version of each type of Policy
         /// </summary>
         public PoliciesGetRequest()
-            : base(HttpMethod.Get, "Api/Policies/")
+            : base(HttpMethod.Get, "Api/Policies")
         {
         }
     }
