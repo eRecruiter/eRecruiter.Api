@@ -51,6 +51,7 @@
     <Compile Include="Parameters\Applicant\ApplicantHistoryParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantPhotoParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantCvParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantPolicyParameter.cs" />
     <Compile Include="Parameters\Application\FinalizeCuteAssessmentParameter.cs" />
     <Compile Include="Parameters\CvParserParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantKnowledgeParameter.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="Responses\Applicant\ApplicantExperienceResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantEducationResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantDocumentResponse.cs" />
+    <Compile Include="Responses\Applicant\ApplicantPolicyResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantResponse.cs" />
     <Compile Include="Responses\Account\ApplicantSetPasswordResponse.cs" />
     <Compile Include="Parameters\Applicant\ApplicantParameter.cs" />
@@ -107,6 +109,8 @@
     <Compile Include="Responses\Application\ApplicationResponse.cs" />
     <Compile Include="Responses\Application\ApplicationCreateResponse.cs" />
     <Compile Include="Responses\Job\JobStatus.cs" />
+    <Compile Include="Responses\Policies\PolicyResponse.cs" />
+    <Compile Include="Responses\Policies\PolicyType.cs" />
     <Compile Include="VideoRecruitingProvider.cs" />
     <Compile Include="WorkflowStatusGroup.cs" />
     <Compile Include="Responses\CustomField\CustomFieldValueResponse.cs" />

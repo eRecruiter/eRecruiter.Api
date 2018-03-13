@@ -1,5 +1,11 @@
 # eRecruiter API ChangeLog
 
+## 1.33.0
+- New API call to retrieve the latest policies
+- New API call to request a specific policy
+- New API call to request the policies for an applicant
+- New API call to update a policy for an applicant
+
 ## 1.32.0
 - New type for `HistoryType` to support privacy policies updates.
 	- `PrivacyPolicy`
