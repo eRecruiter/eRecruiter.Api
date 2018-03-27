@@ -2,7 +2,7 @@
 
 ## 1.34.0
 - New property which handles the visibility of the privacy policy agreement on the registration form.
-	- `AskForPrivacyPolicyAgreement`
+	- `AskForPrivacyPolicyAgreement` 
 
 ## 1.33.0
 - New API call to retrieve the latest policies
