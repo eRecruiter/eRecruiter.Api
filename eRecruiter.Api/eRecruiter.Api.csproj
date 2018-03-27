@@ -52,6 +52,7 @@
     <Compile Include="Parameters\Applicant\ApplicantPhotoParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantCvParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantPolicyParameter.cs" />
+    <Compile Include="Parameters\Applicant\ApplicantVideoInterviewParameter.cs" />
     <Compile Include="Parameters\Application\FinalizeCuteAssessmentParameter.cs" />
     <Compile Include="Parameters\CvParserParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantKnowledgeParameter.cs" />
