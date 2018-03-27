@@ -19,11 +19,11 @@ namespace eRecruiter.Api.Parameters
         /// <summary>
         /// Template external id from the video recruiter provider
         /// </summary>
-        public int TemplateId { get; set; }
+        public int? TemplateId { get; set; }
         /// <summary>
         /// Interview external id from the video recruiter provider
         /// </summary>
-        public int InterviewId { get; set; }
+        public int? InterviewId { get; set; }
         /// <summary>
         /// Date of interview
         /// </summary>
