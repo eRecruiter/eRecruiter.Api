@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.35.1
+- Changed property on ApplicantVideoInterviewParameter
+  - `ApplicationId` is now nullable
+
 ## 1.35.0
 - New API call to create a video interview for an applicant
 
