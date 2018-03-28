@@ -11,7 +11,7 @@ namespace eRecruiter.Api.Parameters
         /// <summary>
         /// Id of the erecruiter application
         /// </summary>
-        public int ApplicationId { get; set; }
+        public int? ApplicationId { get; set; }
         /// <summary>
         /// Id of the video recruiter provider
         /// </summary>
