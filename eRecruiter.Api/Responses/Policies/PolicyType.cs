@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace eRecruiter.Api.Responses.Policies
+﻿namespace eRecruiter.Api.Responses.Policies
 {
     public enum PolicyType
     {
         /// <summary>
-        /// Privacy policy
+        /// A consent policy to perform additional processing of data.
         /// </summary>
-        PrivacyPolicy,
+        Consent,
 
         /// <summary>
-        /// Data Processing Agreement
+        /// An information policy to inform about the processing of data.
         /// </summary>
-        DataProcessingAgreement
+        Information
     }
 }

@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+## 1.36.0
+- Changed naming of policy types to be more clear.
+  - `PrivacyPolicy` has been renamed to `Consent`
+  - `DataProcessingAgreement` has been renamed to `Information`
+
 ## 1.35.1
 - Changed property on ApplicantVideoInterviewParameter
   - `ApplicationId` is now nullable
