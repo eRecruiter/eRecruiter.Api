@@ -126,9 +126,9 @@ namespace eRecruiter.Api.Responses
         public DisplayType AskForPhoto { get; set; }
 
         /// <summary>
-        /// Specifies if or how the privacy policy agreement should be displayed on the registration page.
+        /// Specifies if or how the consent policy should be displayed on the registration page.
         /// </summary>
-        public DisplayType AskForPrivacyPolicyAgreement { get; set; }
+        public DisplayType AskForConsentPolicy { get; set; }
 
         /// <summary>
         /// Specifies wether the upload control of an applicants's documents (<see cref="ApplicantDocumentParameter"/>) should be displayed in the Self-Service-Zone or not.

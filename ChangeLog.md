@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.37.0
+- Changed naming of property which handles the visibility of the policy to be more clear.
+  - `AskForPrivacyPolicyAgreement` has been renamed to `AskForConsentPolicy`
+
 ## 1.36.0
 - Changed naming of policy types to be more clear.
   - `PrivacyPolicy` has been renamed to `Consent`
