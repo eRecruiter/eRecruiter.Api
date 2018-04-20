@@ -1,5 +1,6 @@
 ﻿using eRecruiter.Api.Responses;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Net.Http;
 
 namespace eRecruiter.Api.Client.Requests
@@ -12,9 +13,10 @@ namespace eRecruiter.Api.Client.Requests
         /// <summary>
         /// Returns the current version of each type of Policy
         /// </summary>
-        public PoliciesGetRequest()
-            : base(HttpMethod.Get, "Api/Policies")
+        public PoliciesGetRequest(string portal, CultureInfo culture)
+            : base(HttpMethod.Get, "Api/Policies?portal" + portal + "&culture=" + culture.Name)
         {
         }
+        public PoliciesGetRequest(string portal) : this(portal, CultureInfo.CurrentCulture) { }
     }
 }
