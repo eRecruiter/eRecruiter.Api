@@ -13,6 +13,8 @@ namespace eRecruiter.Api.Client.Requests
         /// <summary>
         /// Returns the current version of each type of Policy
         /// </summary>
+        /// <param name="portal">The portal.</param>
+        /// <param name="culture">The culture.</param>
         public PoliciesGetRequest(string portal, CultureInfo culture)
             : base(HttpMethod.Get, "Api/Policies?portal" + portal + "&culture=" + culture.Name)
         {
