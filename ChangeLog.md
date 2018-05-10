@@ -1,9 +1,15 @@
 # eRecruiter API ChangeLog
 
+## 1.39.0
+- Extended `ApplicantPolicyResponse` with language, version and portal information.
+  - `Language` indicating the language the policy is for.
+  - `Url` indicating the portal URL the policy is for.
+  - `IsOutdated` indicating that the policy has a newer version.
+
 ## 1.38.0
 - Added portal and culture parameters to support per portal policies
   - `portal` has been added to `PoliciesGetRequest`
-   - `culture` has been added to `PoliciesGetRequest`
+  - `culture` has been added to `PoliciesGetRequest`
 
 ## 1.37.0
 - Changed naming of property which handles the visibility of the policy to be more clear.

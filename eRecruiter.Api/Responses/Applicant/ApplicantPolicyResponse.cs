@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using eRecruiter.Api.Responses.Policies;
 
 namespace eRecruiter.Api.Responses
 {
+    /// <summary>
+    /// A policy that has been read/accepted/revoked by the applicant.
+    /// </summary>
     public class ApplicantPolicyResponse
     {
         /// <summary>
@@ -17,12 +16,27 @@ namespace eRecruiter.Api.Responses
         /// <summary>
         /// Policy ID
         /// </summary>
-        public int? PolicyId { get; set; }
+        public int PolicyId { get; set; }
+
+        /// <summary>
+        /// Policy Type
+        /// </summary>
+        public PolicyType Type { get; set; }
+
+        /// <summary>
+        /// Language of the policy.
+        /// </summary>
+        public string Language { get; set; }
+
+        /// <summary>
+        /// URL of the portal of the policy.
+        /// </summary>
+        public string Url { get; set; }
 
         /// <summary>
         /// Policy text
         /// </summary>
-        public string Text  { get; set; }
+        public string Text { get; set; }
 
         /// <summary>
         /// Date of acceptance if it is accepted
@@ -35,8 +49,8 @@ namespace eRecruiter.Api.Responses
         public DateTime? RevokedOn { get; set; }
 
         /// <summary>
-        /// Policy Type
+        /// Flag indicating that the policy has a new version.
         /// </summary>
-        public PolicyType Type { get; set; }
+        public bool IsOutdated { get; set; }
     }
 }
