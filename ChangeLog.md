@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.40.0
+- Extended `ApplicantCvGetRequest` with a new endpoint to be possible generating the applicant european CV
+  - `Api/Applicant/EuropeanCv/` can generate a new european CV for an applicant
+
 ## 1.39.0
 - Extended `ApplicantPolicyResponse` with language, version and portal information.
   - `Language` indicating the language the policy is for.
