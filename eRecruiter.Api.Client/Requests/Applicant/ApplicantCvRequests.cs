@@ -12,6 +12,14 @@ namespace eRecruiter.Api.Client.Requests
         }
     }
 
+    public class ApplicantEuropeanCvGetRequest : HttpRequestMessage<ApplicantCvResponse>
+    {
+        public ApplicantEuropeanCvGetRequest(int applicantId)
+            : base(HttpMethod.Get, "Api/Applicant/EuropeanCv/" + applicantId)
+        {
+        }
+    }
+
     public class ApplicantCvPutRequest : PutJsonHttpRequestMessage<ApplicantCvResponse>
     {
         public ApplicantCvPutRequest(int applicantId, ApplicantCvParameter document)
