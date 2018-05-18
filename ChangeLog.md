@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.41.0
+- New property which enables/disables the download of the european cv in the applicant profile.
+	- `EnableEuropeanCvDownload` 
+
 ## 1.40.0
 - Extended `ApplicantCvGetRequest` with a new endpoint to be possible generating the applicant european CV
   - `Api/Applicant/EuropeanCv/` can generate a new european CV for an applicant

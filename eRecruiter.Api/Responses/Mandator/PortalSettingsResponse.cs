@@ -300,6 +300,12 @@ namespace eRecruiter.Api.Responses
 
         #endregion
 
+        #region Applicant Profile
+
+        public bool EnableEuropeanCvDownload { get; set; }
+
+        #endregion Applicant Profile
+
         #region Display Types
 
         public enum DisplayType
