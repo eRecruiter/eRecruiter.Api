@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.41.1
+- Fixed wrong parameter for `PoliciesGetRequest`
+
 ## 1.41.0
 - New property which enables/disables the download of the european cv in the applicant profile.
 	- `EnableEuropeanCvDownload` 
