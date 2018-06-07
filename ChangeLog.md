@@ -1,5 +1,12 @@
 # eRecruiter API ChangeLog
 
+## 1.42.0
+- New portal settings property which handles the inclusion of customer information in the XML feed.
+	- `EnableCustomerInformationInXmlFeed` 
+- New job response properties to expose the customer information of the job.
+	- `CustomerId` contains the customer ID.
+	- `CustomerName` contains the customer name.
+
 ## 1.41.1
 - Fixed wrong parameter for `PoliciesGetRequest`
 
