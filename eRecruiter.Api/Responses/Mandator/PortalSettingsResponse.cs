@@ -279,6 +279,7 @@ namespace eRecruiter.Api.Responses
         public bool EnableExtendedXml { get; set; }
         public bool EnableJobTagsInXmlFeed { get; set; }
         public bool EnableFourthJobBlockInXmlFeed { get; set; }
+        public bool EnableCustomerInformationInXmlFeed { get; set; }
 
         #endregion
 

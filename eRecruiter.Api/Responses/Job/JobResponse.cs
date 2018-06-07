@@ -94,5 +94,19 @@ namespace eRecruiter.Api.Responses
         public string Block3 { get; set; }
         public string Block4 { get; set; }
         public bool HasQuestionnaire { get; set; }
+
+        #region Customer
+
+        /// <summary>
+        /// ID of the customer the job is associated with.
+        /// </summary>
+        public int CustomerId { get; set; }
+
+        /// <summary>
+        /// Name of the customer the job is associated with.
+        /// </summary>
+        public string CustomerName { get; set; }
+
+        #endregion
     }
 }
