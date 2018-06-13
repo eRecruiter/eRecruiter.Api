@@ -298,6 +298,7 @@ namespace eRecruiter.Api.Responses
         public string KarriereApiSecret { get; set; }
         public string LoginWithXingConsumerKey { get; set; }
         public string LoginWithXingSignatureSalt { get; set; }
+        public string ApplyWithJobsChKey { get; set; }
 
         #endregion
 

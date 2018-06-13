@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.43.0
+- New property in the `PortalSettings` which contains the ApplyWith jobs.ch access key.
+	- `ApplyWithJobsChKey`
+
 ## 1.42.0
 - New portal settings property which handles the inclusion of customer information in the XML feed.
 	- `EnableCustomerInformationInXmlFeed` 
