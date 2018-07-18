@@ -1,5 +1,11 @@
 # eRecruiter API ChangeLog
 
+## 1.44.0
+- New API call to request the application by job ID (`ApplicationSearch` permission required).
+	- `/Api/Applications/ByJob/:jobId` will return all open applications on a job.
+- New API call to request applicants by a custom field and its value. (`Applicants` permission required).
+	- `/Api/Applicants/ByCustomField/:customField?value=:customFieldValue` will return all applicants with a certain custom field value.
+
 ## 1.43.2
 - New property in the `PortalSettings` which contains the ApplyWith jobs.ch access key.
 	- `LoginWithJobCloudKey`
@@ -120,7 +126,7 @@
 - New time range filter for applications by referrer request
 
 ##v1.21.0
-- New API call to get applications by the referrer that created the application (referrer permission required)
+- New API call to get applications by the referrer that created the application (`ApplicationSearch` permission required)
 
 ##v1.20.0
 - Refactored CV parsing request and response
