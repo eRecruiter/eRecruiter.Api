@@ -93,6 +93,7 @@
     <Compile Include="Requests\Applicant\ApplicantCoverLetterRequests.cs" />
     <Compile Include="Requests\Applicant\ApplicantGlobalIdGetRequest.cs" />
     <Compile Include="Requests\Applicant\ApplicantVideoInterviewRequests.cs" />
+    <Compile Include="Requests\Application\ApplicationsByJobRequests.cs" />
     <Compile Include="Requests\Application\ApplicationsByReferrerRequests.cs" />
     <Compile Include="Requests\Application\FinalizeCuteAssessmentRequest.cs" />
     <Compile Include="Requests\DeleteJsonHttpRequestMessage.cs" />
