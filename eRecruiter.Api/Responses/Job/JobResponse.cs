@@ -64,7 +64,7 @@ namespace eRecruiter.Api.Responses
         /// <summary>
         /// Job profiles including group and culture information.
         /// </summary>
-        public IEnumerable<JobProfileResponse> ExtendedJobProfiles { get; set; } 
+        public IEnumerable<JobProfileResponse> ExtendedJobProfiles { get; set; }
         public IEnumerable<string> Regions { get; set; }
         public IEnumerable<CustomFieldValueResponse> CustomFields { get; set; }
         public IEnumerable<string> OccupationTypes { get; set; }
@@ -81,7 +81,7 @@ namespace eRecruiter.Api.Responses
         /// File extension of the company logo the job is associated with
         /// </summary>
         public string CompanyPictureFileExtension { get; set; }
-        
+
         //the job ad
         public string Culture { get; set; }
         public string Html { get; set; }
@@ -94,6 +94,10 @@ namespace eRecruiter.Api.Responses
         public string Block3 { get; set; }
         public string Block4 { get; set; }
         public bool HasQuestionnaire { get; set; }
+        
+        #region Geocoding
+        public JobGeoLocationResponse GeoLocation { get; set; }
+        #endregion Geocoding
 
         #region Customer
 
