@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.45.0
+- New property `GeoLocation` of type `GeoLocationResponse` in JobResponse  which contains information about the job geolocation.
+
 ## 1.44.0
 - New API call to request the application by job ID (`ApplicationSearch` permission required).
 	- `/Api/Applications/ByJob/:jobId` will return all open applications on a job.
