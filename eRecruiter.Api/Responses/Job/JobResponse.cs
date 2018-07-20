@@ -96,7 +96,7 @@ namespace eRecruiter.Api.Responses
         public bool HasQuestionnaire { get; set; }
         
         #region Geocoding
-        public JobGeoLocationResponse GeoLocation { get; set; }
+        public GeoLocationResponse GeoLocation { get; set; }
         #endregion Geocoding
 
         #region Customer
