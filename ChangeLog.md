@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+## 1.46.0
+- The legacy XING API settings have been removed, the new _Login with XING_ integration must be used moving forward.
+    - `XingConsumerKey` in the `PortalSettingsResponse` has been removed.
+    - `XingConsumerSecret` in the `PortalSettingsResponse` has been removed.
+
 ## 1.45.0
 - New property `GeoLocation` of type `GeoLocationResponse` in JobResponse  which contains information about the job geolocation.
 
