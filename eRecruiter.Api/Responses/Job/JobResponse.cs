@@ -99,6 +99,10 @@ namespace eRecruiter.Api.Responses
         public GeoLocationResponse GeoLocation { get; set; }
         #endregion Geocoding
 
+        #region Social Media
+        public SocialMediaResponse SocialMedia { get; set; }
+        #endregion Social Media
+
         #region Customer
 
         /// <summary>

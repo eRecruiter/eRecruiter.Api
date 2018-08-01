@@ -112,6 +112,7 @@
     <Compile Include="Responses\Application\ApplicationCreateResponse.cs" />
     <Compile Include="Responses\Job\GeoLocationResponse.cs" />
     <Compile Include="Responses\Job\JobStatus.cs" />
+    <Compile Include="Responses\Job\SocialMediaResponse.cs" />
     <Compile Include="Responses\Policies\PolicyResponse.cs" />
     <Compile Include="Responses\Policies\PolicyType.cs" />
     <Compile Include="VideoRecruitingProvider.cs" />

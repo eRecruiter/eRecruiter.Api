@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.47.0
+- New property `SocialMedia` of type `SocialMediaResponse` in JobResponse  which contains information about the social media header elements.
+
+
 ## 1.46.0
 - The legacy XING API settings have been removed, the new _Login with XING_ integration must be used moving forward.
     - `XingConsumerKey` in the `PortalSettingsResponse` has been removed.
