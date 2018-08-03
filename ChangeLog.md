@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+## 1.47.1
+- The legacy XING API settings have been temporarily added:
+    - `XingConsumerKey` in the `PortalSettingsResponse` has been temporarily added.
+    - `XingConsumerSecret` in the `PortalSettingsResponse` has been temporarily added.
+
 ## 1.47.0
 - New property `SocialMedia` of type `SocialMediaResponse` in JobResponse  which contains information about the social media header elements.
 
