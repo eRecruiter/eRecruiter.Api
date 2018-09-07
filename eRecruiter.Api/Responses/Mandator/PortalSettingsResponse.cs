@@ -318,5 +318,19 @@ namespace eRecruiter.Api.Responses
         }
 
         #endregion
+
+        #region Job Map
+
+        /// <summary>
+        /// Flag indicating if the job map is enabled on the job listing.
+        /// </summary>
+        public bool EnableJobMap { get; set; }
+
+        /// <summary>
+        /// Flag indicating if the job map is collapsed when loading the job listing.
+        /// </summary>
+        public bool JobMapCollapsed { get; set; }
+
+        #endregion
     }
 }
