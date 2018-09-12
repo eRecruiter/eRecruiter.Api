@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+## 1.48.0
+- New portal settings properties that allow to control the new jobs map behaviour.
+  - `EnableJobMap` controls the availablity of the job map (default: `false`)
+  - `JobMapCollapsed` controls if the job map is visible when the job listing is loaded (default: `false`).
+
 ## 1.47.1
 - The legacy XING API settings have been temporarily added:
     - `XingConsumerKey` in the `PortalSettingsResponse` has been temporarily added.
