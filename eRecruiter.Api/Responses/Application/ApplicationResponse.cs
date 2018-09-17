@@ -58,6 +58,10 @@ namespace eRecruiter.Api.Responses
             public ApplicationActivityAvailability AvailableToContact { get; set; }
         }
 
+        public WorkflowStatusGroup WorkflowStatusGroup { get; set; }
+
+        public int? Rating { get; set; }
+
         public override string ToString()
         {
             if (ApplicantId > 0 && JobId > 0)
