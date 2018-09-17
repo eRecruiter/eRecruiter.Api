@@ -1,6 +1,8 @@
 # eRecruiter API ChangeLog
 
-
+## 1.49.0
+- New property `ApplicationId` in ApplicationCreateResponse which retrieves the ID for the new application created.
+- New properties `WorkflowStatusGroup` and `Rating` in ApplicationResponse which retrieve respectively the current workflow status group and application score if it is available.
 
 ## 1.48.0
 - New portal settings properties that allow to control the new jobs map behaviour.
