@@ -1,5 +1,6 @@
 # eRecruiter API ChangeLog
 
+
 ## 1.48.0
 - New portal settings properties that allow to control the new jobs map behaviour.
   - `EnableJobMap` controls the availablity of the job map (default: `false`)
