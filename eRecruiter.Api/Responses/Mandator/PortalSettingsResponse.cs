@@ -284,9 +284,6 @@ namespace eRecruiter.Api.Responses
         #endregion
 
         #region Third Party Profiles
-
-        public string XingConsumerKey { get; set; }
-        public string XingConsumerSecret { get; set; }
         public string LinkedinConsumerKey { get; set; }
         public string LinkedinConsumerSecret { get; set; }
         public string IndeedApiToken { get; set; }
