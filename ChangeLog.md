@@ -1,5 +1,11 @@
 # eRecruiter API ChangeLog
 
+
+## 1.50.0
+- The legacy XING API settings have been removed, the new _Login with XING_ integration must be used moving forward.
+    - `XingConsumerKey` in the `PortalSettingsResponse` has been removed.
+    - `XingConsumerSecret` in the `PortalSettingsResponse` has been removed.
+
 ## 1.49.0
 - New property `ApplicationId` in ApplicationCreateResponse which retrieves the ID for the new application created.
 - New properties `WorkflowStatusGroup` and `Rating` in ApplicationResponse which retrieve respectively the current workflow status group and application score if it is available.
