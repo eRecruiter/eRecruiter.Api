@@ -93,6 +93,10 @@ namespace eRecruiter.Api.Responses
         public string Block2 { get; set; }
         public string Block3 { get; set; }
         public string Block4 { get; set; }
+        public string HeaderBlock1 { get; set; }
+        public string HeaderBlock2 { get; set; }
+        public string HeaderBlock3 { get; set; }
+        public string HeaderBlock4 { get; set; }
         public bool HasQuestionnaire { get; set; }
         
         #region Geocoding

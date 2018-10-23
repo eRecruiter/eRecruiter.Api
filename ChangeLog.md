@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.51.0
+- The job ad block headers have been added.
+    - `HeaderBlock1`, `HeaderBlock2`, `HeaderBlock3`, `HeaderBlock4` have been added to `JobResponse`.
 
 ## 1.50.0
 - The legacy XING API settings have been removed, the new _Login with XING_ integration must be used moving forward.
