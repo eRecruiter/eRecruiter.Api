@@ -101,6 +101,7 @@ namespace eRecruiter.Api.Responses
         
         #region Geocoding
         public GeoLocationResponse GeoLocation { get; set; }
+        public string GeoLocationName { get; set; }
         #endregion Geocoding
 
         #region Social Media
