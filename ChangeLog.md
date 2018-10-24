@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.52.0
+- The geo location name has been added.
+    - `GeoLocationName` has been added to `JobResponse`.
+
 ## 1.51.0
 - The job ad block headers have been added.
     - `HeaderBlock1`, `HeaderBlock2`, `HeaderBlock3`, `HeaderBlock4` have been added to `JobResponse`.
