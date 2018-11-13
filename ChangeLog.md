@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.53.0
+- `ChannelSettings` has been added.
+    - `ChannelSettings` with `StepStone` settings has been added to `JobResponse`.
+
 ## 1.52.0
 - The geo location name has been added.
     - `GeoLocationName` has been added to `JobResponse`.

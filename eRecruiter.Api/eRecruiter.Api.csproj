@@ -110,6 +110,8 @@
     <Compile Include="Responses\Application\ApplicationReferrerResponse.cs" />
     <Compile Include="Responses\Application\ApplicationResponse.cs" />
     <Compile Include="Responses\Application\ApplicationCreateResponse.cs" />
+    <Compile Include="Responses\Job\Channels\ChannelSettings.cs" />
+    <Compile Include="Responses\Job\Channels\StepStoneChannelSettings.cs" />
     <Compile Include="Responses\Job\GeoLocationResponse.cs" />
     <Compile Include="Responses\Job\JobStatus.cs" />
     <Compile Include="Responses\Job\SocialMediaResponse.cs" />
