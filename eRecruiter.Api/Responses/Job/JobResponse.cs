@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eRecruiter.Api.Responses.Job.Channels;
+using System;
 using System.Collections.Generic;
 
 namespace eRecruiter.Api.Responses
@@ -72,6 +73,7 @@ namespace eRecruiter.Api.Responses
         public IEnumerable<string> Tags { get; set; }
         public IEnumerable<JobPublicationResponse> PublishedOn { get; set; }
         public IEnumerable<string> AvailableCultures { get; set; }
+        public ChannelSettings Channels { get; set; }
 
         /// <summary>
         /// Content of the company logo the job is associated with

@@ -1,5 +1,4 @@
-﻿using eRecruiter.Api.Responses.Job.Channels;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace eRecruiter.Api.Responses
 {
@@ -8,6 +7,5 @@ namespace eRecruiter.Api.Responses
         public IEnumerable<JobResponse> Jobs { get; set; }
         public JobPublicationResponse JobPublicationType { get; set; }
         public string Culture { get; set; }
-        public ChannelSettings Channels { get; set; }
     }
 }

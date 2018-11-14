@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.53.1
+- Moved `ChannelSettings` from `JobsResponse` to `JobResponse`.
+
 ## 1.53.0
 - `ChannelSettings` has been added.
     - `ChannelSettings` with `StepStone` settings has been added to `JobResponse`.
