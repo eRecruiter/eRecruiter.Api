@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.53.2
+- The `HeaderColor` and the `BackgroundColor` have been added to `StepStoneChannelSettings`.
+
 ## 1.53.1
 - Moved `ChannelSettings` from `JobsResponse` to `JobResponse`.
 
