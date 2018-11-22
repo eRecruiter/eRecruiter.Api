@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.54.0
+- The `ApplicantDocument` has been added to `QuestionnaireItemType`.
+
 ## 1.53.2
 - The `HeaderColor` and the `BackgroundColor` have been added to `StepStoneChannelSettings`.
 

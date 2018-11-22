@@ -36,7 +36,9 @@
             Location,
             EmploymentType,
             Educations,
-            Experiences
+            Experiences,
+            ApplicantDocument
+
         }
     }
 }
