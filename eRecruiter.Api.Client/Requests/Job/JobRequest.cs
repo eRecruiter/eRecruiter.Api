@@ -1,4 +1,5 @@
-﻿using eRecruiter.Api.Responses;
+﻿using eRecruiter.Api.Parameters;
+using eRecruiter.Api.Responses;
 using System.Globalization;
 using System.Net.Http;
 
@@ -24,6 +25,18 @@ namespace eRecruiter.Api.Client.Requests
         public override string GetCacheKey()
         {
             return "Job_" + _jobId + "_" + _culture;
+        }
+    }
+
+    public class JobPostRequest : PostJsonHttpRequestMessage<JobCreationResponse>
+    {
+        /// <summary>
+        /// Creates a new job
+        /// </summary>
+        /// <param name="job">The job.</param>
+        public JobPostRequest(JobParameter job)
+            : base("Api/Job/", job)
+        {
         }
     }
 }

@@ -72,6 +72,11 @@
     <Compile Include="FlexDate.cs" />
     <Compile Include="Parameters\CustomField\CustomFieldValueParameter.cs" />
     <Compile Include="Parameters\FeedbackParameter.cs" />
+    <Compile Include="Parameters\Job\CustomField.cs" />
+    <Compile Include="Parameters\Job\JobParameter.cs" />
+    <Compile Include="Parameters\Job\JobStatus.cs" />
+    <Compile Include="Parameters\Job\JobText.cs" />
+    <Compile Include="Parameters\Job\SocialMedia.cs" />
     <Compile Include="Parameters\Synchronize\CompanySynchronizeParameter.cs" />
     <Compile Include="Parameters\Mailer\ApplicationMailParameter.cs" />
     <Compile Include="Parameters\Mailer\DoubleOptInParameter.cs" />
@@ -113,6 +118,7 @@
     <Compile Include="Responses\Job\Channels\ChannelSettings.cs" />
     <Compile Include="Responses\Job\Channels\StepStoneChannelSettings.cs" />
     <Compile Include="Responses\Job\GeoLocationResponse.cs" />
+    <Compile Include="Responses\Job\JobCreationResponse.cs" />
     <Compile Include="Responses\Job\JobStatus.cs" />
     <Compile Include="Responses\Job\SocialMediaResponse.cs" />
     <Compile Include="Responses\Policies\PolicyResponse.cs" />
