@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.55.0
+- Added new endpoint to create new jobs.
+- Added `JobParameter` and `JobCreationResponse` to handle new requests to create jobs.
+
 ## 1.54.0
 - The `ApplicantDocument` has been added to `QuestionnaireItemType`.
 
