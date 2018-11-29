@@ -18,8 +18,8 @@ namespace eRecruiter.Api.Parameters
         public string OccupationType { get; set; }
         public double? SalaryFrom { get; set; }
         public double? SalaryTo { get; set; }
-        public IList<CustomField> CustomFields { get; set; }  
-        public IList<JobText> JobTexts { get; set; }
+        public IList<CustomFieldParameter> CustomFields { get; set; }  
+        public IList<JobTextParameter> JobTexts { get; set; }
        
     }
 }

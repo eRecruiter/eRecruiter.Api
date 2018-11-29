@@ -1,6 +1,6 @@
 ﻿namespace eRecruiter.Api.Parameters
 {
-    public class CustomField
+    public class CustomFieldParameter
     {
         public string Name { get; set; }
         public string Value { get; set; }
