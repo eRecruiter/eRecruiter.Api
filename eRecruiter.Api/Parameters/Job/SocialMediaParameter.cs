@@ -1,6 +1,6 @@
 ﻿namespace eRecruiter.Api.Parameters
 {
-    public class SocialMedia
+    public class SocialMediaParameter
     {
         public string Description { get; set; }
     }
