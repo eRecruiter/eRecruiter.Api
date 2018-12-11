@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.55.2
+- The `ApplicantDocumentType` property has been added to `QuestionnaireItemResponse`.
+
 ## 1.55.1
 - Changed `JobText` and `CustomField` to `JobTextParameter` and `CustomFieldParameter` respectively.
 
@@ -62,27 +65,27 @@
 
 ## 1.44.0
 - New API call to request the application by job ID (`ApplicationSearch` permission required).
-	- `/Api/Applications/ByJob/:jobId` will return all open applications on a job.
+    - `/Api/Applications/ByJob/:jobId` will return all open applications on a job.
 - New API call to request applicants by a custom field and its value. (`Applicants` permission required).
-	- `/Api/Applicants/ByCustomField/:customField?value=:customFieldValue` will return all applicants with a certain custom field value.
+    - `/Api/Applicants/ByCustomField/:customField?value=:customFieldValue` will return all applicants with a certain custom field value.
 
 ## 1.43.2
 - New property in the `PortalSettings` which contains the ApplyWith jobs.ch access key.
-	- `LoginWithJobCloudKey`
+    - `LoginWithJobCloudKey`
 
 ## 1.42.0
 - New portal settings property which handles the inclusion of customer information in the XML feed.
-	- `EnableCustomerInformationInXmlFeed` 
+    - `EnableCustomerInformationInXmlFeed` 
 - New job response properties to expose the customer information of the job.
-	- `CustomerId` contains the customer ID.
-	- `CustomerName` contains the customer name.
+    - `CustomerId` contains the customer ID.
+    - `CustomerName` contains the customer name.
 
 ## 1.41.1
 - Fixed wrong parameter for `PoliciesGetRequest`
 
 ## 1.41.0
 - New property which enables/disables the download of the european cv in the applicant profile.
-	- `EnableEuropeanCvDownload` 
+    - `EnableEuropeanCvDownload` 
 
 ## 1.40.0
 - Extended `ApplicantCvGetRequest` with a new endpoint to be possible generating the applicant european CV
@@ -117,7 +120,7 @@
 
 ## 1.34.0
 - New property which handles the visibility of the privacy policy agreement on the registration form.
-	- `AskForPrivacyPolicyAgreement` 
+    - `AskForPrivacyPolicyAgreement` 
 
 ## 1.33.0
 - New API call to retrieve the latest policies
@@ -127,60 +130,60 @@
 
 ## 1.32.0
 - New type for `HistoryType` to support privacy policies updates.
-	- `PrivacyPolicy`
+    - `PrivacyPolicy`
 
 ## 1.31.0
 - New API call to request the video interviews for an applicant.
-	- The new API call requires the `VideoInterview` permission for the API key.
-	- The response contains information about the video interview as well as an expiring link (3 views until expiration).
+    - The new API call requires the `VideoInterview` permission for the API key.
+    - The response contains information about the video interview as well as an expiring link (3 views until expiration).
 
 ## 1.30.0
 - New portal settings to indicate if pagination should be enabled in the jobs list and how many items should be displayed
-	`EnablePaginationInJobsList`  
-	`PageSizeJobsList`
+    `EnablePaginationInJobsList`  
+    `PageSizeJobsList`
 
 ## 1.29.0
 - New API call to validate a password against the applicant portal password policy.
 
 ## 1.28.0
 - New fields for `ApplicantParameter` to support information about the privacy policy (EU-DSVGO)
-	- `PolicyAcceptedAt` used to transfer/set the date for acceptance of the privacy policy.
+    - `PolicyAcceptedAt` used to transfer/set the date for acceptance of the privacy policy.
 
 ## 1.27.1
 - Add documentation to custom fields to avoid further misunderstandings.
-	
+    
 ## 1.27.0
 - New fields for `PortalSettings` response to support "Login with XING"
-	- `LoginWithXingConsumerKey` used for "Login with XING"
-	- `LoginWithXingSignatureSalt` used for "Login with XING"
+    - `LoginWithXingConsumerKey` used for "Login with XING"
+    - `LoginWithXingSignatureSalt` used for "Login with XING"
 
 ## 1.26.1
 - New fields for `PortalSettings` response to "Apply with Indeed" status setting
-	- `IndeedApplyAllowed` used to enable/disable "Apply with Indeed"
+    - `IndeedApplyAllowed` used to enable/disable "Apply with Indeed"
 
 ## 1.26.0
 - New property for `Job` has been added for the job's status.
-	- `Status` represents the status of the job (draft, open, engaged, repositioned or cancelled).
+    - `Status` represents the status of the job (draft, open, engaged, repositioned or cancelled).
 
 ## 1.25.0
 - New fields for `PortalSettings` response to allow transmission of "Apply by karriere.at" settings
-	- `KarriereApiKey` used for validation of "Apply by karriere.at" requests
-	- `KarriereApiSecret` used for validation of "Apply by karriere.at" requests
+    - `KarriereApiKey` used for validation of "Apply by karriere.at" requests
+    - `KarriereApiSecret` used for validation of "Apply by karriere.at" requests
 - New API call to generate applicant log-on tokens (applicant permission required)
 
 ##v1.24.0
 - New fields for `MandatorResponse` to expose the configured publication cultures
-	- `Cultures` used for exposing publication cultures
+    - `Cultures` used for exposing publication cultures
 
 ##v1.23.0
 - New fields for `PortalSettings` response to allow transmission of myVeeta and Instapp settings
-	- `InstappToken` used for "Apply with Instapp"
-	- `MyVeetaToken` used for "Apply with myVeeta"
+    - `InstappToken` used for "Apply with Instapp"
+    - `MyVeetaToken` used for "Apply with myVeeta"
 
 ##v1.22.0
 - New fields for `PortalSettings` response to allow transmission of Indeed API settings
-	- `IndeedApiToken` used for XML feed delivery
-	- `IndeedApiSecret` used for "Apply with Indeed" request validation
+    - `IndeedApiToken` used for XML feed delivery
+    - `IndeedApiSecret` used for "Apply with Indeed" request validation
 
 ##v1.21.1
 - New time range filter for applications by referrer request
@@ -190,13 +193,13 @@
 
 ##v1.20.0
 - Refactored CV parsing request and response
-	- Add optional portal-URI in request url, such that the backend is able to determine the set parsing strategy for this portal
-	- Extend cv parsing response with more detailed profile data
+    - Add optional portal-URI in request url, such that the backend is able to determine the set parsing strategy for this portal
+    - Extend cv parsing response with more detailed profile data
 
 ##v1.19.0
 - New fields for `JobPublication` response to allow job ad and registration/application URL overrides.
-	- `JobAdUrl` allows to override the location of the job ad
-	- `ApplyUrl` allows to override the location of the registration/application form
+    - `JobAdUrl` allows to override the location of the job ad
+    - `ApplyUrl` allows to override the location of the registration/application form
 
 ##v1.18.2
 - Fix typo in CompanySynchronizeResponse of parameter `Identifiyer` and rename to `Identifier`
@@ -247,7 +250,7 @@
 
 ##v1.8.0
 - New portal setting to indicate if the company picture should be visible on the applicant portal
-	- `EnableCompanyPicturesOnJobsList`
+    - `EnableCompanyPicturesOnJobsList`
 - New properties for job
   - `CompanyPictureContent` Holds the content of the company picture
   - `CompanyPictureFileExtension` Holds the file extension of the company picture

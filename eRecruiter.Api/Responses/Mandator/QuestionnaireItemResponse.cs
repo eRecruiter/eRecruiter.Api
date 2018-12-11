@@ -12,6 +12,7 @@
         public string Language { get; set; }
         public string Knowledge { get; set; }
         public string KnowledgeGroup { get; set; }
+        public string ApplicantDocumentType { get; set; }
 
         public enum QuestionnaireItemType
         {
