@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.56.0
+- The `DefaultValue` property has been added to the `CustomFieldResponse`.
+
 ## 1.55.2
 - The `ApplicantDocumentType` property has been added to `QuestionnaireItemResponse`.
 
