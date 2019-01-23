@@ -19,12 +19,30 @@ namespace eRecruiter.Api.Responses
         /// </summary>
         public string GroupName { get; set; }
 
+        /// <summary>
+        /// The custom field type which controls the renderer.
+        /// </summary>
         public CustomFieldType Type { get; set; }
+
+        /// <summary>
+        /// The target/context the custom field is used for/in.
+        /// </summary>
         public CustomFieldTarget Target { get; set; }
 
+        /// <summary>
+        /// A flag that indicates that the field is public for the job feed.
+        /// </summary>
         public bool IsPublic { get; set; }
 
+        /// <summary>
+        /// The values that are possible for DropdownList and CheckboxList.
+        /// </summary>
         public IEnumerable<string> PossibleValues { get; set; }
+
+        /// <summary>
+        /// The default value for the custom field.
+        /// </summary>
+        public string DefaultValue { get; set; }
 
         public enum CustomFieldType
         {
