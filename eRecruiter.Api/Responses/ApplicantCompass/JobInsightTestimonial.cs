@@ -24,5 +24,10 @@
         /// Additional text from the person giving the testimonial.
         /// </summary>
         public string Text { get; set; }
+
+        /// <summary>
+        /// The image that should be displayed as avatar.
+        /// </summary>
+        public byte[] Image { get; set; }
     }
 }
