@@ -67,6 +67,10 @@
     <Compile Include="Requests\Account\ResetPasswordRequest.cs" />
     <Compile Include="Requests\Account\ValidatePasswordRequest.cs" />
     <Compile Include="Requests\Agnostic\AgnosticApplicantsRequest.cs" />
+    <Compile Include="Requests\ApplicantCompass\CompassQuestionsRequest.cs" />
+    <Compile Include="Requests\ApplicantCompass\InterestProfileRequest.cs" />
+    <Compile Include="Requests\ApplicantCompass\InterestProfilesRequest.cs" />
+    <Compile Include="Requests\ApplicantCompass\JobInsightRequest.cs" />
     <Compile Include="Requests\Applicant\ApplicantExternalIdGetRequest.cs" />
     <Compile Include="Requests\Applicant\ApplicantHistoryRequests.cs" />
     <Compile Include="Requests\Applicant\ApplicantKnowledgeRequests.cs" />
