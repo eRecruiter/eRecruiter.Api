@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.57.0
+- The applicant compass requests, responses and parameters have been added. All requests require the permission to use the 
+  applicant compass feature and a license for the feature.
+
 ## 1.56.0
 - The `DefaultValue` property has been added to the `CustomFieldResponse`.
 

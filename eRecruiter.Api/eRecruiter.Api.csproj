@@ -48,6 +48,9 @@
   <ItemGroup>
     <Compile Include="Gender.cs" />
     <Compile Include="HistoryType.cs" />
+    <Compile Include="Parameters\ApplicantCompass\ApplicantInterestFilterAnswer.cs" />
+    <Compile Include="Parameters\ApplicantCompass\ApplicantInterestParameter.cs" />
+    <Compile Include="Parameters\ApplicantCompass\ApplicantInterestQuestionAnswer.cs" />
     <Compile Include="Parameters\Applicant\ApplicantHistoryParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantPhotoParameter.cs" />
     <Compile Include="Parameters\Applicant\ApplicantCvParameter.cs" />
@@ -91,6 +94,17 @@
     <Compile Include="Responses\Account\ValidatePasswordResponse.cs" />
     <Compile Include="Responses\Agnostic\AgnosticApplicantsResponse.cs" />
     <Compile Include="Responses\ApiTokenResponse.cs" />
+    <Compile Include="Responses\ApplicantCompass\CompassQuestionsResponse.cs" />
+    <Compile Include="Responses\ApplicantCompass\InterestFilter.cs" />
+    <Compile Include="Responses\ApplicantCompass\InterestFilterAnswer.cs" />
+    <Compile Include="Responses\ApplicantCompass\InterestProfileResponse.cs" />
+    <Compile Include="Responses\ApplicantCompass\InterestQuestion.cs" />
+    <Compile Include="Responses\ApplicantCompass\JobInsightBenefit.cs" />
+    <Compile Include="Responses\ApplicantCompass\JobInsightHeader.cs" />
+    <Compile Include="Responses\ApplicantCompass\JobInsightResponse.cs" />
+    <Compile Include="Responses\ApplicantCompass\JobInsightTask.cs" />
+    <Compile Include="Responses\ApplicantCompass\JobInsightTestimonial.cs" />
+    <Compile Include="Responses\ApplicantCompass\InterestQuestionGroup.cs" />
     <Compile Include="Responses\Applicant\ApplicantHistoryResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantPhotoResponse.cs" />
     <Compile Include="Responses\Applicant\ApplicantCvResponse.cs" />
