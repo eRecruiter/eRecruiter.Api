@@ -68,6 +68,11 @@ namespace eRecruiter.Api.Responses
         public bool HasVideo { get; set; }
 
         /// <summary>
+        /// Introduction for video section.
+        /// </summary>
+        public string VideoIntroduction { get; set; }
+
+        /// <summary>
         /// URL of the video for the video section.
         /// </summary>
         public string VideoUrl { get; set; }
