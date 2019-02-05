@@ -23,7 +23,7 @@ namespace eRecruiter.Api.Client.Requests
         /// </summary>
         /// <param name="jobInsightId">Job Insight ID</param>
         /// <param name="culture">Culture Name</param>
-        public JobInsightRequest(int jobInsightId, string culture) : base(HttpMethod.Get, $"/ApplicantCompass/JobInsight/{jobInsightId}?culture={culture}")
+        public JobInsightRequest(int jobInsightId, string culture) : base(HttpMethod.Get, $"Api/ApplicantCompass/JobInsight/{jobInsightId}?culture={culture}")
         {
         }
     }

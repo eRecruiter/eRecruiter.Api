@@ -9,7 +9,7 @@ namespace eRecruiter.Api.Client.Requests
         /// Fetch an interest profile by its ID
         /// </summary>
         /// <param name="interestProfileId">Interest Profile ID</param>
-        public InterestProfileRequest(int interestProfileId) : base(HttpMethod.Get, $"/ApplicantCompass/InterestProfile/{interestProfileId}")
+        public InterestProfileRequest(int interestProfileId) : base(HttpMethod.Get, $"Api/ApplicantCompass/InterestProfile/{interestProfileId}")
         {
         }
     }

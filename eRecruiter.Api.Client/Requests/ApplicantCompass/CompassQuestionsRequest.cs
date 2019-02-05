@@ -10,7 +10,7 @@ namespace eRecruiter.Api.Client.Requests
         {
         }
 
-        public CompassQuestionsRequest(string culture) : base(HttpMethod.Get, $"/ApplicantCompass/Questions?culture={culture}")
+        public CompassQuestionsRequest(string culture) : base(HttpMethod.Get, $"Api/ApplicantCompass/Questions?culture={culture}")
         {
         }
     }

@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.57.1
+- The URL prefix for the applicant compass requests have been corrected to be compliant with the general API layout.
+
 ## 1.57.0
 - The applicant compass requests, responses and parameters have been added. All requests require the permission to use the 
   applicant compass feature and a license for the feature.
