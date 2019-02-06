@@ -63,6 +63,11 @@ namespace eRecruiter.Api.Responses
         public string TestimonialIntroduction { get; set; }
 
         /// <summary>
+        /// Job Insight Testimonials
+        /// </summary>
+        public IEnumerable<JobInsightTestimonial> Testimonials { get; set; }
+
+        /// <summary>
         /// Flag if the video is shown.
         /// </summary>
         public bool HasVideo { get; set; }

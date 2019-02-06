@@ -1,4 +1,4 @@
-﻿namespace eRecruiter.Api.Responses.ApplicantCompass
+﻿namespace eRecruiter.Api.Responses
 {
     /// <summary>
     /// Job Insight Testimonial
