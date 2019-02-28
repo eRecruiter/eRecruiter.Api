@@ -1,8 +1,10 @@
 # eRecruiter API ChangeLog
 
+## 1.57.3
+- The `JobIds` property has been added to the `InterestProfileResponse`.
+
 ## 1.57.2
 - The `Testimonials` property has been added to the `JobInsightResponse`.
-
 
 ## 1.57.1
 - The URL prefix for the applicant compass requests have been corrected to be compliant with the general API layout.

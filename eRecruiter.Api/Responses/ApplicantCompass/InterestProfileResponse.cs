@@ -1,4 +1,6 @@
-﻿namespace eRecruiter.Api.Responses
+﻿using System.Collections.Generic;
+
+namespace eRecruiter.Api.Responses
 {
     /// <summary>
     /// Interest Profile
@@ -19,5 +21,10 @@
         /// ID of the job insight.
         /// </summary>
         public int JobInsightId { get; set; }
+
+        /// <summary>
+        /// IDs of published jobs associated with the interest profile.
+        /// </summary>
+        public IEnumerable<int> JobIds { get; set; }
     }
 }
