@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.57.4
+- The URL for the `InterestProfilesRequest` has been corrected to the actual API endpoint.
+
+
 ## 1.57.3
 - The `JobIds` property has been added to the `InterestProfileResponse`.
 

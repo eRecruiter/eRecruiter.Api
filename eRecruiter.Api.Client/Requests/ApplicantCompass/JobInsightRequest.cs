@@ -1,5 +1,4 @@
 ﻿using eRecruiter.Api.Responses;
-using System.Collections.Generic;
 using System.Globalization;
 using System.Net.Http;
 
