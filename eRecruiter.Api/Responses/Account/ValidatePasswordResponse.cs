@@ -11,7 +11,12 @@ namespace eRecruiter.Api.Responses
             PasswordPolicySymbols,
             PasswordPolicyNumeric,
             PasswordPolicyUppercase,
-            PasswordPolicyLength
+            PasswordPolicyLength,
+            PasswordPolicyContainsAccountName,
+            PasswordPolicyInBannedList,
+            PasswordPolicySameCharacterInRow,
+            PasswordPolicyReuseOfOldPasswords
+
         }
     }
 }
