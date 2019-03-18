@@ -13,7 +13,11 @@ namespace eRecruiter.Api.Responses
             PasswordPolicyUppercase,
             PasswordPolicyLength,
             InvalidCode,
-            InvalidOldPassword
+            InvalidOldPassword,
+            PasswordPolicyContainsAccountName,
+            PasswordPolicyInBannedList,
+            PasswordPolicySameCharacterInRow,
+            PasswordPolicyReuseOfOldPasswords
         }
     }
 }
