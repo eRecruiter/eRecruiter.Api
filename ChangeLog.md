@@ -1,7 +1,7 @@
 # eRecruiter API ChangeLog
 
 ## 1.58.0
-- `PasswordResponses` Models updated to match eRecruiter requirements 
+- `PasswordResponses` models updated to match new password policy features 
 
 ## 1.57.4
 - The URL for the `InterestProfilesRequest` has been corrected to the actual API endpoint.
