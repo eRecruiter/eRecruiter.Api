@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.59.0
+- Added user location fields
+
 ## 1.58.0
 - `PasswordResponses` models updated to match new password policy features 
 
