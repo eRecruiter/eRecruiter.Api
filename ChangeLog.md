@@ -1,7 +1,8 @@
 # eRecruiter API ChangeLog
 
 ## 1.59.0
-- Added user location fields
+- `UserAddress`, `UserZipCode` and `UserCity` have been added to handle the user location.
+
 
 ## 1.58.0
 - `PasswordResponses` models updated to match new password policy features 
