@@ -123,5 +123,11 @@ namespace eRecruiter.Api.Responses
         public string CustomerName { get; set; }
 
         #endregion
+
+        #region UserLocation
+        public string UserAddress{ get; set; }
+        public string UserZipCode { get; set; }
+        public string UserCity { get; set; }
+        #endregion UserLocation
     }
 }
