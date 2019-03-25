@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.60.0
+- `InternalName` property has been added to the `JobPublicationResponse`.
+
 ## 1.59.0
 - `UserAddress`, `UserZipCode` and `UserCity` have been added to handle the user location.
 
