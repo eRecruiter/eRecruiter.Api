@@ -101,6 +101,7 @@
     <Compile Include="Requests\Application\ApplicationsByReferrerRequests.cs" />
     <Compile Include="Requests\Application\FinalizeCuteAssessmentRequest.cs" />
     <Compile Include="Requests\DeleteJsonHttpRequestMessage.cs" />
+    <Compile Include="Requests\Integrations\KarriereOneClickRequest.cs" />
     <Compile Include="Requests\Policies\PoliciesRequests.cs" />
     <Compile Include="Requests\Policies\PolicyRequests.cs" />
     <Compile Include="Requests\Synchronize\CompanySynchronizeRequest.cs" />
