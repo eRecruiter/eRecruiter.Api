@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+## 1.61.0
+- Added new endpoint to create a new applicant and application for the data from "Apply by karriere.at".
+- `KarriereOneClickResponse` has been added.
+- `KarriereOneClickRequest` has been added.
+
 ## 1.60.0
 - `InternalName` property has been added to the `JobPublicationResponse`.
 
