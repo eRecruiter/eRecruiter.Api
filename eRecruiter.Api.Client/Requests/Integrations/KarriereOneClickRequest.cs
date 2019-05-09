@@ -14,6 +14,8 @@ namespace eRecruiter.Api.Client.Requests.Integrations
         public KarriereOneClickRequest(KarriereOneClickParameter parameter)
             : base("Api/Integrations/KarriereOneClick", parameter.Body)
         {
+            Content = new StringContent(parameter.Body, Encoding.UTF8, "application/json");
+
             Headers.Add("X-Karriere-Signature", parameter.Signature);
         }
     }
