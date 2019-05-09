@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.61.1
+- Change KarriereOneClickRequest to override content and content type.
+
 ## 1.61.0
 - Added new endpoint to create a new applicant and application for the data from "Apply by karriere.at".
 - `KarriereOneClickResponse` has been added.
