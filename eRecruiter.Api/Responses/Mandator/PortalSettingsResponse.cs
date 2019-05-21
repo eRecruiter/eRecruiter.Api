@@ -66,6 +66,11 @@ namespace eRecruiter.Api.Responses
         public DisplayType AskForGender { get; set; }
 
         /// <summary>
+        /// Specifies if or how the input field of an applicants's <see cref="ApplicantParameter.GenderIdentity"/> should be displayed in the Self-Service-Zone.
+        /// </summary>
+        public DisplayType AskForGenderIdentity { get; set; }
+
+        /// <summary>
         /// Specifies if or how the input fields of an applicants's <see cref="ApplicantParameter.TitleAfterName"/> or <see cref="ApplicantParameter.TitleAfterName"/> should be displayed in the Self-Service-Zone.
         /// </summary>
         public DisplayType AskForTitles { get; set; }
@@ -170,6 +175,11 @@ namespace eRecruiter.Api.Responses
         /// Specifies if or how the input field of an applicants's <see cref="ApplicantParameter.Gender"/> should be displayed on the registration page.
         /// </summary>
         public DisplayType AskForGenderOnRegistration { get; set; }
+
+        /// <summary>
+        /// Specifies if or how the input field of an applicants's <see cref="ApplicantParameter.GenderIdentity"/> should be displayed on the registration page.
+        /// </summary>
+        public DisplayType AskForGenderIdentityOnRegistration { get; set; }
 
         /// <summary>
         /// Specifies if or how the input fields of an applicants's <see cref="ApplicantParameter.TitleAfterName"/> or <see cref="ApplicantParameter.TitleAfterName"/> should be displayed on the registration page.
