@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gender.cs" />
+    <Compile Include="GenderIdentity.cs" />
     <Compile Include="HistoryType.cs" />
     <Compile Include="Parameters\ApplicantCompass\ApplicantInterestFilterAnswer.cs" />
     <Compile Include="Parameters\ApplicantCompass\ApplicantInterestParameter.cs" />

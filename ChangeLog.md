@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+## 1.62.0
+- Added `GenderIdentity` to `ApplicantParameter`.
+- Added `AskForGenderIdentity` to `PortalSettingsResponse`.
+- Added `AskForGenderIdentityOnRegistration` to `PortalSettingsResponse`.
+
 ## 1.61.1
 - Change KarriereOneClickRequest to override content and content type.
 

@@ -78,6 +78,11 @@ namespace eRecruiter.Api.Parameters
         public Gender Gender { get; set; }
 
         /// <summary>
+        /// The applicant's gender identity.
+        /// </summary>
+        public GenderIdentity GenderIdentity { get; set; }
+
+        /// <summary>
         /// The academic title, which usually is written before an applicant's name.
         /// </summary>
         public string TitleBeforeName { get; set; }
