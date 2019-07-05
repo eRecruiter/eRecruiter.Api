@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.63.0
+- Added `MandatorId` to `JobResponse` for better integration support in multi-mandator use cases.
+- Added `TemplateName` to `JobResponose` to improve support in customer-built career sites.
+
 ## 1.62.0
 - Added `GenderIdentity` to `ApplicantParameter`.
 - Added `AskForGenderIdentity` to `PortalSettingsResponse`.
