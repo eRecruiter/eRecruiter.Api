@@ -11,6 +11,11 @@ namespace eRecruiter.Api.Responses
         /// </summary>
         public int Id { get; set; }
 
+        /// <summary>
+        /// The mandator ID the job is located in.
+        /// </summary>
+        public int MandatorId { get; set; }
+
         public string InternalName { get; set; }
         public string InternalLocation { get; set; }
 
@@ -99,8 +104,9 @@ namespace eRecruiter.Api.Responses
         public string HeaderBlock2 { get; set; }
         public string HeaderBlock3 { get; set; }
         public string HeaderBlock4 { get; set; }
+        public string TemplateName { get; set; }
         public bool HasQuestionnaire { get; set; }
-        
+
         #region Geocoding
         public GeoLocationResponse GeoLocation { get; set; }
         public string GeoLocationName { get; set; }
