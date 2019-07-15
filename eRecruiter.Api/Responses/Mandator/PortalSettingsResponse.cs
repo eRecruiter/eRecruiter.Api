@@ -303,6 +303,8 @@ namespace eRecruiter.Api.Responses
         public string InstappToken { get; set; }
         public string KarriereApiKey { get; set; }
         public string KarriereApiSecret { get; set; }
+        public string KarriereUUId { get; set; }
+        public bool KarriereEnableOneClickWidget { get; set; }
         public string LoginWithXingConsumerKey { get; set; }
         public string LoginWithXingSignatureSalt { get; set; }
         public string LoginWithJobCloudKey { get; set; }

@@ -9,7 +9,7 @@
 		<description>$description$</description>
 		
 		<dependencies>
-			<dependency id="eRecruiter.Api" version="1.63.0" />
+			<dependency id="eRecruiter.Api" version="1.64.0" />
 		</dependencies>	
 	</metadata>
 </package>
