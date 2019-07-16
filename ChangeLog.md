@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.64.0
+-Added `KarriereApiUuId` and `KarriereOneClickWidget` to support karriere.at one-click widget. 
+
 ## 1.63.0
 - Added `MandatorId` to `JobResponse` for better integration support in multi-mandator use cases.
 - Added `TemplateName` to `JobResponose` to improve support in customer-built career sites.
