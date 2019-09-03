@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eRecruiter.Api.Responses.Job;
+using System;
 using System.Collections.Generic;
 
 namespace eRecruiter.Api.Responses
@@ -94,5 +95,6 @@ namespace eRecruiter.Api.Responses
         public string Block3 { get; set; }
         public string Block4 { get; set; }
         public bool HasQuestionnaire { get; set; }
+        public Google4JobsResponse Google4Jobs { get; set; }
     }
 }

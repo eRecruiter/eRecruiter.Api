@@ -1,5 +1,11 @@
 # eRecruiter API ChangeLog
 
+## 1.30.0
+- Added Google 4 jobs information to `JobResponse`.
+	- Added `Google4JobsResponse`
+	- Added `Google4JobsLocationResponse` to `Google4JobsResponse` 
+
+
 ## 1.29.0
 - New API call to validate a password against the applicant portal password policy.
 
