@@ -1,4 +1,5 @@
-﻿using eRecruiter.Api.Responses.Job.Channels;
+﻿using eRecruiter.Api.Responses.Job;
+using eRecruiter.Api.Responses.Job.Channels;
 using System;
 using System.Collections.Generic;
 
@@ -106,6 +107,7 @@ namespace eRecruiter.Api.Responses
         public string HeaderBlock4 { get; set; }
         public string TemplateName { get; set; }
         public bool HasQuestionnaire { get; set; }
+        public GoogleForJobsResponse GoogleForJobs { get; set; }
 
         #region Geocoding
         public GeoLocationResponse GeoLocation { get; set; }

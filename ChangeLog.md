@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+## 1.65.0
+- Added `GoogleForJobsResponse` to `JobResponse`
+	- Added `GoogleForJobsLocationResponse`
+	- Added `GoogleForJobsLocationResponse` list to `GoogleForJobsResponse`
+
 ## 1.64.0
 -Added `KarriereApiUuId` and `KarriereOneClickWidget` to support karriere.at one-click widget. 
 

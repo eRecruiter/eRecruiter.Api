@@ -135,6 +135,8 @@
     <Compile Include="Responses\Job\Channels\ChannelSettings.cs" />
     <Compile Include="Responses\Job\Channels\StepStoneChannelSettings.cs" />
     <Compile Include="Responses\Job\GeoLocationResponse.cs" />
+    <Compile Include="Responses\Job\GoogleForJobsLocationResponse.cs" />
+    <Compile Include="Responses\Job\GoogleForJobsResponse.cs" />
     <Compile Include="Responses\Job\JobCreationResponse.cs" />
     <Compile Include="Responses\Job\JobStatus.cs" />
     <Compile Include="Responses\Job\SocialMediaResponse.cs" />
