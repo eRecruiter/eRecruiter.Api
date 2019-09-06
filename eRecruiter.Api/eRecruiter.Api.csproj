@@ -131,6 +131,7 @@
     <Compile Include="Responses\Application\ApplicationReferrerResponse.cs" />
     <Compile Include="Responses\Application\ApplicationResponse.cs" />
     <Compile Include="Responses\Application\ApplicationCreateResponse.cs" />
+    <Compile Include="Responses\Cache\InvalidCacheKeyResponse.cs" />
     <Compile Include="Responses\Integrations\KarriereOneClickResponse.cs" />
     <Compile Include="Responses\Job\Channels\ChannelSettings.cs" />
     <Compile Include="Responses\Job\Channels\StepStoneChannelSettings.cs" />
