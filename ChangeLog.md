@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.66.0
+- Added `InvalidCachedKeyRequest` and `InvalidCacheKeyResponse`
+- Change `ApiHttpClient` to always try to get a cached item check if cache is valid.
+
 ## 1.65.0
 - Added `GoogleForJobsResponse` to `JobResponse`
 	- Added `GoogleForJobsLocationResponse`

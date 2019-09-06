@@ -142,6 +142,11 @@ namespace eRecruiter.Api.Client
             var cache = MemoryCache.Default;
             var cacheKey = _mandatorId + "_" + requestMessage.GetCacheKey();
 
+            var invalidCachedKey = await new InvalidCachedKeyRequest(cacheKey).LoadResultAsync(this);
+
+            if (cache.Contains(cacheKey) && invalidCachedKey.IsInvalidKey)
+                cache.Remove(cacheKey);
+
             if (!cache.Contains(cacheKey))
                 cache.Add(cacheKey, await SendAndReadAsync<T>(requestMessage, false),
                     DateTimeOffset.Now.Add(cacheDuration));
@@ -172,6 +177,11 @@ namespace eRecruiter.Api.Client
 
             var cache = MemoryCache.Default;
             var cacheKey = _mandatorId + "_" + requestMessage.GetCacheKey();
+
+            var invalidCachedKey = new InvalidCachedKeyRequest(cacheKey).LoadResult(this);
+
+            if (cache.Contains(cacheKey) && invalidCachedKey.IsInvalidKey)
+                cache.Remove(cacheKey);
 
             if (!cache.Contains(cacheKey))
                 cache.Add(cacheKey, SendAndRead<T>(requestMessage, false),
