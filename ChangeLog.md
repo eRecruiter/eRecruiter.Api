@@ -1,5 +1,11 @@
 # eRecruiter API ChangeLog
 
+## 1.67.0
+- Changed `GoogleForJobsResponse` MinSalary and MaxSalary to nullable types.
+- Added `Currency` to `GoogleForJobsResponse`.
+- Changed `EmploymentType` to a list.
+
+
 ## 1.66.0
 - Added `InvalidCachedKeyRequest` and `InvalidCacheKeyResponse`
 - Change `ApiHttpClient` to always try to get a cached item check if cache is valid.
