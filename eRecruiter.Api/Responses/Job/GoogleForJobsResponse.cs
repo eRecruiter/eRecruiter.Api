@@ -7,8 +7,8 @@ namespace eRecruiter.Api.Responses.Job
         public List<string> EmploymentType { get; set; }
         public bool Telecommute { get; set; }
         public string Country { get; set; }
-        public int? MinSalary { get; set; }
-        public int? MaxSalary { get; set; }
+        public double? MinSalary { get; set; }
+        public double? MaxSalary { get; set; }
         public string SalaryUnit { get; set; }
         public string Content { get; set; }
         public string Currency { get; set; }

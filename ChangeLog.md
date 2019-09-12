@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.67.1
+- Changed `GoogleForJobsResponse` MinSalary and MaxSalary to double nullable types.
+
 ## 1.67.0
 - Changed `GoogleForJobsResponse` MinSalary and MaxSalary to nullable types.
 - Added `Currency` to `GoogleForJobsResponse`.
