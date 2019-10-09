@@ -63,6 +63,11 @@ namespace eRecruiter.Api.Responses
         /// <summary>
         /// All available values for occupation types for jobs.
         /// </summary>
-        public IEnumerable<string> OccupationTypes { get; set; } 
+        public IEnumerable<string> OccupationTypes { get; set; }
+
+        #region Cammio
+        public string CammioClientId { get; set; }
+        public string CammioSecret { get; set; }
+        #endregion Cammio
     }
 }

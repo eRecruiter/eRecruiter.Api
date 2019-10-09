@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.68.0
+- Add `CammioPitchHash` to `JobResponse`
+- Add `CammioClientId` and `CammioSecret` to `MandatorResponse`
+
 ## 1.67.1
 - Changed `GoogleForJobsResponse` MinSalary and MaxSalary to double nullable types.
 

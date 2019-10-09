@@ -137,5 +137,10 @@ namespace eRecruiter.Api.Responses
         public string UserZipCode { get; set; }
         public string UserCity { get; set; }
         #endregion UserLocation
+
+        #region Cammio
+        public string CammioPitchHash { get; set; }
+        #endregion Cammio
+
     }
 }
