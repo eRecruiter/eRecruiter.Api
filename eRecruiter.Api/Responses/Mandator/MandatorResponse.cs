@@ -66,7 +66,8 @@ namespace eRecruiter.Api.Responses
         public IEnumerable<string> OccupationTypes { get; set; }
 
         #region Cammio
-        public string CammioApiKey { get; set; }
+        public string CammioClientId { get; set; }
+        public string CammioSecret { get; set; }
         #endregion Cammio
     }
 }
