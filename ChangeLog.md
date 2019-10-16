@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.68.1
+- Add `AskForVideoPitchOnRegistration` to `PortalSettingsResponse`
+
 ## 1.68.0
 - Add `CammioPitchHash` to `JobResponse`
 - Add `CammioClientId` and `CammioSecret` to `MandatorResponse`

@@ -241,6 +241,11 @@ namespace eRecruiter.Api.Responses
         /// </summary>
         public bool AskForDocumentsOnRegistration { get; set; }
 
+        /// <summary>
+        /// Specifies if or how the video pitch should be displayed on the register page or the job application page.
+        /// </summary>
+        public bool AskForVideoPitchOnRegistration { get; set; }
+
         #endregion Applicanta data on registration page
 
         public bool AllowDuplicateEmail { get; set; }
