@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.68.2
+- Change `AskForVideoPitchOnRegistration` to `DisplayType` on `PortalSettingsResponse`
+
 ## 1.68.1
 - Add `AskForVideoPitchOnRegistration` to `PortalSettingsResponse`
 
