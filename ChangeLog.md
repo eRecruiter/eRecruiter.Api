@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.68.3
+- Fix `ApplicantVideoInterviewPutRequest` to return `IEnumerable<ApplicantVideoInterviewResponse>`
+
 ## 1.68.2
 - Change `AskForVideoPitchOnRegistration` to `DisplayType` on `PortalSettingsResponse`
 

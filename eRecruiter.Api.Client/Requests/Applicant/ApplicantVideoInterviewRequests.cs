@@ -23,7 +23,7 @@ namespace eRecruiter.Api.Client.Requests
     /// <summary>
     /// Creates video interview.
     /// </summary>
-    public class ApplicantVideoInterviewPutRequest : PutJsonHttpRequestMessage<ApplicantVideoInterviewResponse>
+    public class ApplicantVideoInterviewPutRequest : PutJsonHttpRequestMessage<IEnumerable<ApplicantVideoInterviewResponse>>
     {
         /// <summary>
         /// Creates video interview for applicant.
