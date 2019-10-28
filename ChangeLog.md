@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.70.0
+- Removed cache invalidation logic as the logic moved to a push based approach.
+
 ## 1.69.0
 - Removed cache invalidation requests in `ApiHttpClient` to avoid deadlocks
 
