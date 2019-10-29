@@ -1,5 +1,10 @@
 # eRecruiter API ChangeLog
 
+## 1.71.0
+- Added new endpoint to create a new applicant and application for the data from "Apply With eRecruiter".
+- `ApplyWithResponse` has been added.
+- `ApplyWithRequest` has been added.
+
 ## 1.70.0
 - Removed cache invalidation logic as the logic moved to a push based approach.
 

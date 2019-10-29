@@ -76,6 +76,7 @@
     <Compile Include="FlexDate.cs" />
     <Compile Include="Parameters\CustomField\CustomFieldValueParameter.cs" />
     <Compile Include="Parameters\FeedbackParameter.cs" />
+    <Compile Include="Parameters\Integrations\ApplyWithParameter.cs" />
     <Compile Include="Parameters\Integrations\KarriereOneClickParameter.cs" />
     <Compile Include="Parameters\Job\CustomFieldParameter.cs" />
     <Compile Include="Parameters\Job\JobParameter.cs" />
@@ -131,6 +132,7 @@
     <Compile Include="Responses\Application\ApplicationReferrerResponse.cs" />
     <Compile Include="Responses\Application\ApplicationResponse.cs" />
     <Compile Include="Responses\Application\ApplicationCreateResponse.cs" />
+    <Compile Include="Responses\Integrations\ApplyWithResponse.cs" />
     <Compile Include="Responses\Integrations\KarriereOneClickResponse.cs" />
     <Compile Include="Responses\Job\Channels\ChannelSettings.cs" />
     <Compile Include="Responses\Job\Channels\StepStoneChannelSettings.cs" />
