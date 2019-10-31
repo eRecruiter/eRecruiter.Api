@@ -133,6 +133,7 @@
     <Compile Include="Responses\Application\ApplicationResponse.cs" />
     <Compile Include="Responses\Application\ApplicationCreateResponse.cs" />
     <Compile Include="Responses\Integrations\ApplyWithResponse.cs" />
+    <Compile Include="Responses\Integrations\ApplyWithSettingResponse.cs" />
     <Compile Include="Responses\Integrations\KarriereOneClickResponse.cs" />
     <Compile Include="Responses\Job\Channels\ChannelSettings.cs" />
     <Compile Include="Responses\Job\Channels\StepStoneChannelSettings.cs" />
