@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.72.0
+- Added new endpoint to fetch "Apply With eRecruiter" setting based on clientId.
+- `ApplyWithSettingResponse` has been added to support this new endpoint.
+
 ## 1.71.0
 - Added new endpoint to create a new applicant and application for the data from "Apply With eRecruiter".
 - `ApplyWithResponse` has been added.
