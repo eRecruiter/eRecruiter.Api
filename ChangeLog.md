@@ -1,5 +1,9 @@
 # eRecruiter API ChangeLog
 
+## 1.72.1
+- Changed `Required` field of `ApplyWithSettingPolicyResponse` class to boolean.
+
+
 ## 1.72.0
 - Added new endpoint to fetch "Apply With eRecruiter" setting based on clientId.
 - `ApplyWithSettingResponse` has been added to support this new endpoint.

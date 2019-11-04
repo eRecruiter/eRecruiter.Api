@@ -32,7 +32,7 @@ namespace eRecruiter.Api.Responses.Integrations
     public class ApplyWithSettingPolicyResponse
     {
         public int Id { get; set; }
-        public string Required { get; set; }
+        public bool Required { get; set; }
         public string Content { get; set; }
     }
 
