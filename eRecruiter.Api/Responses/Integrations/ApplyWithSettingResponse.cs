@@ -42,7 +42,7 @@ namespace eRecruiter.Api.Responses.Integrations
         public string Name { get; set; }
         public string Type { get; set; }
         public string DefaultValue { get; set; }
-        public string Values { get; set; }
+        public ICollection<string> Values { get; set; }
     }
 
     public class ApplyWithSettingPoliciesResponse
