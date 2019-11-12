@@ -39,7 +39,7 @@ namespace eRecruiter.Api.Responses.Integrations
     public class ApplyWithSettingCustomFieldResponse
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string InternalName { get; set; }
         public string Type { get; set; }
         public string DefaultValue { get; set; }
         public ICollection<string> Values { get; set; }
