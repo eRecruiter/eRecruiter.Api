@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.72.2
+- Changed `Values` field of `ApplyWithSettingCustomFieldResponse` class to a Collection of strings.
+
 ## 1.72.1
 - Changed `Required` field of `ApplyWithSettingPolicyResponse` class to boolean.
 
