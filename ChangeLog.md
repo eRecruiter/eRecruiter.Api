@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.72.3
+- Changed `Name` field of `ApplyWithSettingCustomFieldResponse` class to `InternalName`.
+
 ## 1.72.2
 - Changed `Values` field of `ApplyWithSettingCustomFieldResponse` class to a Collection of strings.
 
