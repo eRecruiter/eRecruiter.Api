@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.73.0
+- Add `CoverLetter` to `ApplyWithSettingFieldsResponse`.
+
 ## 1.72.3
 - Changed `Name` field of `ApplyWithSettingCustomFieldResponse` class to `InternalName`.
 
@@ -8,7 +11,6 @@
 
 ## 1.72.1
 - Changed `Required` field of `ApplyWithSettingPolicyResponse` class to boolean.
-
 
 ## 1.72.0
 - Added new endpoint to fetch "Apply With eRecruiter" setting based on clientId.
