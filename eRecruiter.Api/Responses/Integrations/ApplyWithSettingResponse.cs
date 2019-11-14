@@ -27,6 +27,7 @@ namespace eRecruiter.Api.Responses.Integrations
         public string DateOfBirth { get; set; }
         public string Address { get; set; }
         public string Cv { get; set; }
+        public string CoverLetter { get; set; }
     }
 
     public class ApplyWithSettingPolicyResponse
