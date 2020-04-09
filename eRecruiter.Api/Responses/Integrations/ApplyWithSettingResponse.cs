@@ -35,6 +35,7 @@ namespace eRecruiter.Api.Responses.Integrations
         public int Id { get; set; }
         public bool Required { get; set; }
         public string Content { get; set; }
+        public string Url { get; set; }
     }
 
     public class ApplyWithSettingCustomFieldResponse
