@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.74.0
+- Add `Url` to `ApplyWithSettingPolicyResponse`.
+
 ## 1.73.0
 - Add `CoverLetter` to `ApplyWithSettingFieldsResponse`.
 
