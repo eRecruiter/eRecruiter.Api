@@ -108,6 +108,7 @@ namespace eRecruiter.Api.Responses
         public string TemplateName { get; set; }
         public bool HasQuestionnaire { get; set; }
         public GoogleForJobsResponse GoogleForJobs { get; set; }
+        public DateTime? ExpirationDate { get; set; }
 
         #region Geocoding
         public GeoLocationResponse GeoLocation { get; set; }

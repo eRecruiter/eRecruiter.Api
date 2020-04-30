@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.75.0
+- Add `ExpirationDate` to `JobResponse`.
+
 ## 1.74.0
 - Add `Url` to `ApplyWithSettingPolicyResponse`.
 
