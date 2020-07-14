@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.76.0
+- Add `EnableSitemap` to `PortalSettingsResponse`.
+
 ## 1.75.0
 - Add `ExpirationDate` to `JobResponse`.
 

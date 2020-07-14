@@ -346,5 +346,14 @@ namespace eRecruiter.Api.Responses
         public bool JobMapCollapsed { get; set; }
 
         #endregion
+
+        #region Accessibility
+
+        /// <summary>
+        /// Enable the sitemap at the bottom of the screen.
+        /// </summary>
+        public bool EnableSitemap { get; set; }
+
+        #endregion
     }
 }
