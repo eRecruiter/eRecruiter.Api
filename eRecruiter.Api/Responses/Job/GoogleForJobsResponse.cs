@@ -12,6 +12,7 @@ namespace eRecruiter.Api.Responses.Job
         public string SalaryUnit { get; set; }
         public string Content { get; set; }
         public string Currency { get; set; }
+        public string HiringOrganization { get; set; }
         public List<GoogleForJobsLocationResponse> Locations { get; set; }
     }
 }

@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.77.0
+- Add `HiringOrganization` to `GoogleForJobsResponse`.
+
 ## 1.76.0
 - Add `EnableSitemap` to `PortalSettingsResponse`.
 
