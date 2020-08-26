@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.77.1
+- Add `HiringOrganizationLogo` to `GoogleForJobsResponse`.
+
 ## 1.77.0
 - Add `HiringOrganization` to `GoogleForJobsResponse`.
 
