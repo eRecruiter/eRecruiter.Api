@@ -305,7 +305,6 @@ namespace eRecruiter.Api.Responses
         public string IndeedApiSecret { get; set; }
         public bool IndeedApplyAllowed { get; set; }
         public bool IndeedApplyWidgetEnabled { get; set; }
-        public string IndeedApplyWidgetUrl { get; set; }
         public string MyVeetaToken { get; set; }
         public string InstappToken { get; set; }
         public string KarriereApiKey { get; set; }

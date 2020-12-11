@@ -143,5 +143,7 @@ namespace eRecruiter.Api.Responses
         public string CammioPitchHash { get; set; }
         #endregion Cammio
 
+        public string IndeedApplyWidgetUrl { get; set; }
+
     }
 }
