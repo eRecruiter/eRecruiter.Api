@@ -20,12 +20,12 @@ namespace eRecruiter.Api.Client.Requests
             _indeedWidgetEnabled = indeedWidgetEnabled;
         }
 
-        public PublishedJobRequest(int jobId, string channel, bool indeedWidgetEnabled)
+        public PublishedJobRequest(int jobId, string channel, bool indeedWidgetEnabled = false)
             : this(jobId, channel, CultureInfo.CurrentCulture, indeedWidgetEnabled)
         {
         }
 
-        public PublishedJobRequest(int jobId, bool indeedWidgetEnabled)
+        public PublishedJobRequest(int jobId, bool indeedWidgetEnabled = false)
             : this(jobId, "", indeedWidgetEnabled)
         {
         }
