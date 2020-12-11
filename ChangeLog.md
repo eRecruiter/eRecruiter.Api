@@ -1,7 +1,10 @@
 # eRecruiter API ChangeLog
 
+## 1.78.1
+- Add `IndeedApplyWidgetUrl` to JobResponse and added new api endpont for PublishedJobRequest
+
 ## 1.78.0
-- Add `IndeedApplyWidgetEnabled` & `IndeedApplyWidgetUrl` to `GoogleForJobsResponse`.
+- Add `IndeedApplyWidgetEnabled` & `IndeedApplyWidgetUrl` to `MandatorResponse`.
 
 ## 1.77.1
 - Add `HiringOrganizationLogo` to `GoogleForJobsResponse`.
