@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.79.0
+- Add `Id` to `QuestionnaireItemResponse`.
+
 ## 1.78.1
 - Add `IndeedApplyWidgetUrl` to JobResponse and added new api endpont for PublishedJobRequest
 
