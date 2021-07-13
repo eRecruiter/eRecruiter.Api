@@ -38,6 +38,11 @@ namespace eRecruiter.Api.Responses
         /// </summary>
         public bool EnableDoubleOptIn { get; set; }
 
+        /// <summary>
+        /// Enable transactional registration flow
+        /// </summary>
+        public bool EnableTransactionalFlow { get; set; }
+
         #endregion General settings
 
         #region Language Packs

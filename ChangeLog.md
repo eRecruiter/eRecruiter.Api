@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.79.1
+- Add `EnableTransactionalFlow` to `PortalSettingsResponse`.
+
 ## 1.79.0
 - Add `Id` to `QuestionnaireItemResponse`.
 
