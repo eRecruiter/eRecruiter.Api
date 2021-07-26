@@ -14,7 +14,7 @@ namespace eRecruiter.Api.Client.Requests
 
     public class SendApplicationMailRequest : PostJsonHttpRequestMessage<MailerResponse>
     {
-        public SendApplicationMailRequest([NotNull] RegistrationMailParameter parameter) : base("Api/Mailer/Application", parameter)
+        public SendApplicationMailRequest([NotNull] ApplicationMailParameter parameter) : base("Api/Mailer/Application", parameter)
         {
         }
     }
