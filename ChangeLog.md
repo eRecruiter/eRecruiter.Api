@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.79.3
+- Update Api.Client
+
 ## 1.79.2
 - Fix parameter in `SendApplicationMailRequest` from `RegistrationMailParameter` to `ApplicationMailParameter`.
 
