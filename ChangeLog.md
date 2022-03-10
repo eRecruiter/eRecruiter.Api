@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.80.1
+- Add trailing slash to endpoint URL
+
 ## 1.80.0
 - Add new endpoint to send a message to the recruiter on successful application creation
 
