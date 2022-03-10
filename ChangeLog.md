@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.80.2
+- Change request method of `SendApplicationMessage` to POST
+
 ## 1.80.1
 - Add trailing slash to endpoint URL
 
