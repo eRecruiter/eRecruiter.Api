@@ -13,9 +13,9 @@ namespace eRecruiter.Api.Client.Requests
         }
     }
 
-    public class SendApplicationMessage : PostJsonHttpRequestMessage<SendApplicationMessageResponse>
+    public class SendApplicationMessageRequest : PostJsonHttpRequestMessage<SendApplicationMessageResponse>
     {
-        public SendApplicationMessage([NotNull] SendApplicationMessageParameter parameter)
+        public SendApplicationMessageRequest([NotNull] SendApplicationMessageParameter parameter)
             : base("Api/Application/Message/", parameter)
         {
         }

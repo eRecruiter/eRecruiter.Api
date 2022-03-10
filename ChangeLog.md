@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.80.3
+- Adjust request naming to fit convention
+
 ## 1.80.2
 - Change request method of `SendApplicationMessage` to POST
 
