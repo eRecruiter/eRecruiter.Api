@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.80.4
+- New property `VideoRecruitingProvider` for mandators.
+
 ## 1.80.3
 - Adjust request naming to fit convention
 
