@@ -360,6 +360,8 @@ namespace eRecruiter.Api.Responses
         /// </summary>
         public bool EnableSitemap { get; set; }
 
+        public bool EnableSEOFriendlyUrls { get; set; }
+
         #endregion
     }
 }
