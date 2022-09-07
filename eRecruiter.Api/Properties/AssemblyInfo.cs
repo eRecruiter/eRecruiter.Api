@@ -11,4 +11,4 @@
 
 [assembly: AssemblyVersion("1.80.5")]
 [assembly: AssemblyFileVersion("1.80.5")]
-[assembly: AssemblyInformationalVersion("1.80.5)]
+[assembly: AssemblyInformationalVersion("1.80.5")]
