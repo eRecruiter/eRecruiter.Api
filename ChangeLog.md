@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.80.5
+- Changed `GoogleForJobsResponse` EmploymentType to int?.
+
 ## 1.80.4
 - New property `VideoRecruitingProvider` for mandators.
 
