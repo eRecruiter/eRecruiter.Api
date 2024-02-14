@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.80.8
+- New properties `GeoLocationResponse` for job locations.
+
 ## 1.80.5
 - Changed `GoogleForJobsResponse` EmploymentType to int?.
 
