@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.80.9
+- New properties in `JobResponse` for company location of job.
+
 ## 1.80.8
 - New properties `GeoLocationResponse` for job locations.
 

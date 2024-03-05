@@ -112,7 +112,9 @@ namespace eRecruiter.Api.Responses
 
         #region Geocoding
         public GeoLocationResponse GeoLocation { get; set; }
+        public GeoLocationResponse CompanyLocation { get; set; }
         public string GeoLocationName { get; set; }
+        public string CompanyLocationName { get; set; }
         #endregion Geocoding
 
         #region Social Media
