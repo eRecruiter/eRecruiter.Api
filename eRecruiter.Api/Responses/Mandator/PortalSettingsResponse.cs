@@ -43,6 +43,11 @@ namespace eRecruiter.Api.Responses
         /// </summary>
         public bool EnableTransactionalFlow { get; set; }
 
+        /// <summary>
+        /// Enable GDPR information policy
+        /// </summary>
+        public bool EnableGDPRInformationPolicy { get; set; }
+
         #endregion General settings
 
         #region Language Packs

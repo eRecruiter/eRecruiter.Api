@@ -1,5 +1,8 @@
 # eRecruiter API ChangeLog
 
+## 1.80.10
+- New properties in `PortalSettingsResponse` for GDPR information policy.
+
 ## 1.80.9
 - New properties in `JobResponse` for company location of job.
 
