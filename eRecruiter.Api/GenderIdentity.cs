@@ -26,6 +26,10 @@ namespace eRecruiter.Api
         /// <summary>
         /// The person is diverse. 
         /// </summary>
-        Diverse
+        Diverse,
+
+        Inter,
+
+        Open
     }
 }
